@@ -1,10 +1,14 @@
 ---
 name: condopower-formularios
 description: Formulários People via proxy da condopower-api.
-version: 1.0.0
+version: 1.1.0
 ---
 
 # condopower-formularios — formulários HTML de People
+
+## Changelog
+- **v1.1.0 (27/08/2026):** Endpoint do webhook-proxy corrigido (sem `/rpc`). `gerar_form_lider.py` reescrito 100% client-side. Pergunta de Recomendação removida. Validação JS de obrigatoriedade adicionada em todos os forms.
+- **v1.0.0 (25/08/2026):** Padrão proxy same-domain, client-side identity, cookies 10 dias, líder múltiplos liderados.
 
 ## Arquivos por formulário
 

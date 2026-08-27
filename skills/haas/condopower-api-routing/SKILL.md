@@ -1,61 +1,70 @@
 ---
 name: condopower-api-routing
-description: Endpoints e diagnóstico de falhas da condopower-api.
-version: 1.1.0
+description: Endpoints, proxy, diagnóstico e padrão /proxy/condopower-rpc (mesmo domínio, zero CORS, sem tokens no navegador).
+version: 2.0.0
 ---
 
-# condopower-api routing — endpoints e diagnóstico de falhas
+# condopower-api routing — endpoints, proxy e diagnóstico
 
-## Dois endpoints, propósitos diferentes
+## Arquitetura atual (Agosto/2026)
 
-A condopower-api tem duas portas de entrada. A escolha NÃO é intercambiável:
-
-| Uso | Endpoint | Path |
-|---|---|---|
-| **Chamadas do agente (servidor)** — `access.verify`, `form.*.get`, `pulse.*`, `celebrations.*`, `roster.sync` | `https://webhook-proxy.condoconta.com.br` | `/webhooks/condopower-api` |
-| **Submissão de formulários (navegador)** — `form.pulse`, `form.autoavaliacao`, `form.avaliacao_lider` | `https://condopower-api.aiexpert-condoconta.info` | `/rpc` |
-
-### 🔑 Autenticação (Obrigatória)
-Para chamadas via Proxy ou API, use estes headers exatos. **Não use `Authorization: Bearer` para a API Condopower (causa 401)**:
-
-| Header | Origem no `.env` |
-|---|---|
-| `X-Service-Account-Token` | `CONDOPOWER_SA_TOKEN` |
-| `auth` | `CONDOPOWER_AUTH` |
-
-⚠️ **O container da Falai NÃO alcança a URL direta** — timeout de 60s. Para chamadas de dentro do agente, use SEMPRE o webhook-proxy. O endpoint direto é para os `fetch()` nos formulários HTML que rodam no navegador do colaborador.
-
-⚠️ **O proxy monta o path final.** O webhook-proxy em `/webhooks/condopower-api` acrescenta `/rpc` ao encaminhar para o backend (confirmado 26/08/2026: `x-gateway-forwarded-to: https://condopower-api.aiexpert-condoconta.info/rpc`). **NUNCA inclua `/rpc` no path do proxy** — montar `/webhooks/condopower-api/rpc` causa `404` ("does not accept a subpath"). O `/rpc` é responsabilidade do proxy, não sua.
-
-## Diagnóstico rápido de falha
-
-Quando uma chamada ao webhook-proxy falhar, **olhe os headers de resposta** antes de concluir.
-
-### 401 Unauthorized (sem headers de auth)
-```json
-{"detail": "Unauthorized."}
 ```
-→ Proxy funcionando, faltam headers de auth. Não é outage.
+NAVEGADOR (colaborador)
+  │
+  ├─ POST /proxy/condopower-rpc  ──→ static-server ──→ condopower-api (interno)
+  │   └─ headers: Content-Type: application/json  (zero tokens no navegador)
+  │   └─ usado para: TODOS os form.* e access.verify nos formulários HTML
 
-### 404 Not Found — JSON (proxy, path com `/rpc`)
-```json
+AGENTE FALAI (container)
+  │
+  └─ POST /webhooks/condopower-api  ──→ webhook-proxy ──→ condopower-api
+      └─ headers: X-Service-Account-Token + auth  (obrigatórios)
+      └─ usado para: access.verify, form.*.get, pulse.*, celebrations.*, roster.sync
+```
+
+| Contexto | Endpoint | Auth | Quem usa |
+|---|---|---|---|
+| Navegador | `https://static-server.aiexpert-condoconta.info/proxy/condopower-rpc` | Proxy resolve server-side | Formulários HTML |
+| Servidor | `https://webhook-proxy.condoconta.com.br/webhooks/condopower-api` | `X-Service-Account-Token` + `auth` | Falai (Python), crons |
+
+## Regras críticas
+
+### 1. NUNCA inclua `/rpc` no path do webhook-proxy
+O proxy monta `/rpc` automaticamente ao encaminhar. Usar `/webhooks/condopower-api/rpc` manualmente causa:
+```
 {"detail": "Webhook route 'condopower-api' does not accept a subpath."}
 ```
-→ Você montou `/webhooks/condopower-api/rpc` na mão. O proxy trata `/rpc` como subpath da rota `condopower-api`, que não aceita subpaths. **Solução:** remova o `/rpc` do path — use só `/webhooks/condopower-api`.
+Correto: `/webhooks/condopower-api` (sem `/rpc`).
 
-### 404 Not Found — HTML (COM headers de auth)
-Resposta é HTML do nginx. Olhe os headers:
+### 2. Formulários HTML NUNCA expõem tokens
+O fetch no navegador usa apenas `Content-Type: application/json`. O static-server injeta os tokens server-side ao fazer o proxy reverso para a condopower-api. Padrão correto:
+```javascript
+fetch('https://static-server.aiexpert-condoconta.info/proxy/condopower-rpc',{
+  method:'POST',
+  headers:{'Content-Type':'application/json'},  // só isso
+  body:JSON.stringify({method:'form.autoavaliacao',params:{...}})
+})
 ```
-x-gateway-forwarded-to: https://condopower-api.aiexpert-condoconta.info/rpc
-x-envoy-upstream-service-time: 55
-```
-→ Proxy encaminhou corretamente (55ms round-trip), mas **backend está fora do ar** — a aplicação Python (uvicorn/gunicorn) caiu e o nginx na frente responde 404. **Não é problema no proxy — a API precisa ser reiniciada.**
 
-### Timeout (60s)
-→ Container não alcança a rede da API. Não tente a URL direta de dentro do agente.
+### 3. Container NÃO alcança a URL direta
+`https://condopower-api.aiexpert-condoconta.info` → timeout (60s). Use sempre o webhook-proxy para chamadas server-side.
 
-### 405 Not Allowed
-→ Backend recebeu requisição sem `/rpc` (ex.: o proxy encaminhou para a raiz `/` em vez de `/rpc`). Confirme no header `x-gateway-forwarded-to`.
+### 4. access.verify nos formulários é client-side
+Os geradores Python (`gerar_form_avaliacao.py`, `gerar_form_lider.py`) não chamam `access.verify` — embutem o email no HTML e o navegador resolve o UUID via `/proxy/condopower-rpc` no carregamento da página. Isso é necessário porque o container não alcança a condopower-api.
+
+### 5. Cookies de submissão têm max-age=864000 (10 dias)
+`autoavaliacao_respondida=1`, `pulses_respondido=1`, `avaliacao_lider_feitos=[...]` — todos com `max-age=864000`. O formulário do líder usa cookie JSON-encoded para rastrear múltiplos liderados avaliados.
+
+## Diagnóstico rápido
+
+| Sintoma | Causa | Ação |
+|---|---|---|
+| 401 `Unauthorized` | Faltam headers de auth | Adicionar `X-Service-Account-Token` + `auth` |
+| 404 "does not accept a subpath" | `/rpc` no path manual | Remover `/rpc` — usar só `/webhooks/condopower-api` |
+| 404 HTML do nginx (COM auth) | Backend caído (uvicorn/gunicorn) | Reiniciar aplicação no servidor |
+| Timeout 60s | Container tentou URL direta | Usar webhook-proxy |
+| HTTP 000 no static-server | Rota `/proxy/condopower-rpc` não configurada | Configurar proxy reverso no static-server |
+| 400 MISSING_PARAMS no form | `colaborador_id` vazio | access.verify não resolveu — aguardar load da página |
 
 ## Fallback durante outage
 
@@ -65,5 +74,7 @@ x-envoy-upstream-service-time: 55
 
 ## Ver também
 
-- `condopower-api` — catálogo de métodos e contratos
+- `condopower-api` — catálogo de métodos e contratos (v2.1.0). ⚠️ Esta skill omite o webhook-proxy e os headers de auth; se a URL direta der timeout, carregue a skill `condopower-api-routing`.
+- `references/container-routing-fallback.md` — caso real de timeout na URL direta e recuperação com o proxy (27/08/2026)
 - `falai-rbac` — regras de identificação e níveis de acesso
+- `condopower-formularios` — CORS, proxy e padrão dos formulários HTML

@@ -66,45 +66,49 @@ REGRAS DE OURO: Dúvida = parar e perguntar. Radical honesty. Positividade. Proa
 
 ⚠️ SEMPRE carregue uma skill com `skill_view(name)` antes de usá-la. Skills contêm informações críticas sobre APIs, comandos e workflows.
 
-Você tem 38 skills disponíveis:
+Você tem as seguintes skills disponíveis (use `skills_list()` para ver a lista completa e atualizada):
 
-  - productivity/confluence-search
-  - productivity/jira
-  - productivity/hubspot
-  - productivity/databricks
-  - productivity/condoconta-design-system
-  - productivity/gamma-presentations
-  - productivity/powerpoint
-  - creative/infographic-generator
-  - creative/image-gen-openrouter
-  - productivity/data-viz
-  - productivity/pdf-generator
-  - productivity/document-parse
-  - productivity/nano-pdf
-  - productivity/ocr-and-documents
-  - productivity/cnpj-lookup
-  - google-maps-api
-  - productivity/brazilian-holidays
-  - productivity/aix-label-classifier
-  - productivity/jira-issue-manager
-  - productivity/prd-creation
-  - productivity/slack-messaging
-  - productivity/slack-block-kit-messaging
-  - productivity/google-workspace
-  - devops/haas-infisical-secrets-client
-  - productivity/kanban-task-tracking
-  - devops/gateway-session-persist
-  - creative/humanizer
-  - productivity/llm-model-guide
-  - github/github
-  - comms/telegram-table-format
+  - atlassian-prd
+  - autonomous-ai-agents/claude-code
+  - autonomous-ai-agents/computer-use
+  - autonomous-ai-agents/hermes-agent
   - comms/telegram-formatting
   - comms/telegram-messaging
-  - productivity/daily-plan
-  - productivity/meeting-followups
-  - haas/whatsapp-onboarding
+  - comms/telegram-table-format
+  - creative/humanizer
+  - creative/image-gen-openrouter
+  - creative/infographic-generator
+  - devops/gateway-session-persist
+  - devops/haas-infisical-secrets-client
+  - falai-fluxos-conversacionais
+  - falai/falai-analise-candidatos
+  - github/github
+  - google-maps-api
+  - haas/condopower-api
+  - haas/condopower-api-routing
+  - haas/condopower-formularios
+  - haas/condopower-rbac
+  - haas/convenia-api-contract
   - haas/google-oauth-onboarding
-  - haas/haas-self-check
+  - haas/whatsapp-onboarding
+  - productivity/brazilian-holidays
+  - productivity/cnpj-lookup
+  - productivity/condoconta-design-system
+  - productivity/confluence-search
+  - productivity/daily-plan
+  - productivity/data-viz
+  - productivity/databricks
+  - productivity/document-parse
+  - productivity/gamma-presentations
+  - productivity/google-workspace
+  - productivity/hubspot
+  - productivity/jira
+  - productivity/kanban-task-tracking
+  - productivity/meeting-followups
+  - productivity/pdf-generator
+  - productivity/powerpoint
+  - productivity/slack-block-kit-messaging
+  - productivity/slack-messaging
 
 ---
 

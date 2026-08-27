@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PDI 70-20-10 — CondoConta People</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#F4F6FA;--ink:#0C2440;--navy:#14365C;--navy-deep:#0A2138;--gold:#F4B72C;--gold-deep:#C98F0C;--muted:#5E748C;--line:#DCE3EC;--card:#FFFFFF}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font-family:'Inter',sans-serif;line-height:1.5;padding:40px 20px;-webkit-font-smoothing:antialiased}
+.sheet{max-width:860px;margin:0 auto;background:var(--card);box-shadow:0 24px 60px -28px rgba(12,36,64,.35),0 0 0 1px var(--line)}
+header{background:var(--navy-deep);color:#fff;padding:30px 44px}
+.brandrow{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px;flex-wrap:wrap;gap:8px}
+.logo{display:flex;align-items:center;gap:10px;font-family:'Sora',sans-serif;font-weight:700;font-size:15px}
+.logo b{color:var(--gold)}.logo span{color:#AFC1D6;font-weight:600}
+.tag-conf{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(244,183,44,.4);padding:5px 10px;border-radius:4px}
+header h1{font-family:'Sora',sans-serif;font-size:31px;font-weight:800;letter-spacing:-.02em;line-height:1.1}
+header h1 em{color:var(--gold);font-style:normal}
+.sub{color:#AFC1D6;margin-top:8px;font-size:13.5px;max-width:60ch}
+.pad{padding:30px 44px}
+.eyebrow{font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-deep)}
+h2{font-family:'Sora',sans-serif;font-size:19px;font-weight:700;color:var(--navy);margin:4px 0 20px;letter-spacing:-.02em}
+.field{margin-bottom:22px}
+.field label{display:block;font-size:13px;font-weight:600;color:var(--navy);margin-bottom:7px}
+.field .hint{font-size:12px;color:var(--muted);margin-top:4px}
+input,select,textarea{width:100%;padding:11px 14px;border:1.5px solid var(--line);border-radius:8px;font-family:'Inter',sans-serif;font-size:14px;color:var(--ink);background:#FBFCFE}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold)}
+.radio{display:flex;flex-direction:column;gap:9px}
+.radio label{display:flex;align-items:center;gap:10px;padding:11px 14px;border:1.5px solid var(--line);border-radius:8px;background:#FBFCFE;cursor:pointer;font-weight:500;font-size:13.5px;color:var(--ink);margin-bottom:0}
+.radio input{width:auto}
+.status{display:flex;flex-wrap:wrap;gap:8px}
+.status button{padding:9px 15px;border:1.5px solid var(--line);border-radius:20px;background:#FBFCFE;font-size:12.5px;cursor:pointer;color:var(--muted)}
+.status button.sel{background:var(--navy);border-color:var(--navy);color:#fff}
+footer{background:var(--navy-deep);color:#AFC1D6;padding:20px 44px;display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:10.5px;flex-wrap:wrap;gap:8px}
+footer b{color:#fff}footer .gold{color:var(--gold)}
+</style>
+</head>
+<body>
+<div class="sheet">
+<header>
+  <div class="brandrow">
+    <div class="logo"><b>CondoConta</b><span>· People</span></div>
+    <div class="tag-conf">Confidencial</div>
+  </div>
+  <h1>PDI <em>70-20-10</em></h1>
+  <div class="sub">Plano de Desenvolvimento Individual — prática, social e formal.</div>
+</header>
+
+<section class="pad">
+  <div class="eyebrow">Identificação</div>
+  <h2>Colaborador</h2>
+  <div class="field">
+    <label>Para quem é o PDI? (nome ou email)</label>
+    <input type="text" placeholder="Ex: Amanda Almeida">
+  </div>
+</section>
+
+<section class="pad" style="border-top:1px solid var(--line)">
+  <div class="eyebrow">Diagnóstico</div>
+  <h2>Competência e gap</h2>
+  <div class="field">
+    <label>Qual competência será o foco?</label>
+    <input type="text" placeholder="Ex: Comunicação executiva">
+  </div>
+  <div class="field">
+    <label>Qual a evidência do gap atual?</label>
+    <textarea rows="3" placeholder="Ex: apresentações ainda dependem de revisão do gestor"></textarea>
+  </div>
+</section>
+
+<section class="pad" style="border-top:1px solid var(--line)">
+  <div class="eyebrow">Plano de ação</div>
+  <h2>Tipo de ação</h2>
+  <div class="field">
+    <div class="radio">
+      <label><input type="radio" name="tipo" value="1"> 70% — Prática (desafios no trabalho)</label>
+      <label><input type="radio" name="tipo" value="2"> 20% — Social (mentoria, feedback, rede)</label>
+      <label><input type="radio" name="tipo" value="3"> 10% — Formal (cursos, certificações)</label>
+    </div>
+  </div>
+  <div class="field">
+    <label>Descreva a ação</label>
+    <input type="text" placeholder="Ex: Liderar 2 reuniões de steering por mês">
+  </div>
+  <div class="field">
+    <label>Prazo</label>
+    <input type="date">
+  </div>
+  <div class="field">
+    <label>Como será evidenciada a conclusão?</label>
+    <textarea rows="2" placeholder="Ex: gravações das apresentações sem retrabalho"></textarea>
+  </div>
+</section>
+
+<section class="pad" style="border-top:1px solid var(--line)">
+  <div class="eyebrow">Status</div>
+  <h2>Situação atual</h2>
+  <div class="field">
+    <div class="status">
+      <button>Não iniciado</button><button>Em andamento</button><button>Concluído</button><button>Atrasado</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div><b>FALAI</b> · People</div>
+  <div class="gold">condoconta.com.br</div>
+  <div>by Falai — CC People</div>
+</footer>
+</div>
+<script>
+document.querySelectorAll('.status').forEach(function(g){g.querySelectorAll('button').forEach(function(b){b.addEventListener('click',function(){g.querySelectorAll('button').forEach(function(x){x.classList.remove('sel')});b.classList.add('sel');});});});
+</script>
+</body>
+</html>

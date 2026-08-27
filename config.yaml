@@ -1,0 +1,202 @@
+model:
+  default: deepseek/deepseek-v4-pro
+  provider: openrouter
+  cron: google/gemma-4-26b-a4b-it
+providers:
+  openrouter:
+    base_url: https://openrouter.ai/api/v1
+toolsets:
+  - terminal
+  - hermes-cli
+agent:
+  max_turns: 90
+  gateway_timeout: 1800
+  restart_drain_timeout: 180
+  api_max_retries: 3
+  tool_use_enforcement: auto
+  verify_on_stop: false
+  rules:
+    - 'REGRA ABSOLUTA: Para editar config.yaml ou .env, SEMPRE use hermes config set
+      no terminal. NUNCA use patch ou write_file — serão bloqueados.'
+checkpoints:
+  enabled: true
+  max_snapshots: 20
+  max_total_size_mb: 500
+  auto_prune: true
+  retention_days: 7
+compression:
+  enabled: true
+  threshold: 0.5
+  target_ratio: 0.2
+auxiliary:
+  vision:
+    provider: openrouter
+    model: google/gemini-2.5-flash
+display:
+  show_reasoning: false
+  platforms:
+    telegram:
+      streaming: false
+      tool_progress: false
+    slack:
+      streaming: false
+      tool_progress: false
+  tool_progress: false
+dashboard:
+  theme: default
+  basic_auth:
+    username: admin
+    password: falaiCC@2026
+    secret: 34d08970f8a48d4d3d9468538500cc36
+tts:
+  provider: edge
+  edge:
+    voice: pt-BR-FranciscaNeural
+  elevenlabs:
+    voice_id: pNInz6obpgDQGcFmaJgB
+    model_id: eleven_multilingual_v2
+stt:
+  enabled: true
+  provider: local
+  local:
+    model: small
+    language: pt
+  openai:
+    model: whisper-1
+delegation:
+  model: deepseek/deepseek-v4-flash
+  provider: openrouter
+prefill_messages_file: ''
+slack:
+  channel_prompts:
+    C0BJLA3H16F: 'Você está no canal #people-hr. NESTE CANAL, você é a Falai — Especialista
+      em People (RH) da CondoConta.
+
+      IDENTIDADE: Falai é acolhedora, organizada, empática e consultiva — parceira
+      estratégica de RH.
+
+      COMO RESPONDER:
+
+      1. Acolha a dúvida com empatia primeiro
+
+      2. Consulte políticas, documentação ou dados de People
+
+      3. Responda com clareza e organize informações em tópicos
+
+      ESCOPO: Onboarding/offboarding, benefícios, políticas internas, férias/ausências,
+
+      documentação trabalhista, comunicação interna, eventos corporativos, desenvolvimento
+      de talentos.
+
+      GOVERNANÇA:
+
+      Admin (U08MB56BPG8 = Caju): Tudo - consultas, mudanças, configs, credenciais.
+
+      Time People (demais membros): Consultas e perguntas sobre processos de RH.
+
+      REGRA: SEMPRE validar o user_id do solicitante ANTES de executar ações de escrita.
+
+      CONFIDENCIALIDADE: Dados de pessoas são sagrados — nunca exponha PII em canais
+      públicos.
+
+      Assine como: *by Falai — People*
+
+      '
+  enabled: true
+  free_response_chats: C0BJLA3H16F
+  strict_mention: true
+whatsapp:
+  bridge_script: /opt/data/scripts/whatsapp-bridge/bridge.js
+  dm_allow_from: ''
+  dm_policy: allowlist
+  enabled: true
+  free_response_chats: ''
+  group_allow_from: ''
+  group_policy: allowlist
+  mention_patterns: (?i)@?falai
+  port: 3000
+  require_mention: true
+telegram:
+  allowed_chats: 5772183211,8523247194,5925310763
+command_allowlist:
+  - overwrite project env/config file
+  - script execution via heredoc
+  - overwrite system file via redirection
+  - script execution via -e/-c flag
+  - execute_code
+  - in-place edit of Hermes config/env
+onboarding:
+  seen:
+    busy_input_prompt: true
+    profile_build_offered: true
+_config_version: 33
+plugins:
+  enabled:
+    - telegram-platform
+    - slack-platform
+session_reset:
+  mode: none
+sessions:
+  auto_prune: true
+  retention_days: 7
+  retention: 7d
+memory: 'O time está baseado em Florianópolis, SC. Usar Florianópolis como local padrão
+  para clima, previsão do tempo e referências de localização.
+
+  §
+
+  Jira People: PAIX = projetos com rituais ágeis (épicos, sprints, histórias); PADD
+  = tarefas operacionais autocontidas. Sempre diferenciar ao criar issues.
+
+  §
+
+  Jira Cloud API v3: search via POST /rest/api/3/search/jql com body JSON. API v2
+  foi descontinuada (410 Gone).
+
+  §
+
+  Convenia: app.py em /opt/data/convenia (Bolt), DB /opt/data/convenia_data/convenia.db.
+  Amandinha=amanda.almeida@condoconta.com.br (People). U0APYGTD8K1=Leonardo Lima (Finance).
+  Regras: ack() imediato, fluxos em thread, @menção real via API.
+
+  §
+
+  Acesso dados: time People (departamento=''People'') ou U0APYGTD8K1 (Leonardo Lima).
+  Luana Xavier (U0AS4CSDUUU) = People/BP autorizada. Não autorizados → ''Apenas o
+  time People está autorizado.''
+
+  §
+
+  Validação prévia: quem pede, aprova. Se Catarcione (U0AFGRGC80P) solicitar → draft
+  vai pra ele. Se Amandinha solicitar → draft vai pra ela. Não repassar aprovação
+  entre eles. Só disparar após OK explícito de quem pediu.
+
+  §
+
+  Catar (Rodrigo Catarcione): Head de People e Performance, líder direto da Falai.
+  Prefere ser chamado de ''Catar''. Slack ID: U0AFGRGC80P. Caju (Telegram 5772183211)
+  é pessoa diferente.
+
+  §
+
+  Reporter Jira = Leonardo Lima (dono do token). Incluir ''Solicitado por Catarcione''
+  em toda issue. Reporter não editável em next-gen (PADD, PAIX).
+
+  §
+
+  MUTADA em threads de: aniversarios, tempo de casa, Cafe com o CEO. NUNCA responder.
+  Ignorar ate @mencoes.
+
+  §
+
+  ESCALAÇÃO crashes Convenia: 03/08=10, 04/08=5, 05/08=10, 06/08=22, 07/08=28 (recorde,
+  fechamento), 08/08=1 (00:39, Nível 1). Tracking: grep ''caído'' watchdog.log | grep
+  -oP ''\d{4}-\d{2}-\d{2}'' | sort | uniq -c. App estável desde 00:39 (PID 143323,
+  sessão d14a132c, 2h+ uptime). Watchdog PID 147789 saudável (ctxt_switches:587).'
+cron:
+  model: google/gemma-4-26b-a4b-it
+  provider: openrouter
+vision:
+  model: google/gemini-2.5-flash
+  provider: openrouter
+timezone: America/Sao_Paulo

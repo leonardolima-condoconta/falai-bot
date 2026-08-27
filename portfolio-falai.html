@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Falai · People Partner — CondoConta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#F4F6FA;--ink:#0C2440;--navy:#14365C;--navy-deep:#0A2138;--navy-mid:#1E4B7A;--gold:#F4B72C;--gold-deep:#C98F0C;--muted:#5E748C;--line:#DCE3EC;--line-2:#EAEFF5;--card:#FFFFFF}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font-family:'Inter',sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+.sheet{max-width:960px;margin:0 auto;background:var(--card);box-shadow:0 24px 60px -28px rgba(12,36,64,.35),0 0 0 1px var(--line)}
+header{background:var(--navy-deep);color:#fff;padding:44px 52px;display:flex;align-items:center;gap:32px;flex-wrap:wrap}
+.avatar{width:120px;height:120px;border-radius:50%;background:linear-gradient(135deg,var(--gold),#E5A820);display:flex;align-items:center;justify-content:center;font-size:52px;flex-shrink:0;box-shadow:0 8px 32px rgba(244,183,44,.3)}
+.header-text h1{font-family:'Sora',sans-serif;font-size:34px;font-weight:800;letter-spacing:-.02em;line-height:1.1}
+.header-text h1 em{color:var(--gold);font-style:normal}
+.header-text .role{color:var(--gold);font-size:14px;font-weight:600;margin:6px 0}
+.header-text .tagline{color:#AFC1D6;font-size:14px;max-width:48ch}
+.pad{padding:36px 52px}
+.eyebrow{font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:4px}
+h2{font-family:'Sora',sans-serif;font-size:21px;font-weight:700;color:var(--navy);margin-bottom:18px;letter-spacing:-.02em}
+h3{font-family:'Sora',sans-serif;font-size:15px;font-weight:600;color:var(--navy)}
+p{font-size:13.5px;color:var(--ink);margin-bottom:14px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:16px}
+.card{background:#FBFCFE;border:1px solid var(--line);border-radius:10px;padding:20px}
+.card .icon{font-size:28px;margin-bottom:8px}
+.card h4{font-family:'Sora',sans-serif;font-size:13px;font-weight:600;color:var(--navy);margin-bottom:6px}
+.card p{font-size:12px;color:var(--muted);margin:0}
+.bullets{list-style:none;padding:0}
+.bullets li{padding:8px 0;border-bottom:1px solid var(--line-2);font-size:13px;display:flex;align-items:flex-start;gap:10px}
+.bullets li:last-child{border-bottom:none}
+.bullets .dot{color:var(--gold);font-weight:700;flex-shrink:0}
+.ninebox{margin:16px 0;display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
+.nb-cell{padding:20px 12px;text-align:center;font-size:12px;border-radius:4px}
+.nb-high{background:#E8F5E9;color:#2E7D32}
+.nb-mid{background:#FFF8E1;color:#F57F17}
+.nb-low{background:#FFEBEE;color:#C62828}
+.nb-label{font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;margin-top:4px}
+.nb-title{font-weight:700;font-size:13px}
+footer{background:var(--navy-deep);color:#AFC1D6;padding:22px 52px;display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:10.5px;flex-wrap:wrap;gap:8px}
+footer b{color:#fff}footer .gold{color:var(--gold)}
+section:nth-child(even){background:var(--navy);color:#fff}
+section:nth-child(even) h2{color:#fff}
+section:nth-child(even) p{color:#AFC1D6}
+section:nth-child(even) .card{background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.1)}
+section:nth-child(even) .card h4{color:#fff}
+section:nth-child(even) .card p{color:#A9BDD4}
+section:nth-child(even) .bullets li{border-color:rgba(255,255,255,.08);color:#A9BDD4}
+section:nth-child(even) .eyebrow{color:var(--gold)}
+section:nth-child(even) .dot{color:var(--gold)}
+section:nth-child(even) .nb-high{background:rgba(46,125,50,.15);color:#A5D6A7}
+section:nth-child(even) .nb-mid{background:rgba(245,127,23,.15);color:#FFCC80}
+section:nth-child(even) .nb-low{background:rgba(198,40,40,.15);color:#EF9A9A}
+@media(max-width:680px){header{flex-direction:column;text-align:center;padding:32px 28px}.pad{padding:28px}.cards{grid-template-columns:1fr}.ninebox{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+<!-- HOME -->
+<header>
+  <div class="avatar">🧡</div>
+  <div class="header-text">
+    <h1>Falai <em>· People Partner</em></h1>
+    <div class="role">Especialista em People Operations</div>
+    <div class="tagline">Acolhedora, organizada e consultiva — conecto lideranças, colaboradores e o time de People para acelerar processos, fortalecer a cultura e gerar decisões baseadas em dados.</div>
+  </div>
+</header>
+
+<!-- CONDOPOWER -->
+<section class="pad">
+  <div class="eyebrow">Para você</div>
+  <h2>Colaborador · CondoPower</h2>
+  <p>Estou aqui para descomplicar o seu dia a dia. Me chame no Slack para tirar dúvidas sobre políticas internas, benefícios, férias, código de conduta e muito mais. Tudo com sigilo absoluto e base na documentação oficial da CondoConta.</p>
+  <div class="cards">
+    <div class="card">
+      <div class="icon">📚</div>
+      <h4>Documentação do Confluence</h4>
+      <p>Consulto a wiki interna da CondoConta em tempo real para responder sobre políticas, dress code, home office, benefícios e processos de RH.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🔒</div>
+      <h4>Seus dados protegidos</h4>
+      <p>Consulto suas informações apenas com sua autorização. Level 1 vê apenas seus próprios dados.</p>
+    </div>
+    <div class="card">
+      <div class="icon">📅</div>
+      <h4>Agenda e reuniões</h4>
+      <p>Precisa agendar? Eu verifico disponibilidade e crio o convite com Google Meet. Calendar liberado para todos.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🎂</div>
+      <h4>Celebrações</h4>
+      <p>Aniversariantes do dia e tempo de casa são celebrados automaticamente no #people-hr.</p>
+    </div>
+  </div>
+</section>
+
+<!-- LIDERES -->
+<section class="pad">
+  <div class="eyebrow">Para lideranças</div>
+  <h2>Líderes · Ferramentas de Gestão</h2>
+  <p>Gerir pessoas é a coisa mais importante que você faz. Eu organizo os rituais de liderança para que você foque no que importa: a conversa.</p>
+
+  <h3 style="color:var(--gold);margin-top:20px">1x1 + Feedback SCI</h3>
+  <ul class="bullets">
+    <li><span class="dot">1</span> Escolha o colaborador — eu valido se é seu liderado</li>
+    <li><span class="dot">2</span> Data e formato do 1x1</li>
+    <li><span class="dot">3</span> Energia e motivação (1-5)</li>
+    <li><span class="dot">4</span> Pauta do liderado e encaminhamentos</li>
+    <li><span class="dot">5</span> Feedback SCI — Situação, Comportamento, Impacto</li>
+    <li><span class="dot">✓</span> Registro automático no banco de Desempenho</li>
+  </ul>
+
+  <h3 style="color:var(--gold);margin-top:20px">Avaliação de Desempenho</h3>
+  <ul class="bullets">
+    <li><span class="dot">1</span> Atribuições atuais do cargo (peso 50%)</li>
+    <li><span class="dot">2</span> Potencial para o próximo nível (peso 20%)</li>
+    <li><span class="dot">3</span> Competências técnicas e comportamentais (peso 30%)</li>
+    <li><span class="dot">4</span> Recomendação: Promoção, Mérito, Bônus, Manter, PDI, PIP ou Desligamento</li>
+    <li><span class="dot">✓</span> Nota final e nine box calculados automaticamente</li>
+  </ul>
+
+  <h3 style="color:var(--gold);margin-top:20px">PDI 70-20-10</h3>
+  <ul class="bullets">
+    <li><span class="dot">•</span> 70% Prática — desafios no trabalho</li>
+    <li><span class="dot">•</span> 20% Social — mentoria, feedback, rede</li>
+    <li><span class="dot">•</span> 10% Formal — cursos, certificações</li>
+  </ul>
+</section>
+
+<!-- TIME PEOPLE -->
+<section class="pad">
+  <div class="eyebrow">Para o time</div>
+  <h2>Time People · Automação e Ritmo</h2>
+  <p>Apoio o time de People nas operações diárias com automação, calendário e acompanhamento dos rituais de RH.</p>
+  <div class="cards">
+    <div class="card">
+      <div class="icon">📅</div>
+      <h4>Agendamento de reuniões</h4>
+      <p>Crio eventos com Google Meet, convidados, instruções e transcrição automática. Toda reunião inclui a Falai como participante.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🎉</div>
+      <h4>Aniversários e Tempo de Casa</h4>
+      <p>Crons diários automáticos no #people-hr com @menções reais. Segunda-feira cobre o fim de semana.</p>
+    </div>
+    <div class="card">
+      <div class="icon">☕</div>
+      <h4>Café com o CEO</h4>
+      <p>Lembrete automático toda terça-feira às 17h para o ritual semanal.</p>
+    </div>
+    <div class="card">
+      <div class="icon">📊</div>
+      <h4>Pulse de Satisfação</h4>
+      <p>Pesquisa de clima anônima mensal com eNPS. Abertura, acompanhamento de adesão e fechamento.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GESTAO -->
+<section class="pad">
+  <div class="eyebrow">Para a estratégia</div>
+  <h2>Gestão · Insights & Nine Box</h2>
+  <p>A partir das avaliações registradas pelos líderes, gero relatórios e análises que ajudam a gestão a tomar decisões sobre pessoas com base em dados reais.</p>
+
+  <h3 style="color:var(--gold);margin-top:20px">Modelo Nine Box</h3>
+  <p>Matriz de saúde do colaborador — cruza Desempenho (entrega atual) com Potencial (prontidão para o próximo nível).</p>
+
+  <div class="ninebox">
+    <div class="nb-cell nb-high"><div class="nb-title">Alto Potencial<br>Baixo Desempenho</div><div class="nb-label">Enigma · Desenvolver</div></div>
+    <div class="nb-cell nb-high"><div class="nb-title">Alto Potencial<br>Médio Desempenho</div><div class="nb-label">Talento · Reter</div></div>
+    <div class="nb-cell nb-high"><div class="nb-title">Alto Potencial<br>Alto Desempenho</div><div class="nb-label">Estrela · Promover</div></div>
+    <div class="nb-cell nb-mid"><div class="nb-title">Médio Potencial<br>Baixo Desempenho</div><div class="nb-label">Dúvida · Observar</div></div>
+    <div class="nb-cell nb-mid"><div class="nb-title">Médio Potencial<br>Médio Desempenho</div><div class="nb-label">Consistente · Manter</div></div>
+    <div class="nb-cell nb-mid"><div class="nb-title">Médio Potencial<br>Alto Desempenho</div><div class="nb-label">Forte · Desafiar</div></div>
+    <div class="nb-cell nb-low"><div class="nb-title">Baixo Potencial<br>Baixo Desempenho</div><div class="nb-label">Questão · PIP</div></div>
+    <div class="nb-cell nb-low"><div class="nb-title">Baixo Potencial<br>Médio Desempenho</div><div class="nb-label">Âncora · Reposicionar</div></div>
+    <div class="nb-cell nb-low"><div class="nb-title">Baixo Potencial<br>Alto Desempenho</div><div class="nb-label">Especialista · Valorizar</div></div>
+  </div>
+
+  <h3 style="color:var(--gold);margin-top:24px">Relatórios disponíveis</h3>
+  <ul class="bullets">
+    <li><span class="dot">📊</span> Distribuição do nine box por área e por ciclo</li>
+    <li><span class="dot">📈</span> Evolução das notas de cada colaborador ao longo dos ciclos</li>
+    <li><span class="dot">👥</span> Cobertura de 1x1 e feedbacks por liderança</li>
+    <li><span class="dot">🎯</span> PDIs ativos, atrasados e concluídos por time</li>
+    <li><span class="dot">💚</span> Pulse: eNPS, adesão e sentimento por área</li>
+  </ul>
+</section>
+
+<footer>
+  <div><b>FALAI</b> · CondoConta People</div>
+  <div class="gold">condoconta.com.br</div>
+  <div>by Falai — CC People · 2026</div>
+</footer>
+</div>
+</body>
+</html>

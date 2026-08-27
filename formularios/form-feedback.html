@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feedback SCI — CondoConta People</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#F4F6FA;--ink:#0C2440;--navy:#14365C;--navy-deep:#0A2138;--gold:#F4B72C;--gold-deep:#C98F0C;--muted:#5E748C;--line:#DCE3EC;--card:#FFFFFF}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font-family:'Inter',sans-serif;line-height:1.5;padding:40px 20px;-webkit-font-smoothing:antialiased}
+.sheet{max-width:860px;margin:0 auto;background:var(--card);box-shadow:0 24px 60px -28px rgba(12,36,64,.35),0 0 0 1px var(--line)}
+header{background:var(--navy-deep);color:#fff;padding:30px 44px}
+.brandrow{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px;flex-wrap:wrap;gap:8px}
+.logo{display:flex;align-items:center;gap:10px;font-family:'Sora',sans-serif;font-weight:700;font-size:15px}
+.logo b{color:var(--gold)}.logo span{color:#AFC1D6;font-weight:600}
+.tag-conf{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(244,183,44,.4);padding:5px 10px;border-radius:4px}
+header h1{font-family:'Sora',sans-serif;font-size:31px;font-weight:800;letter-spacing:-.02em;line-height:1.1}
+header h1 em{color:var(--gold);font-style:normal}
+.sub{color:#AFC1D6;margin-top:8px;font-size:13.5px;max-width:60ch}
+.pad{padding:30px 44px}
+.eyebrow{font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-deep)}
+h2{font-family:'Sora',sans-serif;font-size:19px;font-weight:700;color:var(--navy);margin:4px 0 20px;letter-spacing:-.02em}
+.field{margin-bottom:20px}
+.field label{display:block;font-size:13px;font-weight:600;color:var(--navy);margin-bottom:7px}
+input,select,textarea{width:100%;padding:11px 14px;border:1.5px solid var(--line);border-radius:8px;font-family:'Inter',sans-serif;font-size:14px;color:var(--ink);background:#FBFCFE}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold)}
+.radio{display:flex;gap:10px;flex-wrap:wrap}
+.radio button{padding:9px 15px;border:1.5px solid var(--line);border-radius:20px;background:#FBFCFE;font-size:12.5px;cursor:pointer;color:var(--muted)}
+.radio button.sel{background:var(--navy);border-color:var(--navy);color:#fff}
+footer{background:var(--navy-deep);color:#AFC1D6;padding:20px 44px;display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:10.5px;flex-wrap:wrap;gap:8px}
+footer b{color:#fff}footer .gold{color:var(--gold)}
+</style>
+</head>
+<body>
+<div class="sheet">
+<header>
+  <div class="brandrow">
+    <div class="logo"><b>CondoConta</b><span>· People</span></div>
+    <div class="tag-conf">Confidencial</div>
+  </div>
+  <h1>Feedback <em>SCI</em></h1>
+  <div class="sub">Método Situação · Comportamento · Impacto para feedback objetivo e construtivo.</div>
+</header>
+
+<section class="pad">
+  <div class="eyebrow">Identificação</div>
+  <h2>Destinatário</h2>
+  <div class="field">
+    <label>Quem recebe o feedback? (nome ou email)</label>
+    <input type="text" placeholder="Ex: Ana Bunn">
+  </div>
+  <div class="field">
+    <label>Data</label>
+    <input type="date">
+  </div>
+</section>
+
+<section class="pad" style="border-top:1px solid var(--line)">
+  <div class="eyebrow">Classificação</div>
+  <h2>Tipo de feedback</h2>
+  <div class="field">
+    <div class="radio"><button>Positivo</button><button>Construtivo</button><button>Ambos</button></div>
+  </div>
+</section>
+
+<section class="pad" style="border-top:1px solid var(--line)">
+  <div class="eyebrow">Método SCI</div>
+  <h2>Detalhamento</h2>
+  <div class="field">
+    <label>Situação</label>
+    <textarea rows="2" placeholder="Onde e quando aconteceu — contexto específico"></textarea>
+  </div>
+  <div class="field">
+    <label>Comportamento</label>
+    <textarea rows="2" placeholder="O que a pessoa fez ou disse — fatos observáveis"></textarea>
+  </div>
+  <div class="field">
+    <label>Impacto</label>
+    <textarea rows="2" placeholder="Consequência no time, projeto ou resultado"></textarea>
+  </div>
+  <div class="field">
+    <label>O que foi acordado?</label>
+    <textarea rows="2" placeholder="Próximos passos combinados"></textarea>
+  </div>
+</section>
+
+<footer>
+  <div><b>FALAI</b> · People</div>
+  <div class="gold">condoconta.com.br</div>
+  <div>by Falai — CC People</div>
+</footer>
+</div>
+<script>
+document.querySelectorAll('.radio').forEach(function(g){g.querySelectorAll('button').forEach(function(b){b.addEventListener('click',function(){g.querySelectorAll('button').forEach(function(x){x.classList.remove('sel')});b.classList.add('sel');});});});
+</script>
+</body>
+</html>

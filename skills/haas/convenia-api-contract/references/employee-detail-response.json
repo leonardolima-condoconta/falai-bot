@@ -1,0 +1,56 @@
+{
+  "_note": "Resposta real de GET /api/v3/employees/{id} via ConveniaClient._client.get(). Token: Falai-Bot.",
+  "_example_id": "5387968f-0f11-4e25-8c3a-b67d0a962b21",
+  "_collected": "2026-08-19",
+  "response": {
+    "message": "",
+    "success": true,
+    "redirect": null,
+    "data": {
+      "id": "string (UUID)",
+      "name": "string (primeiro nome)",
+      "last_name": "string (sobrenome completo)",
+      "email": "string",
+      "hiring_date": "string (YYYY-MM-DD)",
+      "cellphone": "string (DDD + número, sem máscara)",
+      "birth_date": "string (YYYY-MM-DD)",
+      "social_name": "string | null",
+      "relationship_id": "integer",
+      "relationship": {
+        "id": "integer",
+        "name": "string"
+      },
+      "department": {
+        "id": "string (UUID)",
+        "name": "string"
+      },
+      "job": {
+        "id": "string (UUID)",
+        "name": "string"
+      },
+      "supervisor": {
+        "id": "string (UUID)",
+        "name": "string (primeiro nome)",
+        "last_name": "string"
+      },
+      "cost_center": {
+        "id": "string (UUID)",
+        "name": "string"
+      },
+      "custom_fields": [
+        {
+          "id": "string (UUID)",
+          "custom_field_id": "string (UUID)",
+          "name": "string",
+          "value": "string | null"
+        }
+      ]
+    }
+  },
+  "fields_absent": [
+    "cpf — não incluso na resposta de detalhe",
+    "pis — não incluso",
+    "rg — não incluso",
+    "salary — sempre null (token Falai-Bot)"
+  ]
+}

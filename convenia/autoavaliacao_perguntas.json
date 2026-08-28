@@ -4,8 +4,8 @@
   "origem": "04 - Autoavaliação por Área",
   "resumo": {
     "areas": 9,
-    "colaboradores": 121,
-    "perguntas_total": 968
+    "colaboradores": 122,
+    "perguntas_total": 976
   },
   "areas": [
     {
@@ -9727,7 +9727,7 @@
     {
       "area": "Sales",
       "arquivo": "CondoConta_Autoavaliacao_Sales_2026-2_Ago.xlsx",
-      "qtd_colaboradores": 17,
+      "qtd_colaboradores": 18,
       "colaboradores": [
         {
           "nome": "Augusto Degrazia",
@@ -11249,6 +11249,99 @@
             {
               "n": 3,
               "pergunta": "Analisando o seu step atual sugerido (—): Descreva uma situação recente em que você assumiu mais responsabilidade ou autonomia do que era esperado no seu cargo.",
+              "tipo": "Texto aberto",
+              "celula_resposta": "C9"
+            },
+            {
+              "n": 4,
+              "pergunta": "Como você avalia suas Competências neste ciclo?",
+              "tipo": "Escala 1-5",
+              "celula_resposta": "C10",
+              "opcoes": [
+                "1",
+                "1.5",
+                "2",
+                "2.5",
+                "3",
+                "3.5",
+                "4",
+                "4.5",
+                "5"
+              ]
+            },
+            {
+              "n": 5,
+              "pergunta": "Cite um valor CondoConta que você sente que viveu bem neste ciclo, com um exemplo concreto.",
+              "tipo": "Texto aberto",
+              "celula_resposta": "C11"
+            },
+            {
+              "n": 6,
+              "pergunta": "Cite um valor CondoConta que você sente que precisa evoluir, com um exemplo concreto.",
+              "tipo": "Texto aberto",
+              "celula_resposta": "C12"
+            },
+            {
+              "n": 7,
+              "pergunta": "O que você quer fazer, nos próximos 6 meses, para evoluir na sua carreira? (isso vira seu PDI)",
+              "tipo": "Texto aberto",
+              "celula_resposta": "C13"
+            },
+            {
+              "n": 8,
+              "pergunta": "Em uma escala de 1 a 5, qual seu nível de motivação/energia hoje na CondoConta?",
+              "tipo": "Escala 1-5",
+              "celula_resposta": "C14",
+              "opcoes": [
+                "1",
+                "1.5",
+                "2",
+                "2.5",
+                "3",
+                "3.5",
+                "4",
+                "4.5",
+                "5"
+              ]
+            }
+          ]
+        },
+        {
+          "nome": "Mathias Dziekaniak Vecchietti",
+          "aba": "Mathias Dziekaniak Vecchietti",
+          "cargo": "Assistente de Vendas",
+          "area": "Sales",
+          "nivel": "Júnior",
+          "step": "I",
+          "gestor": null,
+          "qtd_perguntas": 8,
+          "perguntas": [
+            {
+              "n": 1,
+              "pergunta": "Como você avalia seus Resultados neste ciclo? (1 = muito abaixo do esperado, 5 = excepcional)",
+              "tipo": "Escala 1-5",
+              "celula_resposta": "C7",
+              "opcoes": [
+                "1",
+                "1.5",
+                "2",
+                "2.5",
+                "3",
+                "3.5",
+                "4",
+                "4.5",
+                "5"
+              ]
+            },
+            {
+              "n": 2,
+              "pergunta": "Qual % da sua meta individual você já bateu neste ciclo, e qual sua taxa de conversão nas etapas do funil?",
+              "tipo": "Texto aberto",
+              "celula_resposta": "C8"
+            },
+            {
+              "n": 3,
+              "pergunta": "Analisando o seu step atual sugerido (Step II): Descreva uma situação recente em que você assumiu mais responsabilidade ou autonomia do que era esperado no seu cargo.",
               "tipo": "Texto aberto",
               "celula_resposta": "C9"
             },

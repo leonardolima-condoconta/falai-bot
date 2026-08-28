@@ -42,9 +42,8 @@ fetch('https://static-server.aiexpert-condoconta.info/proxy/condopower-rpc', {
 
 - **Zero tokens no navegador.** O proxy injeta `X-Service-Account-Token` e `auth` server-side.
   Nunca exponha os tokens no JS do form (o usuário pediu explicitamente para remover).
-- NUNCA apontar o fetch para `condopower-api.aiexpert-condoconta.info/rpc` direto,
-  nem para `webhook-proxy...` — cross-origin quebra no preflight.
-- Detalhe completo da investigação: `references/cors-e-proxy.md`.
+NUNCA apontar o fetch para `condopower-api.aiexpert-condoconta.info/rpc` direto,
+nem para `webhook-proxy...` — cross-origin quebra no preflight.
 
 ## Resolução de identidade CLIENT-SIDE
 

@@ -99,9 +99,30 @@ o painel do Convenia (`app.convenia.com.br`) ou solicitar token com escopo ampli
 - `PYTHONPATH` aponta para o diretório PAI (`/opt/data`), nunca para `/opt/data/convenia`.
 - Usar o venv do projeto: `/opt/data/.venv/bin/python3`.
 
+## Módulos fora do escopo do token Falai-Bot
+
+O token `Falai-Bot` cobre **apenas dados cadastrais**. Os módulos abaixo NÃO têm permissão e
+qualquer tentativa de acessá-los retorna **403** ou lista vazia:
+
+| Módulo | Status | O que fazer |
+|---|---|---|
+| Desempenho / Feedback | 🔒 Sem acesso | Usar `condopower-api` (`form.1x1.get`, `form.avaliacao_lider.get`, etc.) |
+| Reuniões de 1:1 | 🔒 Sem acesso | Idem — `form.1x1.get` na condopower-api |
+| PDI / Metas | 🔒 Sem acesso | `form.pdi.get` na condopower-api |
+| Nine Box | 🔒 Sem acesso | `form.9box.get` na condopower-api |
+| Férias / Ausências | 🔒 403 | Orientar a acessar `app.convenia.com.br` |
+| Desligamentos | 🔒 403 | Idem |
+| Folha / Salário | 🔒 `null` | Idem |
+
+**Fluxo correto para "feedback de desempenho" ou "1:1":**
+1. Primeiro, busque na `condopower-api` (`form.1x1.get`, `form.avaliacao_lider.get`,
+   `form.autoavaliacao.get`, `form.pdi.get`, `form.9box.get`).
+2. Se todos retornarem vazio, **NÃO tente o Convenia** — o token não alcança esses módulos.
+3. Informe que não há registros na plataforma e ofereça registrar um novo.
+4. Se a pessoa insistir que os dados estão no Convenia, oriente a acessar
+   `app.convenia.com.br` → módulo de Desempenho diretamente.
 ## Notas
 
-- `salary` é sempre `null` no token `Falai-Bot`; férias/ausências/desligamentos são 403.
 - Rate limit 50 req/min; extração completa (~127s) é segura.
 - Campos aninhados (`job`, `department`, `cost_center`, `supervisor`) são dicts, não objetos.
 - Schema completo da resposta de detalhe: `references/employee-detail-response.json`.

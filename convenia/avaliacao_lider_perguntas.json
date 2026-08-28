@@ -4,8 +4,8 @@
   "origem": "03 - Avaliação do Líder por Área",
   "resumo": {
     "areas": 9,
-    "colaboradores": 120,
-    "perguntas_total": 960
+    "colaboradores": 121,
+    "perguntas_total": 968
   },
   "areas": [
     {
@@ -10565,7 +10565,7 @@
     {
       "area": "Sales",
       "arquivo": "CondoConta_Avaliacao_Lider_Sales_2026-2_Ago.xlsx",
-      "qtd_colaboradores": 17,
+      "qtd_colaboradores": 18,
       "colaboradores": [
         {
           "nome": "Augusto Degrazia",
@@ -10574,7 +10574,7 @@
           "area": "Sales",
           "nivel": "Júnior",
           "step": "II",
-          "gestor": "Ayrton de Sena",
+          "gestor": null,
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -11084,7 +11084,7 @@
           "area": "Sales",
           "nivel": "Júnior",
           "step": "I",
-          "gestor": "Ayrton de Sena",
+          "gestor": null,
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -11288,7 +11288,7 @@
           "area": "Sales",
           "nivel": "Júnior",
           "step": "II",
-          "gestor": "Bruno Antônio Veronese",
+          "gestor": "Ayrton de Sena",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -11390,7 +11390,7 @@
           "area": "Sales",
           "nivel": "Júnior",
           "step": "III",
-          "gestor": "Bruno Antônio Veronese",
+          "gestor": "Humberto Basso",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -12100,7 +12100,7 @@
           "area": "Sales",
           "nivel": "Júnior",
           "step": "III",
-          "gestor": "Humberto Basso",
+          "gestor": "Ayrton de Sena",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -12254,6 +12254,108 @@
             {
               "n": 5,
               "pergunta": "Como você avalia o Potencial de Gianluca Dal Zotto para assumir mais responsabilidade nos próximos 12-18 meses?",
+              "tipo": "Escala 1-5",
+              "celula_resposta": "C11",
+              "opcoes": [
+                "1",
+                "1.5",
+                "2",
+                "2.5",
+                "3",
+                "3.5",
+                "4",
+                "4.5",
+                "5"
+              ]
+            },
+            {
+              "n": 6,
+              "pergunta": "Cite um exemplo concreto (Situação-Comportamento-Impacto) de um valor CondoConta bem vivido por essa pessoa.",
+              "tipo": "Texto aberto",
+              "celula_resposta": "C12"
+            },
+            {
+              "n": 7,
+              "pergunta": "Cite um exemplo concreto de onde essa pessoa precisa evoluir em relação aos Valores CondoConta.",
+              "tipo": "Texto aberto",
+              "celula_resposta": "C13"
+            },
+            {
+              "n": 8,
+              "pergunta": "Recomendação para este colaborador neste ciclo (Promoção / Mérito / Bônus / Manter / PDI intensivo / PIP / Desligamento):",
+              "tipo": "Lista suspensa",
+              "celula_resposta": "C14",
+              "opcoes": [
+                "Promoção",
+                "Mérito",
+                "Bônus",
+                "Manter",
+                "PDI intensivo",
+                "PIP",
+                "Desligamento"
+              ]
+            }
+          ]
+        },
+        {
+          "nome": "Mathias Dziekaniak Vecchietti",
+          "aba": "Mathias Dziekaniak Vecchietti",
+          "cargo": "Assistente de Vendas",
+          "area": "Sales",
+          "nivel": "Júnior",
+          "step": "I",
+          "gestor": "Ayrton de Sena",
+          "qtd_perguntas": 8,
+          "perguntas": [
+            {
+              "n": 1,
+              "pergunta": "Como você avalia os Resultados de Augusto Degrazia neste ciclo? (1 = muito abaixo do esperado, 5 = excepcional)",
+              "tipo": "Escala 1-5",
+              "celula_resposta": "C7",
+              "opcoes": [
+                "1",
+                "1.5",
+                "2",
+                "2.5",
+                "3",
+                "3.5",
+                "4",
+                "4.5",
+                "5"
+              ]
+            },
+            {
+              "n": 2,
+              "pergunta": "Qual % da sua meta individual você já bateu neste ciclo, e qual sua taxa de conversão nas etapas do funil? (responda pensando na entrega de Augusto Degrazia.)",
+              "tipo": "Texto aberto",
+              "celula_resposta": "C8"
+            },
+            {
+              "n": 3,
+              "pergunta": "Augusto Degrazia está pronto(a) para o próximo step? O que falta, especificamente, à luz do critério: \"Descreva uma situação recente em que você assumiu mais responsabilidade ou autonomia do que era esperado no seu cargo.\"",
+              "tipo": "Texto aberto",
+              "celula_resposta": "C9"
+            },
+            {
+              "n": 4,
+              "pergunta": "Como você avalia as Competências de Augusto Degrazia neste ciclo?",
+              "tipo": "Escala 1-5",
+              "celula_resposta": "C10",
+              "opcoes": [
+                "1",
+                "1.5",
+                "2",
+                "2.5",
+                "3",
+                "3.5",
+                "4",
+                "4.5",
+                "5"
+              ]
+            },
+            {
+              "n": 5,
+              "pergunta": "Como você avalia o Potencial de Augusto Degrazia para assumir mais responsabilidade nos próximos 12-18 meses?",
               "tipo": "Escala 1-5",
               "celula_resposta": "C11",
               "opcoes": [

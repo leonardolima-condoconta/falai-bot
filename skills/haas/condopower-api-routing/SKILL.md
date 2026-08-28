@@ -47,13 +47,26 @@ fetch('https://static-server.aiexpert-condoconta.info/proxy/condopower-rpc',{
 ```
 
 ### 3. Container NÃO alcança a URL direta
-`https://condopower-api.aiexpert-condoconta.info` → timeout (60s). Use sempre o webhook-proxy para chamadas server-side.
+`https://condopower-api.aiexpert-condoconta.info` → timeout (60s+). Use sempre o webhook-proxy para chamadas server-side. Credenciais em `/opt/data/.env`:
+```bash
+grep -E 'CONDOPOWER_SA_TOKEN|CONDOPOWER_AUTH' /opt/data/.env
+```
+Headers obrigatórios: `X-Service-Account-Token` + `auth`. Se a URL direta der timeout, **carregue esta skill imediatamente** — não insista com retries na URL direta.
 
 ### 4. access.verify nos formulários é client-side
 Os geradores Python (`gerar_form_avaliacao.py`, `gerar_form_lider.py`) não chamam `access.verify` — embutem o email no HTML e o navegador resolve o UUID via `/proxy/condopower-rpc` no carregamento da página. Isso é necessário porque o container não alcança a condopower-api.
 
 ### 5. Cookies de submissão têm max-age=864000 (10 dias)
 `autoavaliacao_respondida=1`, `pulses_respondido=1`, `avaliacao_lider_feitos=[...]` — todos com `max-age=864000`. O formulário do líder usa cookie JSON-encoded para rastrear múltiplos liderados avaliados.
+
+### 6. Pulses para não-People — use `form.pulse.get` com e-mail People + área
+
+Quando um líder (nível 2) pergunta quantas pessoas do time responderam à Pulses:
+- `pulse.round_status` → **403 NOT_PEOPLE** (só nível 3+)
+- `form.pulse.get` com o e-mail do líder → **lista vazia** (anonimato)
+- ✅ Use `form.pulse.get` com `requester_email` de alguém do time People (ex: `rodrigo.catarcione@condoconta.com.br`) e o filtro `area` do departamento
+
+Isso retorna as respostas anônimas da área sem quebrar o anonimato individual. NUNCA use o e-mail do líder — retorna lista vazia. Cuide com texto livre em times pequenos: o conteúdo pode identificar o autor indiretamente.
 
 ## Diagnóstico rápido
 
@@ -70,11 +83,19 @@ Os geradores Python (`gerar_form_avaliacao.py`, `gerar_form_lider.py`) não cham
 
 - Perguntas respondíveis com Confluence (cargos, trilhas) → prossiga, avisando da falha.
 - Perguntas que exigem RBAC (formulários, avaliações) → pare e peça para tentar depois.
-- Fluxo completo em `falai-rbac` → `references/condopower-api-outage-fallback.md`.
+
+## Slack — links nunca em negrito
+
+No Slack, asteriscos aplicam **negrito**. Links entre asteriscos quebram visualmente. Padrão correto:
+```
+📝 *Link do formulário:* https://static-server.aiexpert-condoconta.info/pesquisa-pulses
+```
+❌ Errado: `*Link: https://...*` (link dentro do par de asteriscos)
 
 ## Ver também
 
 - `condopower-api` — catálogo de métodos e contratos (v2.1.0). ⚠️ Esta skill omite o webhook-proxy e os headers de auth; se a URL direta der timeout, carregue a skill `condopower-api-routing`.
 - `references/container-routing-fallback.md` — caso real de timeout na URL direta e recuperação com o proxy (27/08/2026)
-- `falai-rbac` — regras de identificação e níveis de acesso
+- `condopower-rbac` — regras de identificação e níveis de acesso (levels 1-5)
 - `condopower-formularios` — CORS, proxy e padrão dos formulários HTML
+- `references/pulse-for-non-people.md` — padrão de consulta Pulses para líderes via e-mail People + área (caso real 28/08/2026)

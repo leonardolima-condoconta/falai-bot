@@ -22,7 +22,7 @@ Alcança: a si próprio e seus liderados diretos
 
 ## Métodos BLOQUEADOS
 
-Todos os métodos administrativos (`pulse.*`, `system.describe`, `access.verify`, `celebrations.*`, `roster.sync`) são bloqueados.
+Todos os métodos administrativos (`pulse.*`, `system.describe`, `access.verify`, `celebrations.*`, `roster.sync`, `form.*.get`) são bloqueados.
 
 ## Regra do líder
 - `lider_id` é SEMPRE o id do próprio líder (de `access.verify`)

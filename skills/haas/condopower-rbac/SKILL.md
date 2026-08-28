@@ -13,7 +13,7 @@ Mapa de permissão e fluxo para cada método da `condopower-api`.
 ```
 level-1/   → condopower  (form.pulse, form.autoavaliacao)
 level-2/   → condo_leader (todos form.*)
-level-3/   → team_people  (form.pulse, pulse.*)
+level-3/   → team_people  (form.pulse, pulse.*, form.*.get)
 level-4/   → admin        (todos + pulse.reopen)
 level-5/   → superadmin   (todos + system.describe, access.verify, celebrations.*, roster.sync)
 ```
@@ -38,6 +38,6 @@ level-5/   → superadmin   (todos + system.describe, access.verify, celebration
 | `form.autoavaliacao` | `gerar_form_avaliacao.py` | ✅ Criado |
 | `form.avaliacao_lider` | `gerar_form_lider.py` | ✅ Criado |
 | `form.pulse` | `form-pulse.html` (estático) | ✅ Criado |
-| `form.1x1` | — | ❌ NÃO CRIADO |
+| `form.1x1` | `gerar_form_1x1.py` | ✅ Criado |
 | `form.pdi` | — | ❌ NÃO CRIADO |
 | `form.9box` | — | ❌ NÃO CRIADO |

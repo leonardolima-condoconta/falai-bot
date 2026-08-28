@@ -11,6 +11,7 @@ Se solicitados, responder:
 | `form.1x1` | 2 | Bloqueado — requer level 2+ |
 | `form.pdi` | 2 | Bloqueado — requer level 2+ |
 | `form.9box` | 2 | Bloqueado — requer level 2+ |
+| `form.*.get` | 3 | Bloqueado — requer level 3+ (team_people) |
 | `pulse.open_round` | 3 | Bloqueado — requer level 3+ (team_people) |
 | `pulse.close_round` | 3 | Bloqueado — requer level 3+ (team_people) |
 | `pulse.round_status` | 3 | Bloqueado — requer level 3+ (team_people) |

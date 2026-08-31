@@ -51,8 +51,8 @@ if not colaborador:
 cnome = colaborador["nome"]
 ccargo = colaborador["cargo"]
 carea = colaborador["area"]
-cnivel = colaborador.get("nivel","")
-cstep = colaborador.get("step","")
+cnivel = colaborador.get("senioridade","") or colaborador.get("nivel","")
+cstep = colaborador.get("nivel_senioridade","") or colaborador.get("step","")
 ciclo = source_data.get("ciclo","2026.2")
 
 ph = ""
@@ -181,6 +181,10 @@ function enviarForm(){var s=document.getElementById('status');var vazios=[];docu
 </html>"""
 
 slug = "avaliacao-" + cnome.lower().replace(" ","-")[:40]
+# Sanitize: strip accents, non-ASCII
+import unicodedata, re
+slug = ''.join(c for c in unicodedata.normalize('NFD', slug) if unicodedata.category(c) != 'Mn')
+slug = re.sub(r'[^a-z0-9-]', '', slug)[:60]
 with open("/tmp/" + slug + ".html", "w") as f:
     f.write(html)
 

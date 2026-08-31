@@ -4,8 +4,8 @@
   "origem": "03 - Avaliação do Líder por Área",
   "resumo": {
     "areas": 9,
-    "colaboradores": 121,
-    "perguntas_total": 968
+    "colaboradores": 111,
+    "perguntas_total": 888
   },
   "areas": [
     {
@@ -113,7 +113,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "André Romão de Oliveira",
@@ -215,7 +217,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Paulo Fernando da Costa Pere",
@@ -317,7 +321,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Rodrigo Silva da Luz",
@@ -419,7 +425,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Vinicius Marques Rocha",
@@ -521,7 +529,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Lucas José de Souza",
@@ -623,7 +633,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Pedro Della Rocca",
@@ -725,7 +737,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Vladimir Alves Vidal",
@@ -827,7 +841,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Rafael Pacífico Segundo Lima",
@@ -929,7 +945,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Magda Mayara dos Santos Mont",
@@ -1031,7 +1049,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Rodrigo Rachelle Wagner",
@@ -1133,7 +1153,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         }
       ]
     },
@@ -1242,16 +1264,18 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Eduardo Victor Nóbrega Ferna",
           "aba": "Eduardo Victor Nóbrega Ferna",
-          "cargo": "Product Marketing Manager",
+          "cargo": "Desenvolvedor Backend",
           "area": "Eng. e Dev de Software",
           "nivel": "Pleno",
           "step": "IV",
-          "gestor": "Juliano Fernandes Santana",
+          "gestor": "Mateus Medeiros de Araújo",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -1344,7 +1368,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Everton Mutti Castro",
@@ -1446,7 +1472,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Michael Douglas da Silva Alv",
@@ -1548,7 +1576,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Arthur de Angellis Oliveira ",
@@ -1650,7 +1680,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Mateus Medeiros de Araújo",
@@ -1752,7 +1784,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Raphael de Carvalho Cortes",
@@ -1854,7 +1888,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Victor Oliveira Barros do Na",
@@ -1956,7 +1992,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "João Guilherme Teixeira Brag",
@@ -1965,7 +2003,7 @@
           "area": "Eng. e Dev de Software",
           "nivel": "Júnior",
           "step": "V",
-          "gestor": "Mateus Medeiros de Araújo",
+          "gestor": "Victor Oliveira Barros do Nascimento",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -2058,7 +2096,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Lucas Fernandes Gauer",
@@ -2160,7 +2200,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Samuel Figueiredo de Andrade",
@@ -2169,7 +2211,7 @@
           "area": "Eng. e Dev de Software",
           "nivel": "Júnior",
           "step": "III",
-          "gestor": "Mateus Medeiros de Araújo",
+          "gestor": "Victor Oliveira Barros do Nascimento",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -2262,7 +2304,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Victor Hugo Morais Predebon",
@@ -2364,7 +2408,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         }
       ]
     },
@@ -2473,7 +2519,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Fernando Legat Springmann",
@@ -2575,7 +2623,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Franco Maiole Brognoli",
@@ -2677,7 +2727,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Gregori Anastase Teixeira Ko",
@@ -2779,7 +2831,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Laiane Nikitenko",
@@ -2881,7 +2935,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Larissa Gonçalves Becker",
@@ -2983,7 +3039,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Leonardo de Lima",
@@ -3085,7 +3143,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "nivel_senioridade": "V",
+          "senioridade": "Pleno"
         },
         {
           "nome": "Pedro Reis",
@@ -3187,7 +3247,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Wiliam Midon Pedroso",
@@ -3289,7 +3351,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Leonardo Luís Perin",
@@ -3391,7 +3455,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Vitor Pacheco",
@@ -3493,7 +3559,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Julia Eulalia Baldoino Marqu",
@@ -3595,7 +3663,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Mateus Fantucci",
@@ -3697,16 +3767,18 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Mayara do Livramento da Roch",
           "aba": "Mayara do Livramento da Roch",
-          "cargo": "AI Expert Analyst",
+          "cargo": "Analista de Tesouraria Pleno",
           "area": "Finance",
           "nivel": "Júnior",
           "step": "III",
-          "gestor": "Wilson Rodrigo Dalmolin",
+          "gestor": "Renata Leticia Bacoff Paim",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -3799,7 +3871,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Pâmela Rachadel",
@@ -3901,7 +3975,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Renata Leticia Bacoff Paim",
@@ -4003,7 +4079,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         }
       ]
     },
@@ -4112,109 +4190,9 @@
                 "Desligamento"
               ]
             }
-          ]
-        },
-        {
-          "nome": "Aline Silva Passos Nasciment",
-          "aba": "Aline Silva Passos Nasciment",
-          "cargo": "Analista de Cobrança",
-          "area": "Jurídico e Cobrança",
-          "nivel": "Pleno",
-          "step": "III",
-          "gestor": "Solange Gonçalves da Costa Pereira",
-          "qtd_perguntas": 8,
-          "perguntas": [
-            {
-              "n": 1,
-              "pergunta": "Como você avalia os Resultados de Aline Silva Passos Nascimento neste ciclo? (1 = muito abaixo do esperado, 5 = excepcional)",
-              "tipo": "Escala 1-5",
-              "celula_resposta": "C7",
-              "opcoes": [
-                "1",
-                "1.5",
-                "2",
-                "2.5",
-                "3",
-                "3.5",
-                "4",
-                "4.5",
-                "5"
-              ]
-            },
-            {
-              "n": 2,
-              "pergunta": "Quantas tarefas operacionais você executou este mês sem necessidade de retrabalho ou correção? (responda pensando na entrega de Aline Silva Passos Nascimento.)",
-              "tipo": "Texto aberto",
-              "celula_resposta": "C8"
-            },
-            {
-              "n": 3,
-              "pergunta": "Aline Silva Passos Nascimento está pronto(a) para o próximo step? O que falta, especificamente, à luz do critério: \"• Entrega: lidera a organização do departamento jurídico (prazos, arquivos, sistemas).• Competência: propõe melhorias em processos administrativos do jurídico.• Autonomia: suporta auditorias sem necessidade de direcionamento.• Comportamento: pensa em organização como base para a eficiência jurídica.• Avança quando: passa a representar o departamento em reuniões operacionais.\"",
-              "tipo": "Texto aberto",
-              "celula_resposta": "C9"
-            },
-            {
-              "n": 4,
-              "pergunta": "Como você avalia as Competências de Aline Silva Passos Nascimento neste ciclo?",
-              "tipo": "Escala 1-5",
-              "celula_resposta": "C10",
-              "opcoes": [
-                "1",
-                "1.5",
-                "2",
-                "2.5",
-                "3",
-                "3.5",
-                "4",
-                "4.5",
-                "5"
-              ]
-            },
-            {
-              "n": 5,
-              "pergunta": "Como você avalia o Potencial de Aline Silva Passos Nascimento para assumir mais responsabilidade nos próximos 12-18 meses?",
-              "tipo": "Escala 1-5",
-              "celula_resposta": "C11",
-              "opcoes": [
-                "1",
-                "1.5",
-                "2",
-                "2.5",
-                "3",
-                "3.5",
-                "4",
-                "4.5",
-                "5"
-              ]
-            },
-            {
-              "n": 6,
-              "pergunta": "Cite um exemplo concreto (Situação-Comportamento-Impacto) de um valor CondoConta bem vivido por essa pessoa.",
-              "tipo": "Texto aberto",
-              "celula_resposta": "C12"
-            },
-            {
-              "n": 7,
-              "pergunta": "Cite um exemplo concreto de onde essa pessoa precisa evoluir em relação aos Valores CondoConta.",
-              "tipo": "Texto aberto",
-              "celula_resposta": "C13"
-            },
-            {
-              "n": 8,
-              "pergunta": "Recomendação para este colaborador neste ciclo (Promoção / Mérito / Bônus / Manter / PDI intensivo / PIP / Desligamento):",
-              "tipo": "Lista suspensa",
-              "celula_resposta": "C14",
-              "opcoes": [
-                "Promoção",
-                "Mérito",
-                "Bônus",
-                "Manter",
-                "PDI intensivo",
-                "PIP",
-                "Desligamento"
-              ]
-            }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Daniela Oliveira Dutra da Si",
@@ -4316,7 +4294,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Danielly Maire Oliveira da C",
@@ -4418,7 +4398,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Izadora Maria Vidor Camara",
@@ -4520,7 +4502,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Letícia Francisco dos Santos",
@@ -4622,7 +4606,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Lilian Cantuária Delis da Co",
@@ -4724,7 +4710,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Mara Giovanna Valente Pinto",
@@ -4826,7 +4814,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Matheus da Silva Ferreira",
@@ -4928,109 +4918,9 @@
                 "Desligamento"
               ]
             }
-          ]
-        },
-        {
-          "nome": "Paloma Corin da Cruz",
-          "aba": "Paloma Corin da Cruz",
-          "cargo": "Collection Specialist",
-          "area": "Jurídico e Cobrança",
-          "nivel": "Júnior",
-          "step": "I",
-          "gestor": "Silvana Muller",
-          "qtd_perguntas": 8,
-          "perguntas": [
-            {
-              "n": 1,
-              "pergunta": "Como você avalia os Resultados de Paloma Corin da Cruz neste ciclo? (1 = muito abaixo do esperado, 5 = excepcional)",
-              "tipo": "Escala 1-5",
-              "celula_resposta": "C7",
-              "opcoes": [
-                "1",
-                "1.5",
-                "2",
-                "2.5",
-                "3",
-                "3.5",
-                "4",
-                "4.5",
-                "5"
-              ]
-            },
-            {
-              "n": 2,
-              "pergunta": "Qual sua taxa de conversão de acordos este mês comparada à meta, e qual % da sua carteira está com follow-up em dia? (responda pensando na entrega de Paloma Corin da Cruz.)",
-              "tipo": "Texto aberto",
-              "celula_resposta": "C8"
-            },
-            {
-              "n": 3,
-              "pergunta": "Paloma Corin da Cruz está pronto(a) para o próximo step? O que falta, especificamente, à luz do critério: \"• Avança quando: Executa com qualidade dentro da régua, registra corretamente no CRM, atinge metas de volume/qualidade do nível.\"",
-              "tipo": "Texto aberto",
-              "celula_resposta": "C9"
-            },
-            {
-              "n": 4,
-              "pergunta": "Como você avalia as Competências de Paloma Corin da Cruz neste ciclo?",
-              "tipo": "Escala 1-5",
-              "celula_resposta": "C10",
-              "opcoes": [
-                "1",
-                "1.5",
-                "2",
-                "2.5",
-                "3",
-                "3.5",
-                "4",
-                "4.5",
-                "5"
-              ]
-            },
-            {
-              "n": 5,
-              "pergunta": "Como você avalia o Potencial de Paloma Corin da Cruz para assumir mais responsabilidade nos próximos 12-18 meses?",
-              "tipo": "Escala 1-5",
-              "celula_resposta": "C11",
-              "opcoes": [
-                "1",
-                "1.5",
-                "2",
-                "2.5",
-                "3",
-                "3.5",
-                "4",
-                "4.5",
-                "5"
-              ]
-            },
-            {
-              "n": 6,
-              "pergunta": "Cite um exemplo concreto (Situação-Comportamento-Impacto) de um valor CondoConta bem vivido por essa pessoa.",
-              "tipo": "Texto aberto",
-              "celula_resposta": "C12"
-            },
-            {
-              "n": 7,
-              "pergunta": "Cite um exemplo concreto de onde essa pessoa precisa evoluir em relação aos Valores CondoConta.",
-              "tipo": "Texto aberto",
-              "celula_resposta": "C13"
-            },
-            {
-              "n": 8,
-              "pergunta": "Recomendação para este colaborador neste ciclo (Promoção / Mérito / Bônus / Manter / PDI intensivo / PIP / Desligamento):",
-              "tipo": "Lista suspensa",
-              "celula_resposta": "C14",
-              "opcoes": [
-                "Promoção",
-                "Mérito",
-                "Bônus",
-                "Manter",
-                "PDI intensivo",
-                "PIP",
-                "Desligamento"
-              ]
-            }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Raissa Estefany Venâncio Cos",
@@ -5132,7 +5022,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Tamara Mesquita Martio",
@@ -5234,7 +5126,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Aline Matos Vieira Albino",
@@ -5336,7 +5230,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "Pleno",
+          "nivel_senioridade": "I"
         },
         {
           "nome": "Andréa Carlos de Araujo",
@@ -5438,109 +5334,9 @@
                 "Desligamento"
               ]
             }
-          ]
-        },
-        {
-          "nome": "Daniela de Souza Kashiva",
-          "aba": "Daniela de Souza Kashiva",
-          "cargo": "Collection Specialist",
-          "area": "Jurídico e Cobrança",
-          "nivel": "Júnior",
-          "step": "I",
-          "gestor": "Silvana Muller",
-          "qtd_perguntas": 8,
-          "perguntas": [
-            {
-              "n": 1,
-              "pergunta": "Como você avalia os Resultados de Daniela de Souza Kashiva neste ciclo? (1 = muito abaixo do esperado, 5 = excepcional)",
-              "tipo": "Escala 1-5",
-              "celula_resposta": "C7",
-              "opcoes": [
-                "1",
-                "1.5",
-                "2",
-                "2.5",
-                "3",
-                "3.5",
-                "4",
-                "4.5",
-                "5"
-              ]
-            },
-            {
-              "n": 2,
-              "pergunta": "Qual sua taxa de conversão de acordos este mês comparada à meta, e qual % da sua carteira está com follow-up em dia? (responda pensando na entrega de Daniela de Souza Kashiva.)",
-              "tipo": "Texto aberto",
-              "celula_resposta": "C8"
-            },
-            {
-              "n": 3,
-              "pergunta": "Daniela de Souza Kashiva está pronto(a) para o próximo step? O que falta, especificamente, à luz do critério: \"• Avança quando: Executa com qualidade dentro da régua, registra corretamente no CRM, atinge metas de volume/qualidade do nível.\"",
-              "tipo": "Texto aberto",
-              "celula_resposta": "C9"
-            },
-            {
-              "n": 4,
-              "pergunta": "Como você avalia as Competências de Daniela de Souza Kashiva neste ciclo?",
-              "tipo": "Escala 1-5",
-              "celula_resposta": "C10",
-              "opcoes": [
-                "1",
-                "1.5",
-                "2",
-                "2.5",
-                "3",
-                "3.5",
-                "4",
-                "4.5",
-                "5"
-              ]
-            },
-            {
-              "n": 5,
-              "pergunta": "Como você avalia o Potencial de Daniela de Souza Kashiva para assumir mais responsabilidade nos próximos 12-18 meses?",
-              "tipo": "Escala 1-5",
-              "celula_resposta": "C11",
-              "opcoes": [
-                "1",
-                "1.5",
-                "2",
-                "2.5",
-                "3",
-                "3.5",
-                "4",
-                "4.5",
-                "5"
-              ]
-            },
-            {
-              "n": 6,
-              "pergunta": "Cite um exemplo concreto (Situação-Comportamento-Impacto) de um valor CondoConta bem vivido por essa pessoa.",
-              "tipo": "Texto aberto",
-              "celula_resposta": "C12"
-            },
-            {
-              "n": 7,
-              "pergunta": "Cite um exemplo concreto de onde essa pessoa precisa evoluir em relação aos Valores CondoConta.",
-              "tipo": "Texto aberto",
-              "celula_resposta": "C13"
-            },
-            {
-              "n": 8,
-              "pergunta": "Recomendação para este colaborador neste ciclo (Promoção / Mérito / Bônus / Manter / PDI intensivo / PIP / Desligamento):",
-              "tipo": "Lista suspensa",
-              "celula_resposta": "C14",
-              "opcoes": [
-                "Promoção",
-                "Mérito",
-                "Bônus",
-                "Manter",
-                "PDI intensivo",
-                "PIP",
-                "Desligamento"
-              ]
-            }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Daniele Vanessa Severo Silva",
@@ -5642,7 +5438,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Fernanda Garcia",
@@ -5744,7 +5542,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "Pleno",
+          "nivel_senioridade": "I"
         },
         {
           "nome": "Fernanda Marques Farias Seve",
@@ -5846,7 +5646,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Gabriela Fournaris Corrêa",
@@ -5948,7 +5750,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "Pleno",
+          "nivel_senioridade": "I"
         },
         {
           "nome": "George Antônio do Senhor Siq",
@@ -6050,7 +5854,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Jaqueline de Oliveira Didier",
@@ -6152,7 +5958,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Jennifer dos Santos Maciel",
@@ -6254,7 +6062,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Laryssa Cristiny Fernandes",
@@ -6356,118 +6166,18 @@
                 "Desligamento"
               ]
             }
-          ]
-        },
-        {
-          "nome": "Márcia Rosane dos Santos Via",
-          "aba": "Márcia Rosane dos Santos Via",
-          "cargo": "Collection Analyst",
-          "area": "Jurídico e Cobrança",
-          "nivel": "Júnior",
-          "step": "I",
-          "gestor": "Solange Gonçalves da Costa Pereira",
-          "qtd_perguntas": 8,
-          "perguntas": [
-            {
-              "n": 1,
-              "pergunta": "Como você avalia os Resultados de Márcia Rosane dos Santos Vianna neste ciclo? (1 = muito abaixo do esperado, 5 = excepcional)",
-              "tipo": "Escala 1-5",
-              "celula_resposta": "C7",
-              "opcoes": [
-                "1",
-                "1.5",
-                "2",
-                "2.5",
-                "3",
-                "3.5",
-                "4",
-                "4.5",
-                "5"
-              ]
-            },
-            {
-              "n": 2,
-              "pergunta": "Qual sua taxa de conversão de acordos este mês comparada à meta, e qual % da sua carteira está com follow-up em dia? (responda pensando na entrega de Márcia Rosane dos Santos Vianna.)",
-              "tipo": "Texto aberto",
-              "celula_resposta": "C8"
-            },
-            {
-              "n": 3,
-              "pergunta": "Márcia Rosane dos Santos Vianna está pronto(a) para o próximo step? O que falta, especificamente, à luz do critério: \"• Avança quando: Executa com qualidade dentro da régua, registra corretamente no CRM, atinge metas de volume/qualidade do nível.\"",
-              "tipo": "Texto aberto",
-              "celula_resposta": "C9"
-            },
-            {
-              "n": 4,
-              "pergunta": "Como você avalia as Competências de Márcia Rosane dos Santos Vianna neste ciclo?",
-              "tipo": "Escala 1-5",
-              "celula_resposta": "C10",
-              "opcoes": [
-                "1",
-                "1.5",
-                "2",
-                "2.5",
-                "3",
-                "3.5",
-                "4",
-                "4.5",
-                "5"
-              ]
-            },
-            {
-              "n": 5,
-              "pergunta": "Como você avalia o Potencial de Márcia Rosane dos Santos Vianna para assumir mais responsabilidade nos próximos 12-18 meses?",
-              "tipo": "Escala 1-5",
-              "celula_resposta": "C11",
-              "opcoes": [
-                "1",
-                "1.5",
-                "2",
-                "2.5",
-                "3",
-                "3.5",
-                "4",
-                "4.5",
-                "5"
-              ]
-            },
-            {
-              "n": 6,
-              "pergunta": "Cite um exemplo concreto (Situação-Comportamento-Impacto) de um valor CondoConta bem vivido por essa pessoa.",
-              "tipo": "Texto aberto",
-              "celula_resposta": "C12"
-            },
-            {
-              "n": 7,
-              "pergunta": "Cite um exemplo concreto de onde essa pessoa precisa evoluir em relação aos Valores CondoConta.",
-              "tipo": "Texto aberto",
-              "celula_resposta": "C13"
-            },
-            {
-              "n": 8,
-              "pergunta": "Recomendação para este colaborador neste ciclo (Promoção / Mérito / Bônus / Manter / PDI intensivo / PIP / Desligamento):",
-              "tipo": "Lista suspensa",
-              "celula_resposta": "C14",
-              "opcoes": [
-                "Promoção",
-                "Mérito",
-                "Bônus",
-                "Manter",
-                "PDI intensivo",
-                "PIP",
-                "Desligamento"
-              ]
-            }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Paula Eduarda Cardoso Betina",
           "aba": "Paula Eduarda Cardoso Betina",
-          "cargo": "Analista de Relacionamento",
+          "cargo": "Assistente de Cobrança",
           "area": "Jurídico e Cobrança",
           "nivel": "Júnior",
           "step": "I",
-          "gestor": "Andrieli Elmatos",
+          "gestor": "Solange Gonçalves da Costa Pereira",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -6560,7 +6270,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Vanessa da Silva",
@@ -6662,7 +6374,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Silvana Muller",
@@ -6764,7 +6478,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Solange Gonçalves da Costa P",
@@ -6866,7 +6582,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         }
       ]
     },
@@ -6975,7 +6693,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Melissa Alves Camargo",
@@ -7077,7 +6797,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Thalita Leal Dutra Bristot",
@@ -7179,7 +6901,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Kauê B. Tomazelli",
@@ -7281,7 +7005,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         }
       ]
     },
@@ -7390,7 +7116,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Ana Paula de Britto Sosa",
@@ -7492,7 +7220,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Luana Beatris Xavier",
@@ -7594,7 +7324,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         }
       ]
     },
@@ -7603,108 +7335,6 @@
       "arquivo": "CondoConta_Avaliacao_Lider_Produto_Design_2026-2_Ago.xlsx",
       "qtd_colaboradores": 2,
       "colaboradores": [
-        {
-          "nome": "Alex Ricobom",
-          "aba": "Alex Ricobom",
-          "cargo": "Head of People",
-          "area": "Produto e Design",
-          "nivel": "Sênior",
-          "step": "I",
-          "gestor": "Rodrigo Della Rocca Cruz",
-          "qtd_perguntas": 8,
-          "perguntas": [
-            {
-              "n": 1,
-              "pergunta": "Como você avalia os Resultados de Alex Ricobom neste ciclo? (1 = muito abaixo do esperado, 5 = excepcional)",
-              "tipo": "Escala 1-5",
-              "celula_resposta": "C7",
-              "opcoes": [
-                "1",
-                "1.5",
-                "2",
-                "2.5",
-                "3",
-                "3.5",
-                "4",
-                "4.5",
-                "5"
-              ]
-            },
-            {
-              "n": 2,
-              "pergunta": "Das últimas 3 features entregues, quantas tinham o problema validado com dado ou usuário real antes de ir para Engineering? (responda pensando na entrega de Alex Ricobom.)",
-              "tipo": "Texto aberto",
-              "celula_resposta": "C8"
-            },
-            {
-              "n": 3,
-              "pergunta": "Alex Ricobom está pronto(a) para o próximo step? O que falta, especificamente, à luz do critério: \"• Entrega: define a visão estratégica de um produto crítico.• Competência: lidera o discovery e estratégia de forma autônoma.• Autonomia: suporta o GPM com análises sem necessidade de direcionamento.• Comportamento: pensa em produto como parte da estratégia de negócio.• Avança quando: desenvolve a estratégia de go-to-market do produto.\"",
-              "tipo": "Texto aberto",
-              "celula_resposta": "C9"
-            },
-            {
-              "n": 4,
-              "pergunta": "Como você avalia as Competências de Alex Ricobom neste ciclo?",
-              "tipo": "Escala 1-5",
-              "celula_resposta": "C10",
-              "opcoes": [
-                "1",
-                "1.5",
-                "2",
-                "2.5",
-                "3",
-                "3.5",
-                "4",
-                "4.5",
-                "5"
-              ]
-            },
-            {
-              "n": 5,
-              "pergunta": "Como você avalia o Potencial de Alex Ricobom para assumir mais responsabilidade nos próximos 12-18 meses?",
-              "tipo": "Escala 1-5",
-              "celula_resposta": "C11",
-              "opcoes": [
-                "1",
-                "1.5",
-                "2",
-                "2.5",
-                "3",
-                "3.5",
-                "4",
-                "4.5",
-                "5"
-              ]
-            },
-            {
-              "n": 6,
-              "pergunta": "Cite um exemplo concreto (Situação-Comportamento-Impacto) de um valor CondoConta bem vivido por essa pessoa.",
-              "tipo": "Texto aberto",
-              "celula_resposta": "C12"
-            },
-            {
-              "n": 7,
-              "pergunta": "Cite um exemplo concreto de onde essa pessoa precisa evoluir em relação aos Valores CondoConta.",
-              "tipo": "Texto aberto",
-              "celula_resposta": "C13"
-            },
-            {
-              "n": 8,
-              "pergunta": "Recomendação para este colaborador neste ciclo (Promoção / Mérito / Bônus / Manter / PDI intensivo / PIP / Desligamento):",
-              "tipo": "Lista suspensa",
-              "celula_resposta": "C14",
-              "opcoes": [
-                "Promoção",
-                "Mérito",
-                "Bônus",
-                "Manter",
-                "PDI intensivo",
-                "PIP",
-                "Desligamento"
-              ]
-            }
-          ]
-        },
         {
           "nome": "Felipe André Deistel Ferreir",
           "aba": "Felipe André Deistel Ferreir",
@@ -7805,7 +7435,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         }
       ]
     },
@@ -7914,7 +7546,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Olivio Cichovicz Neto",
@@ -8016,105 +7650,9 @@
                 "Desligamento"
               ]
             }
-          ]
-        },
-        {
-          "nome": "Bruna Gabriela",
-          "aba": "Bruna Gabriela",
-          "linha_bruta": "Cargo: CX Analyst   |   Área: Relacionamento, Suporte e Onboarding   |   Nível: Júnior   |   —   |   Gestor: Joanna Rosa Mella Massing",
-          "qtd_perguntas": 8,
-          "perguntas": [
-            {
-              "n": 1,
-              "pergunta": "Como você avalia os Resultados de Bruna Gabriela neste ciclo? (1 = muito abaixo do esperado, 5 = excepcional)",
-              "tipo": "Escala 1-5",
-              "celula_resposta": "C7",
-              "opcoes": [
-                "1",
-                "1.5",
-                "2",
-                "2.5",
-                "3",
-                "3.5",
-                "4",
-                "4.5",
-                "5"
-              ]
-            },
-            {
-              "n": 2,
-              "pergunta": "Qual seu % de resolução no primeiro contato este mês, e qual foi seu CSAT médio? (responda pensando na entrega de Bruna Gabriela.)",
-              "tipo": "Texto aberto",
-              "celula_resposta": "C8"
-            },
-            {
-              "n": 3,
-              "pergunta": "Bruna Gabriela está pronto(a) para o próximo step? O que falta, especificamente, à luz do critério: \"Descreva uma situação recente em que você assumiu mais responsabilidade ou autonomia do que era esperado no seu cargo.\"",
-              "tipo": "Texto aberto",
-              "celula_resposta": "C9"
-            },
-            {
-              "n": 4,
-              "pergunta": "Como você avalia as Competências de Bruna Gabriela neste ciclo?",
-              "tipo": "Escala 1-5",
-              "celula_resposta": "C10",
-              "opcoes": [
-                "1",
-                "1.5",
-                "2",
-                "2.5",
-                "3",
-                "3.5",
-                "4",
-                "4.5",
-                "5"
-              ]
-            },
-            {
-              "n": 5,
-              "pergunta": "Como você avalia o Potencial de Bruna Gabriela para assumir mais responsabilidade nos próximos 12-18 meses?",
-              "tipo": "Escala 1-5",
-              "celula_resposta": "C11",
-              "opcoes": [
-                "1",
-                "1.5",
-                "2",
-                "2.5",
-                "3",
-                "3.5",
-                "4",
-                "4.5",
-                "5"
-              ]
-            },
-            {
-              "n": 6,
-              "pergunta": "Cite um exemplo concreto (Situação-Comportamento-Impacto) de um valor CondoConta bem vivido por essa pessoa.",
-              "tipo": "Texto aberto",
-              "celula_resposta": "C12"
-            },
-            {
-              "n": 7,
-              "pergunta": "Cite um exemplo concreto de onde essa pessoa precisa evoluir em relação aos Valores CondoConta.",
-              "tipo": "Texto aberto",
-              "celula_resposta": "C13"
-            },
-            {
-              "n": 8,
-              "pergunta": "Recomendação para este colaborador neste ciclo (Promoção / Mérito / Bônus / Manter / PDI intensivo / PIP / Desligamento):",
-              "tipo": "Lista suspensa",
-              "celula_resposta": "C14",
-              "opcoes": [
-                "Promoção",
-                "Mérito",
-                "Bônus",
-                "Manter",
-                "PDI intensivo",
-                "PIP",
-                "Desligamento"
-              ]
-            }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Caroline Monguilhott Duarte",
@@ -8216,7 +7754,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Caroline Regina Ramos de Oli",
@@ -8318,7 +7858,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Daiane de Souza Lopes",
@@ -8420,7 +7962,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Failla de Oliveira Pires",
@@ -8522,7 +8066,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Francisco Bieging Gomes",
@@ -8624,7 +8170,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Juliana Xavier Simões",
@@ -8726,7 +8274,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Lucas Garcia Freitas",
@@ -8828,7 +8378,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Lucas da Silva Ferreira",
@@ -8930,7 +8482,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Rafael Ian Barreto de Meneze",
@@ -9032,7 +8586,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Vitória Kimberllan Carvalho ",
@@ -9134,7 +8690,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Alisson Barbosa",
@@ -9236,7 +8794,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Ana Paula Bunn",
@@ -9338,7 +8898,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Andresa Maria Ziegler",
@@ -9440,7 +9002,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Cauã Daniel Lima da Silva",
@@ -9542,105 +9106,9 @@
                 "Desligamento"
               ]
             }
-          ]
-        },
-        {
-          "nome": "Ingrid Barbosa dos Santos",
-          "aba": "Ingrid Barbosa dos Santos",
-          "linha_bruta": "Cargo: CS Analyst   |   Área: Relacionamento, Suporte e Onboarding   |   Nível: Júnior   |   —   |   Gestor: Renata Otacilio",
-          "qtd_perguntas": 8,
-          "perguntas": [
-            {
-              "n": 1,
-              "pergunta": "Como você avalia os Resultados de Ingrid Barbosa dos Santos neste ciclo? (1 = muito abaixo do esperado, 5 = excepcional)",
-              "tipo": "Escala 1-5",
-              "celula_resposta": "C7",
-              "opcoes": [
-                "1",
-                "1.5",
-                "2",
-                "2.5",
-                "3",
-                "3.5",
-                "4",
-                "4.5",
-                "5"
-              ]
-            },
-            {
-              "n": 2,
-              "pergunta": "Qual seu % de resolução no primeiro contato este mês, e qual foi seu CSAT médio? (responda pensando na entrega de Ingrid Barbosa dos Santos.)",
-              "tipo": "Texto aberto",
-              "celula_resposta": "C8"
-            },
-            {
-              "n": 3,
-              "pergunta": "Ingrid Barbosa dos Santos está pronto(a) para o próximo step? O que falta, especificamente, à luz do critério: \"Descreva uma situação recente em que você assumiu mais responsabilidade ou autonomia do que era esperado no seu cargo.\"",
-              "tipo": "Texto aberto",
-              "celula_resposta": "C9"
-            },
-            {
-              "n": 4,
-              "pergunta": "Como você avalia as Competências de Ingrid Barbosa dos Santos neste ciclo?",
-              "tipo": "Escala 1-5",
-              "celula_resposta": "C10",
-              "opcoes": [
-                "1",
-                "1.5",
-                "2",
-                "2.5",
-                "3",
-                "3.5",
-                "4",
-                "4.5",
-                "5"
-              ]
-            },
-            {
-              "n": 5,
-              "pergunta": "Como você avalia o Potencial de Ingrid Barbosa dos Santos para assumir mais responsabilidade nos próximos 12-18 meses?",
-              "tipo": "Escala 1-5",
-              "celula_resposta": "C11",
-              "opcoes": [
-                "1",
-                "1.5",
-                "2",
-                "2.5",
-                "3",
-                "3.5",
-                "4",
-                "4.5",
-                "5"
-              ]
-            },
-            {
-              "n": 6,
-              "pergunta": "Cite um exemplo concreto (Situação-Comportamento-Impacto) de um valor CondoConta bem vivido por essa pessoa.",
-              "tipo": "Texto aberto",
-              "celula_resposta": "C12"
-            },
-            {
-              "n": 7,
-              "pergunta": "Cite um exemplo concreto de onde essa pessoa precisa evoluir em relação aos Valores CondoConta.",
-              "tipo": "Texto aberto",
-              "celula_resposta": "C13"
-            },
-            {
-              "n": 8,
-              "pergunta": "Recomendação para este colaborador neste ciclo (Promoção / Mérito / Bônus / Manter / PDI intensivo / PIP / Desligamento):",
-              "tipo": "Lista suspensa",
-              "celula_resposta": "C14",
-              "opcoes": [
-                "Promoção",
-                "Mérito",
-                "Bônus",
-                "Manter",
-                "PDI intensivo",
-                "PIP",
-                "Desligamento"
-              ]
-            }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Joel Fernandes Dini",
@@ -9742,7 +9210,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Manoela Paola Walter",
@@ -9844,16 +9314,18 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Pedro Paulo Magalhães Jeremi",
           "aba": "Pedro Paulo Magalhães Jeremi",
-          "cargo": "Líder de Dados",
+          "cargo": "CS Onboarding Analyst",
           "area": "Relacionamento, Suporte e Onboarding",
           "nivel": "Júnior",
           "step": "I",
-          "gestor": "Rodrigo Costa",
+          "gestor": "Andrieli Elmatos",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -9946,109 +9418,9 @@
                 "Desligamento"
               ]
             }
-          ]
-        },
-        {
-          "nome": "Thiago Cardoso Araújo",
-          "aba": "Thiago Cardoso Araújo",
-          "cargo": "CS Analyst",
-          "area": "Relacionamento, Suporte e Onboarding",
-          "nivel": "Júnior",
-          "step": "I",
-          "gestor": "Renata Otacilio",
-          "qtd_perguntas": 8,
-          "perguntas": [
-            {
-              "n": 1,
-              "pergunta": "Como você avalia os Resultados de Thiago Cardoso Araújo neste ciclo? (1 = muito abaixo do esperado, 5 = excepcional)",
-              "tipo": "Escala 1-5",
-              "celula_resposta": "C7",
-              "opcoes": [
-                "1",
-                "1.5",
-                "2",
-                "2.5",
-                "3",
-                "3.5",
-                "4",
-                "4.5",
-                "5"
-              ]
-            },
-            {
-              "n": 2,
-              "pergunta": "Qual seu % de resolução no primeiro contato este mês, e qual foi seu CSAT médio? (responda pensando na entrega de Thiago Cardoso Araújo.)",
-              "tipo": "Texto aberto",
-              "celula_resposta": "C8"
-            },
-            {
-              "n": 3,
-              "pergunta": "Thiago Cardoso Araújo está pronto(a) para o próximo step? O que falta, especificamente, à luz do critério: \"• Entrega: gerencia carteira de clientes com supervisão.• Competência: realiza QBRs básicos e monitora saúde da conta.• Autonomia: registra atividades no CRM com disciplina.• Comportamento: empático e organizado no contato com clientes.• Avança quando: realiza QBRs sem necessidade de revisão prévia.\"",
-              "tipo": "Texto aberto",
-              "celula_resposta": "C9"
-            },
-            {
-              "n": 4,
-              "pergunta": "Como você avalia as Competências de Thiago Cardoso Araújo neste ciclo?",
-              "tipo": "Escala 1-5",
-              "celula_resposta": "C10",
-              "opcoes": [
-                "1",
-                "1.5",
-                "2",
-                "2.5",
-                "3",
-                "3.5",
-                "4",
-                "4.5",
-                "5"
-              ]
-            },
-            {
-              "n": 5,
-              "pergunta": "Como você avalia o Potencial de Thiago Cardoso Araújo para assumir mais responsabilidade nos próximos 12-18 meses?",
-              "tipo": "Escala 1-5",
-              "celula_resposta": "C11",
-              "opcoes": [
-                "1",
-                "1.5",
-                "2",
-                "2.5",
-                "3",
-                "3.5",
-                "4",
-                "4.5",
-                "5"
-              ]
-            },
-            {
-              "n": 6,
-              "pergunta": "Cite um exemplo concreto (Situação-Comportamento-Impacto) de um valor CondoConta bem vivido por essa pessoa.",
-              "tipo": "Texto aberto",
-              "celula_resposta": "C12"
-            },
-            {
-              "n": 7,
-              "pergunta": "Cite um exemplo concreto de onde essa pessoa precisa evoluir em relação aos Valores CondoConta.",
-              "tipo": "Texto aberto",
-              "celula_resposta": "C13"
-            },
-            {
-              "n": 8,
-              "pergunta": "Recomendação para este colaborador neste ciclo (Promoção / Mérito / Bônus / Manter / PDI intensivo / PIP / Desligamento):",
-              "tipo": "Lista suspensa",
-              "celula_resposta": "C14",
-              "opcoes": [
-                "Promoção",
-                "Mérito",
-                "Bônus",
-                "Manter",
-                "PDI intensivo",
-                "PIP",
-                "Desligamento"
-              ]
-            }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Tuany Ribeiro",
@@ -10150,7 +9522,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Sabrina Vieira",
@@ -10252,7 +9626,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Andrieli Elmatos",
@@ -10354,7 +9730,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Joanna Rosa Mella Massing",
@@ -10456,7 +9834,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Renata Otacilio",
@@ -10558,7 +9938,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         }
       ]
     },
@@ -10567,108 +9949,6 @@
       "arquivo": "CondoConta_Avaliacao_Lider_Sales_2026-2_Ago.xlsx",
       "qtd_colaboradores": 18,
       "colaboradores": [
-        {
-          "nome": "Augusto Degrazia",
-          "aba": "Augusto Degrazia",
-          "cargo": "Executivo(a) de Negócios",
-          "area": "Sales",
-          "nivel": "Júnior",
-          "step": "II",
-          "gestor": "Guilherme Arquer Giacometti",
-          "qtd_perguntas": 8,
-          "perguntas": [
-            {
-              "n": 1,
-              "pergunta": "Como você avalia os Resultados de Augusto Degrazia neste ciclo? (1 = muito abaixo do esperado, 5 = excepcional)",
-              "tipo": "Escala 1-5",
-              "celula_resposta": "C7",
-              "opcoes": [
-                "1",
-                "1.5",
-                "2",
-                "2.5",
-                "3",
-                "3.5",
-                "4",
-                "4.5",
-                "5"
-              ]
-            },
-            {
-              "n": 2,
-              "pergunta": "Qual % da sua meta individual você já bateu neste ciclo, e qual sua taxa de conversão nas etapas do funil? (responda pensando na entrega de Augusto Degrazia.)",
-              "tipo": "Texto aberto",
-              "celula_resposta": "C8"
-            },
-            {
-              "n": 3,
-              "pergunta": "Augusto Degrazia está pronto(a) para o próximo step? O que falta, especificamente, à luz do critério: \"Descreva uma situação recente em que você assumiu mais responsabilidade ou autonomia do que era esperado no seu cargo.\"",
-              "tipo": "Texto aberto",
-              "celula_resposta": "C9"
-            },
-            {
-              "n": 4,
-              "pergunta": "Como você avalia as Competências de Augusto Degrazia neste ciclo?",
-              "tipo": "Escala 1-5",
-              "celula_resposta": "C10",
-              "opcoes": [
-                "1",
-                "1.5",
-                "2",
-                "2.5",
-                "3",
-                "3.5",
-                "4",
-                "4.5",
-                "5"
-              ]
-            },
-            {
-              "n": 5,
-              "pergunta": "Como você avalia o Potencial de Augusto Degrazia para assumir mais responsabilidade nos próximos 12-18 meses?",
-              "tipo": "Escala 1-5",
-              "celula_resposta": "C11",
-              "opcoes": [
-                "1",
-                "1.5",
-                "2",
-                "2.5",
-                "3",
-                "3.5",
-                "4",
-                "4.5",
-                "5"
-              ]
-            },
-            {
-              "n": 6,
-              "pergunta": "Cite um exemplo concreto (Situação-Comportamento-Impacto) de um valor CondoConta bem vivido por essa pessoa.",
-              "tipo": "Texto aberto",
-              "celula_resposta": "C12"
-            },
-            {
-              "n": 7,
-              "pergunta": "Cite um exemplo concreto de onde essa pessoa precisa evoluir em relação aos Valores CondoConta.",
-              "tipo": "Texto aberto",
-              "celula_resposta": "C13"
-            },
-            {
-              "n": 8,
-              "pergunta": "Recomendação para este colaborador neste ciclo (Promoção / Mérito / Bônus / Manter / PDI intensivo / PIP / Desligamento):",
-              "tipo": "Lista suspensa",
-              "celula_resposta": "C14",
-              "opcoes": [
-                "Promoção",
-                "Mérito",
-                "Bônus",
-                "Manter",
-                "PDI intensivo",
-                "PIP",
-                "Desligamento"
-              ]
-            }
-          ]
-        },
         {
           "nome": "Dimaima Maicá",
           "aba": "Dimaima Maicá",
@@ -10769,7 +10049,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Felipe Moreira",
@@ -10871,7 +10153,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Jessica Correa",
@@ -10973,7 +10257,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Natália Cristina Mello de Se",
@@ -11075,7 +10361,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Vitoria Jessica Barbosa Melo",
@@ -11177,7 +10465,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Wagner Augusto Ferreira",
@@ -11279,7 +10569,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Juliana Ferreira da Costa",
@@ -11381,7 +10673,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Willian Soares Alves",
@@ -11483,105 +10777,9 @@
                 "Desligamento"
               ]
             }
-          ]
-        },
-        {
-          "nome": "Ângelo Matheus Gonzalez Luz",
-          "aba": "Ângelo Matheus Gonzalez Luz",
-          "linha_bruta": "Cargo: Executivo de Negócios   |   Área: Sales   |   Nível: Júnior   |   —   |   Gestor: Bruno Antônio Veronese",
-          "qtd_perguntas": 8,
-          "perguntas": [
-            {
-              "n": 1,
-              "pergunta": "Como você avalia os Resultados de Ângelo Matheus Gonzalez Luz neste ciclo? (1 = muito abaixo do esperado, 5 = excepcional)",
-              "tipo": "Escala 1-5",
-              "celula_resposta": "C7",
-              "opcoes": [
-                "1",
-                "1.5",
-                "2",
-                "2.5",
-                "3",
-                "3.5",
-                "4",
-                "4.5",
-                "5"
-              ]
-            },
-            {
-              "n": 2,
-              "pergunta": "Qual % da sua meta individual você já bateu neste ciclo, e qual sua taxa de conversão nas etapas do funil? (responda pensando na entrega de Ângelo Matheus Gonzalez Luz.)",
-              "tipo": "Texto aberto",
-              "celula_resposta": "C8"
-            },
-            {
-              "n": 3,
-              "pergunta": "Ângelo Matheus Gonzalez Luz está pronto(a) para o próximo step? O que falta, especificamente, à luz do critério: \"Descreva uma situação recente em que você assumiu mais responsabilidade ou autonomia do que era esperado no seu cargo.\"",
-              "tipo": "Texto aberto",
-              "celula_resposta": "C9"
-            },
-            {
-              "n": 4,
-              "pergunta": "Como você avalia as Competências de Ângelo Matheus Gonzalez Luz neste ciclo?",
-              "tipo": "Escala 1-5",
-              "celula_resposta": "C10",
-              "opcoes": [
-                "1",
-                "1.5",
-                "2",
-                "2.5",
-                "3",
-                "3.5",
-                "4",
-                "4.5",
-                "5"
-              ]
-            },
-            {
-              "n": 5,
-              "pergunta": "Como você avalia o Potencial de Ângelo Matheus Gonzalez Luz para assumir mais responsabilidade nos próximos 12-18 meses?",
-              "tipo": "Escala 1-5",
-              "celula_resposta": "C11",
-              "opcoes": [
-                "1",
-                "1.5",
-                "2",
-                "2.5",
-                "3",
-                "3.5",
-                "4",
-                "4.5",
-                "5"
-              ]
-            },
-            {
-              "n": 6,
-              "pergunta": "Cite um exemplo concreto (Situação-Comportamento-Impacto) de um valor CondoConta bem vivido por essa pessoa.",
-              "tipo": "Texto aberto",
-              "celula_resposta": "C12"
-            },
-            {
-              "n": 7,
-              "pergunta": "Cite um exemplo concreto de onde essa pessoa precisa evoluir em relação aos Valores CondoConta.",
-              "tipo": "Texto aberto",
-              "celula_resposta": "C13"
-            },
-            {
-              "n": 8,
-              "pergunta": "Recomendação para este colaborador neste ciclo (Promoção / Mérito / Bônus / Manter / PDI intensivo / PIP / Desligamento):",
-              "tipo": "Lista suspensa",
-              "celula_resposta": "C14",
-              "opcoes": [
-                "Promoção",
-                "Mérito",
-                "Bônus",
-                "Manter",
-                "PDI intensivo",
-                "PIP",
-                "Desligamento"
-              ]
-            }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Ayrton de Sena",
@@ -11683,7 +10881,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Bruno Antônio Veronese",
@@ -11785,7 +10985,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Guilherme Arquer Giacometti",
@@ -11887,7 +11089,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Humberto Basso",
@@ -11989,7 +11193,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Bruno de Mattos Porto",
@@ -12091,7 +11297,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Michelle Pacheco Soares",
@@ -12193,7 +11401,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Gianluca Dal Zotto",
@@ -12295,7 +11505,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         },
         {
           "nome": "Mathias Dziekaniak Vecchietti",
@@ -12397,7 +11609,9 @@
                 "Desligamento"
               ]
             }
-          ]
+          ],
+          "senioridade": "",
+          "nivel_senioridade": ""
         }
       ]
     }

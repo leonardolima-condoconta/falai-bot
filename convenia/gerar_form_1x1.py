@@ -2,6 +2,7 @@
 """
 Gera HTML do 1x1 consolidado (autoavaliacao + lider + 9box + PDI).
 Uso: python3 gerar_form_1x1.py <email_lider> <email_colaborador>
+Layout full-screen: header full-width + grid 60/40 + scroll unico.
 """
 import json, subprocess, sys
 
@@ -57,8 +58,6 @@ pdi_raw = pdi_prev["result"]["respostas"][0]["raw"] if pdi_prev.get("ok") and pd
 auto_p = auto_raw.get("perguntas", {})
 av_p = av_raw.get("perguntas", {})
 
-tem_auto = bool(auto_p); tem_av = bool(av_p)
-
 # Extrair notas para 9box
 def extract_score(data, keywords):
     for k, v in data.items():
@@ -74,7 +73,6 @@ nota_res_lider = extract_score(av_p, ["resultados"])
 nota_comp_lider = extract_score(av_p, ["competência"])
 nota_pot_lider = extract_score(av_p, ["potencial"])
 
-# 9box anterior
 nbox_prev_res = nbox_raw.get("nota_resultados") or extract_score(nbox_raw, ["resultados"])
 nbox_prev_pot = nbox_raw.get("nota_potencial") or extract_score(nbox_raw, ["potencial"])
 
@@ -133,13 +131,16 @@ for row in range(3,0,-1):
         if r9_prev == col and p9_prev == row: cls += " prev"
         ninebox_cells += f'<div class="nb{cls}">{label}</div>'
 
-# PDI fields (pre-fill if exists)
+# PDI fields
 pdi_comp = pdi_raw.get("competencia_foco", "")
 pdi_gap = pdi_raw.get("gap_evidencia", "")
 pdi_tipo = pdi_raw.get("tipo_acao", "")
 pdi_desc = pdi_raw.get("descricao_acao", "")
 pdi_prazo = pdi_raw.get("prazo", "")
 pdi_evid = pdi_raw.get("evidencia_conclusao", "")
+
+nota_res_v = nota_res_lider or ""
+nota_pot_v = nota_pot_lider or ""
 
 html = f"""<!DOCTYPE html>
 <html lang="pt-BR">
@@ -153,8 +154,11 @@ html = f"""<!DOCTYPE html>
 <style>
 :root{{--paper:#F4F6FA;--ink:#0C2440;--navy:#14365C;--navy-deep:#0A2138;--gold:#F4B72C;--gold-deep:#C98F0C;--muted:#5E748C;--line:#DCE3EC;--card:#FFFFFF;--auto-bg:#FFF8E1;--auto-border:#F4B72C;--lider-bg:#E8F0FE;--lider-border:#14365C}}
 *{{box-sizing:border-box;margin:0;padding:0}}
-body{{background:var(--paper);color:var(--ink);font-family:'Inter',sans-serif;line-height:1.5;padding:20px}}
-.wrapper{{max-width:1300px;margin:0 auto;display:grid;grid-template-columns:1fr 380px;gap:20px;align-items:start}}
+body{{background:var(--paper);color:var(--ink);font-family:'Inter',sans-serif;line-height:1.5;padding:0;height:100vh;overflow-y:auto;display:flex;flex-direction:column}}
+body > header{{flex-shrink:0}}
+.wrapper{{flex:1;display:grid;grid-template-columns:3fr 2fr;gap:0}}
+.wrapper > div{{padding:20px}}
+.wrapper > div:last-child{{background:var(--card);border-left:1px solid var(--line)}}
 @media(max-width:960px){{.wrapper{{grid-template-columns:1fr}}}}
 .sheet{{background:var(--card);box-shadow:0 12px 30px -14px rgba(12,36,64,.25),0 0 0 1px var(--line);margin-bottom:16px}}
 header{{background:var(--navy-deep);color:#fff;padding:20px 28px}}
@@ -186,19 +190,16 @@ header .sub{{color:#AFC1D6;font-size:12px;margin-top:4px}}
 .justify textarea{{width:100%;padding:10px 12px;border:1.5px solid var(--line);border-radius:8px;font-family:'Inter',sans-serif;font-size:13px;color:var(--ink);background:#FBFCFE;resize:vertical}}
 .justify textarea:focus{{outline:none;border-color:var(--gold)}}
 .justify label{{display:block;font-size:12px;font-weight:600;color:var(--navy);margin-bottom:5px}}
-/* 9box */
-.nb-grid{{display:grid;grid-template-columns:1fr 1fr 1fr;gap:3px;max-width:300px;margin:0 auto 12px}}
-.nb-grid div{{border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:600;text-align:center;padding:6px 2px;color:var(--muted);border:1px solid var(--line);background:#FBFCFE;min-height:44px}}
-.nb-grid div.active-lider{{box-shadow:0 0 0 3px var(--lider-border);font-weight:800;color:var(--lider-border)}}
-.nb-grid div.active-auto{{box-shadow:0 0 0 3px var(--auto-border);font-weight:800;color:#8B6914}}
+.nb-grid{{display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px;max-width:100%;margin:0 auto 12px}}
+.nb-grid div{{border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;text-align:center;padding:14px 4px;color:var(--muted);border:1.5px solid var(--line);background:#FBFCFE;min-height:60px}}
+.nb-grid div.active-lider{{box-shadow:0 0 0 3px var(--lider-border);font-weight:800;color:var(--lider-border);font-size:14px}}
+.nb-grid div.active-auto{{box-shadow:0 0 0 3px var(--auto-border);font-weight:800;color:#8B6914;font-size:14px}}
 .nb-grid div.prev{{background:#E8F0FE30;border-style:dashed}}
-.nb-grid div.active-lider.active-auto{{box-shadow:0 0 0 3px var(--lider-border),0 0 0 5px var(--auto-border)}}
-.nb-legend{{display:flex;gap:12px;justify-content:center;font-size:10px;color:var(--muted);margin-bottom:4px;flex-wrap:wrap}}
-.nb-label{{font-size:10px;color:var(--muted);text-align:center;margin-bottom:12px}}
-/* PDI */
-.pdi-field{{margin-bottom:10px}}
-.pdi-field label{{display:block;font-size:11px;font-weight:600;color:var(--navy);margin-bottom:3px}}
-.pdi-field input,.pdi-field textarea{{width:100%;padding:8px 10px;border:1.5px solid var(--line);border-radius:6px;font-family:'Inter',sans-serif;font-size:12px;color:var(--ink);background:#FBFCFE}}
+.nb-legend{{display:flex;gap:16px;justify-content:center;font-size:12px;color:var(--muted);margin-bottom:6px;flex-wrap:wrap}}
+.nb-label{{font-size:12px;color:var(--muted);text-align:center;margin-bottom:16px}}
+.pdi-field{{margin-bottom:12px}}
+.pdi-field label{{display:block;font-size:13px;font-weight:600;color:var(--navy);margin-bottom:4px}}
+.pdi-field input,.pdi-field textarea{{width:100%;padding:10px 12px;border:1.5px solid var(--line);border-radius:8px;font-family:'Inter',sans-serif;font-size:13px;color:var(--ink);background:#FBFCFE}}
 .pdi-field textarea{{resize:vertical}}
 .pdi-field input:focus,.pdi-field textarea:focus{{outline:none;border-color:var(--gold)}}
 .btn-row{{text-align:right;margin-top:16px}}
@@ -213,16 +214,18 @@ footer .gold{{color:var(--gold)}}
 </style>
 </head>
 <body>
+
+<header>
+  <div class="brand"><div class="logo"><b>CondoConta</b><span> · People</span></div><div class="tag">1x1</div></div>
+  <h1><em>{lider_nome}</em> ↔ <em>{colab_nome}</em></h1>
+  <div class="sub">{colab_cargo} · {colab_area} · Ciclo 2026.2</div>
+</header>
+
 <div class="wrapper">
 <div>
 
   <div class="sheet" id="form-section">
-    <header>
-      <div class="brand"><div class="logo"><b>CondoConta</b><span> · People</span></div><div class="tag">1x1</div></div>
-      <h1><em>{lider_nome}</em> ↔ <em>{colab_nome}</em></h1>
-      <div class="sub">{colab_cargo} · {colab_area} · Ciclo 2026.2</div>
-    </header>
-    <div class="pad">
+    <div class="pad" style="padding-top:12px">
       <div class="legend">
         <span><span class="dot auto"></span> Autoavaliação (Colaborador)</span>
         <span><span class="dot lider"></span> Avaliação do Líder</span>
@@ -246,7 +249,6 @@ footer .gold{{color:var(--gold)}}
       <h3>✅ 1x1 registrado com sucesso!</h3>
       <p>Obrigado por dedicar este tempo ao desenvolvimento do seu time.</p>
     </div>
-    <footer><div><b>FALAI</b> · People</div><div class="gold">condoconta.com.br</div><div>by Falai — CC People</div></footer>
   </div>
 
 </div>
@@ -261,15 +263,19 @@ footer .gold{{color:var(--gold)}}
         <span style="opacity:.6">┅ Anterior</span>
       </div>
       <div class="nb-grid">{ninebox_cells}</div>
+      <div style="display:flex;justify-content:space-between;font-size:9px;color:var(--muted);margin:0 auto 0">
+        <span style="flex:1;text-align:center">Baixo</span><span style="flex:1;text-align:center">Médio</span><span style="flex:1;text-align:center">Alto</span>
+      </div>
       <div class="nb-label">Horizontal: Resultados · Vertical: Potencial</div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px">
+      <div style="font-family:'Sora',sans-serif;font-size:11px;font-weight:700;color:var(--navy);margin-bottom:6px">🎯 Ajustar Posição</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
         <div class="pdi-field">
           <label>Resultados (1-5)</label>
-          <input type="number" min="1" max="5" step="0.5" id="nb_resultados" value="{json.dumps(nota_res_lider or '')}\">
+          <input type="number" min="1" max="5" step="0.5" id="nb_resultados" value="{nota_res_v}">
         </div>
         <div class="pdi-field">
           <label>Potencial (1-5)</label>
-          <input type="number" min="1" max="5" step="0.5" id="nb_potencial" value="{json.dumps(nota_pot_lider or '')}\">
+          <input type="number" min="1" max="5" step="0.5" id="nb_potencial" value="{nota_pot_v}">
         </div>
       </div>
     </div>
@@ -289,16 +295,17 @@ footer .gold{{color:var(--gold)}}
 </div>
 </div>
 
+<footer><div><b>FALAI</b> · People</div><div class="gold">condoconta.com.br</div><div>by Falai — CC People</div></footer>
+
 <input type="hidden" id="lider_id" value="{lider_id}">
-<input type="hidden" id="lider_email" value="{LIDER_EMAIL}">
 <input type="hidden" id="colaborador_id" value="{colab_id}">
 <input type="hidden" id="colaborador_nome" value="{colab_nome}">
 <input type="hidden" id="area_val" value="{colab_area}">
 
 <script>
-var SA = '{SA}'; var AUTH = '{AUTH}';
-var LIDER_EMAIL = '{LIDER_EMAIL}'; var LIDER_ID = '{lider_id}';
-var COL_ID = '{colab_id}'; var COL_NOME = '{colab_nome}'; var AREA = '{colab_area}';
+var LIDER_ID = '{lider_id}';
+var COL_ID = '{colab_id}';
+var AREA = '{colab_area}';
 
 function post(method, params){{
   return fetch('https://static-server.aiexpert-condoconta.info/proxy/condopower-rpc',{{
@@ -310,58 +317,26 @@ function post(method, params){{
 async function submitAll(){{
   var s = document.getElementById('status');
   s.textContent = 'Salvando...'; s.style.color = 'var(--gold-deep)';
-
   var just = document.getElementById('justificativa').value;
   var nb_r = document.getElementById('nb_resultados').value;
   var nb_p = document.getElementById('nb_potencial').value;
   var errors = [];
-
-  // 1x1
   if(just){{
-    var r1 = await post('form.1x1',{{
-      lider_id:LIDER_ID,colaborador_id:COL_ID,
-      area:AREA,justificativa:just,data:new Date().toISOString().split('T')[0]
-    }});
+    var r1 = await post('form.1x1',{{lider_id:LIDER_ID,colaborador_id:COL_ID,area:AREA,justificativa:just,data:new Date().toISOString().split('T')[0]}});
     if(!r1.ok) errors.push('1x1: '+(r1.error&&r1.error.message||'?'));
   }}
-
-  // 9box
   if(nb_r && nb_p){{
-    var r2 = await post('form.9box',{{
-      lider_id:LIDER_ID,colaborador_id:COL_ID,
-      area:AREA,nota_resultados:parseFloat(nb_r),nota_potencial:parseFloat(nb_p)
-    }});
+    var r2 = await post('form.9box',{{lider_id:LIDER_ID,colaborador_id:COL_ID,area:AREA,nota_resultados:parseFloat(nb_r),nota_potencial:parseFloat(nb_p)}});
     if(!r2.ok) errors.push('9box: '+(r2.error&&r2.error.message||'?'));
   }}
-
-  // PDI
-  var pdi_c = document.getElementById('pdi_competencia').value;
-  var pdi_g = document.getElementById('pdi_gap').value;
-  var pdi_t = document.getElementById('pdi_tipo').value;
-  var pdi_d = document.getElementById('pdi_desc').value;
-  var pdi_p = document.getElementById('pdi_prazo').value;
-  var pdi_e = document.getElementById('pdi_evid').value;
+  var pdi_c=document.getElementById('pdi_competencia').value,pdi_g=document.getElementById('pdi_gap').value,pdi_t=document.getElementById('pdi_tipo').value,pdi_d=document.getElementById('pdi_desc').value,pdi_p=document.getElementById('pdi_prazo').value,pdi_e=document.getElementById('pdi_evid').value;
   if(pdi_c||pdi_g||pdi_t||pdi_d||pdi_p||pdi_e){{
-    var r3 = await post('form.pdi',{{
-      lider_id:LIDER_ID,colaborador_id:COL_ID,
-      area:AREA,
-      competencia_foco:pdi_c,gap_evidencia:pdi_g,tipo_acao:pdi_t,
-      descricao_acao:pdi_d,prazo:pdi_p,evidencia_conclusao:pdi_e
-    }});
+    var r3=await post('form.pdi',{{lider_id:LIDER_ID,colaborador_id:COL_ID,area:AREA,competencia_foco:pdi_c,gap_evidencia:pdi_g,tipo_acao:pdi_t,descricao_acao:pdi_d,prazo:pdi_p,evidencia_conclusao:pdi_e}});
     if(!r3.ok) errors.push('PDI: '+(r3.error&&r3.error.message||'?'));
   }}
-
-  if(errors.length){{
-    s.textContent = '❌ Erros: '+errors.join('; ');
-    s.style.color = '#C62828';
-  }} else if(!just && !nb_r && !nb_p && !pdi_c){{
-    s.textContent = '⚠️ Preencha ao menos a justificativa do 1x1.';
-    s.style.color = '#C62828';
-  }} else {{
-    s.textContent = '✅ Salvo com sucesso!';
-    s.style.color = '#2E7D32';
-    document.getElementById('thank-you').style.display = 'block';
-  }}
+  if(errors.length){{s.textContent='❌ Erros: '+errors.join('; ');s.style.color='#C62828';}}
+  else if(!just && !nb_r && !nb_p && !pdi_c){{s.textContent='⚠️ Preencha ao menos a justificativa do 1x1.';s.style.color='#C62828';}}
+  else{{s.textContent='✅ Salvo com sucesso!';s.style.color='#2E7D32';document.getElementById('thank-you').style.display='block';}}
 }}
 </script>
 </body>

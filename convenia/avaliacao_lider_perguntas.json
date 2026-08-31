@@ -118,11 +118,11 @@
         {
           "nome": "André Romão de Oliveira",
           "aba": "André Romão de Oliveira",
-          "cargo": "Analista de Dados Pleno",
+          "cargo": "Analista de Dados",
           "area": "Dados e AI",
           "nivel": "Sênior",
           "step": "I",
-          "gestor": "Leonardo Luís Perin",
+          "gestor": "Franco Maiole Brognoli",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -322,11 +322,11 @@
         {
           "nome": "Rodrigo Silva da Luz",
           "aba": "Rodrigo Silva da Luz",
-          "cargo": "Tech Lead",
+          "cargo": "Tech Lead AI Expert",
           "area": "Dados e AI",
           "nivel": "Especialista",
           "step": "I",
-          "gestor": "Paulo Fernando da Costa Pereira Filho",
+          "gestor": "Juliano Fernandes Santana",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -424,11 +424,11 @@
         {
           "nome": "Vinicius Marques Rocha",
           "aba": "Vinicius Marques Rocha",
-          "cargo": "AI Expert Analyst",
+          "cargo": "Product Designer",
           "area": "Dados e AI",
           "nivel": "Sênior",
           "step": "III",
-          "gestor": "Paulo Fernando da Costa Pereira Filho",
+          "gestor": "Juliano Fernandes Santana",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -526,11 +526,11 @@
         {
           "nome": "Lucas José de Souza",
           "aba": "Lucas José de Souza",
-          "cargo": "AI Dev Analyst",
+          "cargo": "Engenheiro DevOPS",
           "area": "Dados e AI",
           "nivel": "Sênior",
           "step": "IV",
-          "gestor": "Rodrigo Costa",
+          "gestor": "Mateus Medeiros de Araújo",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -628,7 +628,7 @@
         {
           "nome": "Pedro Della Rocca",
           "aba": "Pedro Della Rocca",
-          "cargo": "Data Engineer",
+          "cargo": "Líder de Dados",
           "area": "Dados e AI",
           "nivel": "Sênior",
           "step": "I",
@@ -730,11 +730,11 @@
         {
           "nome": "Vladimir Alves Vidal",
           "aba": "Vladimir Alves Vidal",
-          "cargo": "Data Engineer",
+          "cargo": "Engenheiro de Dados",
           "area": "Dados e AI",
           "nivel": "Pleno",
           "step": "III",
-          "gestor": "Rodrigo Costa",
+          "gestor": "Pedro Della Rocca",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -934,11 +934,11 @@
         {
           "nome": "Magda Mayara dos Santos Mont",
           "aba": "Magda Mayara dos Santos Mont",
-          "cargo": "AI Ops Analyst",
+          "cargo": "AI Expert Analyst",
           "area": "Dados e AI",
           "nivel": "Pleno",
           "step": "I",
-          "gestor": "Silvana Muller",
+          "gestor": "Wilson Rodrigo Dalmolin",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -1040,7 +1040,7 @@
           "area": "Dados e AI",
           "nivel": "Pleno",
           "step": "I",
-          "gestor": "Vitor Pacheco",
+          "gestor": "Renata Leticia Bacoff Paim",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -1145,7 +1145,7 @@
         {
           "nome": "André Luiz Nunes Amaru",
           "aba": "André Luiz Nunes Amaru",
-          "cargo": "Backend Developer",
+          "cargo": "Desenvolvedor Backend",
           "area": "Eng. e Dev de Software",
           "nivel": "Júnior",
           "step": "IV",
@@ -1247,11 +1247,11 @@
         {
           "nome": "Eduardo Victor Nóbrega Ferna",
           "aba": "Eduardo Victor Nóbrega Ferna",
-          "cargo": "Backend Developer",
+          "cargo": "Product Marketing Manager",
           "area": "Eng. e Dev de Software",
           "nivel": "Pleno",
           "step": "IV",
-          "gestor": "Mateus Medeiros de Araújo",
+          "gestor": "Juliano Fernandes Santana",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -1349,7 +1349,7 @@
         {
           "nome": "Everton Mutti Castro",
           "aba": "Everton Mutti Castro",
-          "cargo": "Backend Developer",
+          "cargo": "Desenvolvedor Backend",
           "area": "Eng. e Dev de Software",
           "nivel": "Júnior",
           "step": "II",
@@ -1451,7 +1451,7 @@
         {
           "nome": "Michael Douglas da Silva Alv",
           "aba": "Michael Douglas da Silva Alv",
-          "cargo": "Frontend Developer",
+          "cargo": "Desenvolvedor Mobile",
           "area": "Eng. e Dev de Software",
           "nivel": "Pleno",
           "step": "V",
@@ -1553,11 +1553,11 @@
         {
           "nome": "Arthur de Angellis Oliveira ",
           "aba": "Arthur de Angellis Oliveira ",
-          "cargo": "Credit & Risk Dev Analyst",
+          "cargo": "Analista de Service Desk",
           "area": "Eng. e Dev de Software",
           "nivel": "Júnior",
           "step": "I",
-          "gestor": "Rodrigo Costa",
+          "gestor": "Mateus Medeiros de Araújo",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -1757,7 +1757,7 @@
         {
           "nome": "Raphael de Carvalho Cortes",
           "aba": "Raphael de Carvalho Cortes",
-          "cargo": "Technical Support Analyst",
+          "cargo": "Analista de Suporte Técnico",
           "area": "Eng. e Dev de Software",
           "nivel": "Júnior",
           "step": "V",
@@ -1859,11 +1859,11 @@
         {
           "nome": "Victor Oliveira Barros do Na",
           "aba": "Victor Oliveira Barros do Na",
-          "cargo": "Backend Lead",
+          "cargo": "Desenvolvedor Backend",
           "area": "Eng. e Dev de Software",
           "nivel": "Coordenação",
           "step": "I",
-          "gestor": "Rodrigo Costa",
+          "gestor": "Mateus Medeiros de Araújo",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -1961,11 +1961,11 @@
         {
           "nome": "João Guilherme Teixeira Brag",
           "aba": "João Guilherme Teixeira Brag",
-          "cargo": "Desenvolvedor Full Stack",
+          "cargo": "Desenvolvedor",
           "area": "Eng. e Dev de Software",
           "nivel": "Júnior",
           "step": "V",
-          "gestor": "Victor Oliveira Barros do Nascimento",
+          "gestor": "Mateus Medeiros de Araújo",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -2063,7 +2063,7 @@
         {
           "nome": "Lucas Fernandes Gauer",
           "aba": "Lucas Fernandes Gauer",
-          "cargo": "Desenvolvedor Full Stack",
+          "cargo": "Desenvolvedor de Software",
           "area": "Eng. e Dev de Software",
           "nivel": "Júnior",
           "step": "I",
@@ -2165,11 +2165,11 @@
         {
           "nome": "Samuel Figueiredo de Andrade",
           "aba": "Samuel Figueiredo de Andrade",
-          "cargo": "Fullstack Developer",
+          "cargo": "Desenvolvedor Front-End",
           "area": "Eng. e Dev de Software",
           "nivel": "Júnior",
           "step": "III",
-          "gestor": "Victor Oliveira Barros do Nascimento",
+          "gestor": "Mateus Medeiros de Araújo",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -2267,7 +2267,7 @@
         {
           "nome": "Victor Hugo Morais Predebon",
           "aba": "Victor Hugo Morais Predebon",
-          "cargo": "Backend Developer",
+          "cargo": "Desenvolvedor Backend",
           "area": "Eng. e Dev de Software",
           "nivel": "Pleno",
           "step": "V",
@@ -2376,7 +2376,7 @@
         {
           "nome": "Bruno Bender Ribeiro",
           "aba": "Bruno Bender Ribeiro",
-          "cargo": "Credit & Risk Analyst",
+          "cargo": "Cientista de Dados",
           "area": "Finance",
           "nivel": "Sênior",
           "step": "II",
@@ -2478,7 +2478,7 @@
         {
           "nome": "Fernando Legat Springmann",
           "aba": "Fernando Legat Springmann",
-          "cargo": "Finance Specialist",
+          "cargo": "Analista de FP&A",
           "area": "Finance",
           "nivel": "Pleno",
           "step": "V",
@@ -2580,7 +2580,7 @@
         {
           "nome": "Franco Maiole Brognoli",
           "aba": "Franco Maiole Brognoli",
-          "cargo": "PJ Coordinator",
+          "cargo": "Coordenador de Controladoria",
           "area": "Finance",
           "nivel": "Coordenação",
           "step": "I",
@@ -2682,7 +2682,7 @@
         {
           "nome": "Gregori Anastase Teixeira Ko",
           "aba": "Gregori Anastase Teixeira Ko",
-          "cargo": "Credit & Risk Analyst",
+          "cargo": "Analista de Crédito",
           "area": "Finance",
           "nivel": "Pleno",
           "step": "III",
@@ -2784,7 +2784,7 @@
         {
           "nome": "Laiane Nikitenko",
           "aba": "Laiane Nikitenko",
-          "cargo": "Treasury Analyst",
+          "cargo": "Financial Specialist",
           "area": "Finance",
           "nivel": "Pleno",
           "step": "V",
@@ -2886,7 +2886,7 @@
         {
           "nome": "Larissa Gonçalves Becker",
           "aba": "Larissa Gonçalves Becker",
-          "cargo": "Credit & Risk Analyst",
+          "cargo": "Analista de Crédito",
           "area": "Finance",
           "nivel": "Júnior",
           "step": "I",
@@ -2988,11 +2988,11 @@
         {
           "nome": "Leonardo de Lima",
           "aba": "Leonardo de Lima",
-          "cargo": "Treasury Analyst",
+          "cargo": "AI Expert Analyst",
           "area": "Finance",
           "nivel": "Pleno",
           "step": "IV",
-          "gestor": "Leonardo Luís Perin",
+          "gestor": "Franco Maiole Brognoli",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -3090,11 +3090,11 @@
         {
           "nome": "Pedro Reis",
           "aba": "Pedro Reis",
-          "cargo": "Treasury Analyst",
+          "cargo": "AI Expert Analyst",
           "area": "Finance",
           "nivel": "Pleno",
           "step": "V",
-          "gestor": "Leonardo Luís Perin",
+          "gestor": "Wilson Rodrigo Dalmolin",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -3192,7 +3192,7 @@
         {
           "nome": "Wiliam Midon Pedroso",
           "aba": "Wiliam Midon Pedroso",
-          "cargo": "Credit & Risk Analyst",
+          "cargo": "Analista de Crédito e Risco",
           "area": "Finance",
           "nivel": "Júnior",
           "step": "V",
@@ -3294,7 +3294,7 @@
         {
           "nome": "Leonardo Luís Perin",
           "aba": "Leonardo Luís Perin",
-          "cargo": "Head of Risk, Credit & Finance",
+          "cargo": "Head of Finance & Credito",
           "area": "Finance",
           "nivel": "S-Team",
           "step": "I",
@@ -3396,11 +3396,11 @@
         {
           "nome": "Vitor Pacheco",
           "aba": "Vitor Pacheco",
-          "cargo": "Banking Ops Manager",
+          "cargo": "AI Expert Analyst",
           "area": "Finance",
           "nivel": "Gerência",
           "step": "I",
-          "gestor": "Luciano Helio Bernardi",
+          "gestor": "Renata Leticia Bacoff Paim",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -3498,11 +3498,11 @@
         {
           "nome": "Julia Eulalia Baldoino Marqu",
           "aba": "Julia Eulalia Baldoino Marqu",
-          "cargo": "Treasury Analyst",
+          "cargo": "Analista de Tesouraria Júnior",
           "area": "Finance",
           "nivel": "Júnior",
           "step": "II",
-          "gestor": "Vitor Pacheco",
+          "gestor": "Renata Leticia Bacoff Paim",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -3600,11 +3600,11 @@
         {
           "nome": "Mateus Fantucci",
           "aba": "Mateus Fantucci",
-          "cargo": "Treasury Analyst",
+          "cargo": "Analista de Tesouraria",
           "area": "Finance",
           "nivel": "Júnior",
           "step": "V",
-          "gestor": "Vitor Pacheco",
+          "gestor": "Renata Leticia Bacoff Paim",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -3702,11 +3702,11 @@
         {
           "nome": "Mayara do Livramento da Roch",
           "aba": "Mayara do Livramento da Roch",
-          "cargo": "Treasury Analyst",
+          "cargo": "AI Expert Analyst",
           "area": "Finance",
           "nivel": "Júnior",
           "step": "III",
-          "gestor": "Vitor Pacheco",
+          "gestor": "Wilson Rodrigo Dalmolin",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -3804,11 +3804,11 @@
         {
           "nome": "Pâmela Rachadel",
           "aba": "Pâmela Rachadel",
-          "cargo": "Treasury Analyst",
+          "cargo": "Analista de Tesouraria",
           "area": "Finance",
           "nivel": "Pleno",
           "step": "II",
-          "gestor": "Vitor Pacheco",
+          "gestor": "Renata Leticia Bacoff Paim",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -3906,11 +3906,11 @@
         {
           "nome": "Renata Leticia Bacoff Paim",
           "aba": "Renata Leticia Bacoff Paim",
-          "cargo": "Banking Ops Analyst",
+          "cargo": "Treasury Manager",
           "area": "Finance",
           "nivel": "Pleno",
           "step": "V",
-          "gestor": "Vitor Pacheco",
+          "gestor": "Luciano Helio Bernardi",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -4015,11 +4015,11 @@
         {
           "nome": "Wilson Rodrigo Dalmolin",
           "aba": "Wilson Rodrigo Dalmolin",
-          "cargo": "Collection Manager",
+          "cargo": "Gerente de Cobrança",
           "area": "Jurídico e Cobrança",
           "nivel": "Gerência",
           "step": "I",
-          "gestor": "Leonardo Luís Perin",
+          "gestor": "Luciano Helio Bernardi",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -4117,11 +4117,11 @@
         {
           "nome": "Aline Silva Passos Nasciment",
           "aba": "Aline Silva Passos Nasciment",
-          "cargo": "Legal Assistant",
+          "cargo": "Analista de Cobrança",
           "area": "Jurídico e Cobrança",
           "nivel": "Pleno",
           "step": "III",
-          "gestor": "Silvana Muller",
+          "gestor": "Solange Gonçalves da Costa Pereira",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -4219,7 +4219,7 @@
         {
           "nome": "Daniela Oliveira Dutra da Si",
           "aba": "Daniela Oliveira Dutra da Si",
-          "cargo": "Legal Assistant",
+          "cargo": "Collection Specialist",
           "area": "Jurídico e Cobrança",
           "nivel": "Júnior",
           "step": "I",
@@ -4423,7 +4423,7 @@
         {
           "nome": "Izadora Maria Vidor Camara",
           "aba": "Izadora Maria Vidor Camara",
-          "cargo": "KDM Assistant",
+          "cargo": "Analista Jurídico",
           "area": "Jurídico e Cobrança",
           "nivel": "Júnior",
           "step": "V",
@@ -4525,7 +4525,7 @@
         {
           "nome": "Letícia Francisco dos Santos",
           "aba": "Letícia Francisco dos Santos",
-          "cargo": "KDM Assistant",
+          "cargo": "Assistente Administrativo",
           "area": "Jurídico e Cobrança",
           "nivel": "Júnior",
           "step": "I",
@@ -4627,7 +4627,7 @@
         {
           "nome": "Lilian Cantuária Delis da Co",
           "aba": "Lilian Cantuária Delis da Co",
-          "cargo": "Legal Assistant",
+          "cargo": "Assistente Jurídico",
           "area": "Jurídico e Cobrança",
           "nivel": "Júnior",
           "step": "I",
@@ -4729,7 +4729,7 @@
         {
           "nome": "Mara Giovanna Valente Pinto",
           "aba": "Mara Giovanna Valente Pinto",
-          "cargo": "Legal Assistant",
+          "cargo": "Assistente Jurídico",
           "area": "Jurídico e Cobrança",
           "nivel": "Júnior",
           "step": "I",
@@ -4831,7 +4831,7 @@
         {
           "nome": "Matheus da Silva Ferreira",
           "aba": "Matheus da Silva Ferreira",
-          "cargo": "Legal Assistant",
+          "cargo": "Analista Jurídico",
           "area": "Jurídico e Cobrança",
           "nivel": "Júnior",
           "step": "I",
@@ -5035,7 +5035,7 @@
         {
           "nome": "Raissa Estefany Venâncio Cos",
           "aba": "Raissa Estefany Venâncio Cos",
-          "cargo": "KDM Assistant",
+          "cargo": "Assistente Administrativo",
           "area": "Jurídico e Cobrança",
           "nivel": "Júnior",
           "step": "I",
@@ -5137,7 +5137,7 @@
         {
           "nome": "Tamara Mesquita Martio",
           "aba": "Tamara Mesquita Martio",
-          "cargo": "KDM Assistant",
+          "cargo": "Assistente Jurídico",
           "area": "Jurídico e Cobrança",
           "nivel": "Júnior",
           "step": "I",
@@ -5239,7 +5239,7 @@
         {
           "nome": "Aline Matos Vieira Albino",
           "aba": "Aline Matos Vieira Albino",
-          "cargo": "Collection Analyst",
+          "cargo": "Analista de Cobrança",
           "area": "Jurídico e Cobrança",
           "nivel": "Júnior",
           "step": "I",
@@ -5341,7 +5341,7 @@
         {
           "nome": "Andréa Carlos de Araujo",
           "aba": "Andréa Carlos de Araujo",
-          "cargo": "Collection Analyst",
+          "cargo": "Analista de Cobrança",
           "area": "Jurídico e Cobrança",
           "nivel": "Júnior",
           "step": "I",
@@ -5443,11 +5443,11 @@
         {
           "nome": "Daniela de Souza Kashiva",
           "aba": "Daniela de Souza Kashiva",
-          "cargo": "Collection Analyst",
+          "cargo": "Collection Specialist",
           "area": "Jurídico e Cobrança",
           "nivel": "Júnior",
           "step": "I",
-          "gestor": "Solange Gonçalves da Costa Pereira",
+          "gestor": "Silvana Muller",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -5545,7 +5545,7 @@
         {
           "nome": "Daniele Vanessa Severo Silva",
           "aba": "Daniele Vanessa Severo Silva",
-          "cargo": "Collection Analyst",
+          "cargo": "Analista de Cobrança",
           "area": "Jurídico e Cobrança",
           "nivel": "Júnior",
           "step": "I",
@@ -5647,7 +5647,7 @@
         {
           "nome": "Fernanda Garcia",
           "aba": "Fernanda Garcia",
-          "cargo": "Collection Analyst",
+          "cargo": "Analista de Cobrança",
           "area": "Jurídico e Cobrança",
           "nivel": "Júnior",
           "step": "I",
@@ -5749,7 +5749,7 @@
         {
           "nome": "Fernanda Marques Farias Seve",
           "aba": "Fernanda Marques Farias Seve",
-          "cargo": "Collection Analyst",
+          "cargo": "Analista de Cobrança",
           "area": "Jurídico e Cobrança",
           "nivel": "Júnior",
           "step": "I",
@@ -5851,7 +5851,7 @@
         {
           "nome": "Gabriela Fournaris Corrêa",
           "aba": "Gabriela Fournaris Corrêa",
-          "cargo": "Collection Analyst",
+          "cargo": "Analista de Cobrança",
           "area": "Jurídico e Cobrança",
           "nivel": "Júnior",
           "step": "I",
@@ -5953,7 +5953,7 @@
         {
           "nome": "George Antônio do Senhor Siq",
           "aba": "George Antônio do Senhor Siq",
-          "cargo": "Collection Analyst",
+          "cargo": "Analista de Cobrança",
           "area": "Jurídico e Cobrança",
           "nivel": "Júnior",
           "step": "I",
@@ -6055,7 +6055,7 @@
         {
           "nome": "Jaqueline de Oliveira Didier",
           "aba": "Jaqueline de Oliveira Didier",
-          "cargo": "Collection Analyst",
+          "cargo": "Analista de Cobrança",
           "area": "Jurídico e Cobrança",
           "nivel": "Júnior",
           "step": "I",
@@ -6157,7 +6157,7 @@
         {
           "nome": "Jennifer dos Santos Maciel",
           "aba": "Jennifer dos Santos Maciel",
-          "cargo": "Collection Analyst",
+          "cargo": "Analista de Cobrança",
           "area": "Jurídico e Cobrança",
           "nivel": "Júnior",
           "step": "I",
@@ -6259,7 +6259,7 @@
         {
           "nome": "Laryssa Cristiny Fernandes",
           "aba": "Laryssa Cristiny Fernandes",
-          "cargo": "Collection Analyst",
+          "cargo": "Analista de Cobrança",
           "area": "Jurídico e Cobrança",
           "nivel": "Júnior",
           "step": "I",
@@ -6463,11 +6463,11 @@
         {
           "nome": "Paula Eduarda Cardoso Betina",
           "aba": "Paula Eduarda Cardoso Betina",
-          "cargo": "Collection Analyst",
+          "cargo": "Analista de Relacionamento",
           "area": "Jurídico e Cobrança",
           "nivel": "Júnior",
           "step": "I",
-          "gestor": "Solange Gonçalves da Costa Pereira",
+          "gestor": "Andrieli Elmatos",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -6565,7 +6565,7 @@
         {
           "nome": "Vanessa da Silva",
           "aba": "Vanessa da Silva",
-          "cargo": "Collection Analyst",
+          "cargo": "Analista de Cobrança",
           "area": "Jurídico e Cobrança",
           "nivel": "Júnior",
           "step": "I",
@@ -6667,7 +6667,7 @@
         {
           "nome": "Silvana Muller",
           "aba": "Silvana Muller",
-          "cargo": "Legal Coordinator",
+          "cargo": "Coordenador de Legal Ops",
           "area": "Jurídico e Cobrança",
           "nivel": "Júnior",
           "step": "I",
@@ -6878,11 +6878,11 @@
         {
           "nome": "Eduardo Silva",
           "aba": "Eduardo Silva",
-          "cargo": "Marketing Analyst",
+          "cargo": "Product Marketing Manager",
           "area": "Marketing",
           "nivel": "Sênior",
           "step": "V",
-          "gestor": "Kauê B. Tomazelli",
+          "gestor": "Juliano Fernandes Santana",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -6980,7 +6980,7 @@
         {
           "nome": "Melissa Alves Camargo",
           "aba": "Melissa Alves Camargo",
-          "cargo": "Marketing Analyst",
+          "cargo": "Analista de Marketing",
           "area": "Marketing",
           "nivel": "Júnior",
           "step": "I",
@@ -7082,7 +7082,7 @@
         {
           "nome": "Thalita Leal Dutra Bristot",
           "aba": "Thalita Leal Dutra Bristot",
-          "cargo": "Marketing Analyst",
+          "cargo": "Analista de Marketing",
           "area": "Marketing",
           "nivel": "Júnior",
           "step": "V",
@@ -7184,7 +7184,7 @@
         {
           "nome": "Kauê B. Tomazelli",
           "aba": "Kauê B. Tomazelli",
-          "cargo": "Gerente de Growth",
+          "cargo": "Gerente de Growth Marketing",
           "area": "Marketing",
           "nivel": "Gerência",
           "step": "V",
@@ -7293,7 +7293,7 @@
         {
           "nome": "Amanda Elena de Almeida",
           "aba": "Amanda Elena de Almeida",
-          "cargo": "Analista de Employer Branding & Endomarketing",
+          "cargo": "Analista de Endomarketing",
           "area": "People",
           "nivel": "Pleno",
           "step": "V",
@@ -7395,7 +7395,7 @@
         {
           "nome": "Ana Paula de Britto Sosa",
           "aba": "Ana Paula de Britto Sosa",
-          "cargo": "Analista Administrativo de People",
+          "cargo": "Analista Administrativo",
           "area": "People",
           "nivel": "Júnior",
           "step": "II",
@@ -7497,7 +7497,7 @@
         {
           "nome": "Luana Beatris Xavier",
           "aba": "Luana Beatris Xavier",
-          "cargo": "People Business Partner",
+          "cargo": "Business Partner",
           "area": "People",
           "nivel": "Pleno",
           "step": "I",
@@ -7606,11 +7606,11 @@
         {
           "nome": "Alex Ricobom",
           "aba": "Alex Ricobom",
-          "cargo": "Product Manager",
+          "cargo": "Head of People",
           "area": "Produto e Design",
           "nivel": "Sênior",
           "step": "I",
-          "gestor": "Juliano Fernandes Santana",
+          "gestor": "Rodrigo Della Rocca Cruz",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -7817,7 +7817,7 @@
         {
           "nome": "Dasaev Melo Menezes",
           "aba": "Dasaev Melo Menezes",
-          "cargo": "Registration Analyst",
+          "cargo": "CS Onboarding Analyst",
           "area": "Relacionamento, Suporte e Onboarding",
           "nivel": "Júnior",
           "step": "I",
@@ -8119,11 +8119,11 @@
         {
           "nome": "Caroline Monguilhott Duarte",
           "aba": "Caroline Monguilhott Duarte",
-          "cargo": "CX Analyst",
+          "cargo": "Analista de Relacionamento",
           "area": "Relacionamento, Suporte e Onboarding",
           "nivel": "Júnior",
           "step": "III",
-          "gestor": "Joanna Rosa Mella Massing",
+          "gestor": "Renata Otacilio",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -8221,11 +8221,11 @@
         {
           "nome": "Caroline Regina Ramos de Oli",
           "aba": "Caroline Regina Ramos de Oli",
-          "cargo": "CX Analyst",
+          "cargo": "Analista de Relacionamento",
           "area": "Relacionamento, Suporte e Onboarding",
           "nivel": "Júnior",
           "step": "I",
-          "gestor": "Joanna Rosa Mella Massing",
+          "gestor": "Renata Otacilio",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -8323,7 +8323,7 @@
         {
           "nome": "Daiane de Souza Lopes",
           "aba": "Daiane de Souza Lopes",
-          "cargo": "CX Analyst",
+          "cargo": "Analista de Suporte",
           "area": "Relacionamento, Suporte e Onboarding",
           "nivel": "Júnior",
           "step": "I",
@@ -8425,11 +8425,11 @@
         {
           "nome": "Failla de Oliveira Pires",
           "aba": "Failla de Oliveira Pires",
-          "cargo": "CX Quality Analyst",
+          "cargo": "Registration Analyst",
           "area": "Relacionamento, Suporte e Onboarding",
           "nivel": "Pleno",
           "step": "I",
-          "gestor": "Joanna Rosa Mella Massing",
+          "gestor": "Andrieli Elmatos",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -8527,7 +8527,7 @@
         {
           "nome": "Francisco Bieging Gomes",
           "aba": "Francisco Bieging Gomes",
-          "cargo": "CX Analyst",
+          "cargo": "Analista de Suporte",
           "area": "Relacionamento, Suporte e Onboarding",
           "nivel": "Júnior",
           "step": "I",
@@ -8629,7 +8629,7 @@
         {
           "nome": "Juliana Xavier Simões",
           "aba": "Juliana Xavier Simões",
-          "cargo": "CX Analyst",
+          "cargo": "Analista de Suporte",
           "area": "Relacionamento, Suporte e Onboarding",
           "nivel": "Júnior",
           "step": "I",
@@ -8731,11 +8731,11 @@
         {
           "nome": "Lucas Garcia Freitas",
           "aba": "Lucas Garcia Freitas",
-          "cargo": "CX Analyst",
+          "cargo": "Registration Analyst",
           "area": "Relacionamento, Suporte e Onboarding",
           "nivel": "Júnior",
           "step": "I",
-          "gestor": "Joanna Rosa Mella Massing",
+          "gestor": "Andrieli Elmatos",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -8833,7 +8833,7 @@
         {
           "nome": "Lucas da Silva Ferreira",
           "aba": "Lucas da Silva Ferreira",
-          "cargo": "CX Analyst",
+          "cargo": "Analista de Qualidade",
           "area": "Relacionamento, Suporte e Onboarding",
           "nivel": "Júnior",
           "step": "II",
@@ -8935,7 +8935,7 @@
         {
           "nome": "Rafael Ian Barreto de Meneze",
           "aba": "Rafael Ian Barreto de Meneze",
-          "cargo": "CX Analyst",
+          "cargo": "Analista de Suporte",
           "area": "Relacionamento, Suporte e Onboarding",
           "nivel": "Júnior",
           "step": "I",
@@ -9037,11 +9037,11 @@
         {
           "nome": "Vitória Kimberllan Carvalho ",
           "aba": "Vitória Kimberllan Carvalho ",
-          "cargo": "CX Analyst",
+          "cargo": "Analista de Relacionamento",
           "area": "Relacionamento, Suporte e Onboarding",
           "nivel": "Júnior",
           "step": "III",
-          "gestor": "Joanna Rosa Mella Massing",
+          "gestor": "Andrieli Elmatos",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -9139,7 +9139,7 @@
         {
           "nome": "Alisson Barbosa",
           "aba": "Alisson Barbosa",
-          "cargo": "CS Analyst",
+          "cargo": "Analista de Relacionamento",
           "area": "Relacionamento, Suporte e Onboarding",
           "nivel": "Júnior",
           "step": "II",
@@ -9241,11 +9241,11 @@
         {
           "nome": "Ana Paula Bunn",
           "aba": "Ana Paula Bunn",
-          "cargo": "CS Analyst",
+          "cargo": "Analista de Relacionamento",
           "area": "Relacionamento, Suporte e Onboarding",
           "nivel": "Júnior",
           "step": "IV",
-          "gestor": "Renata Otacilio",
+          "gestor": "Andrieli Elmatos",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -9343,7 +9343,7 @@
         {
           "nome": "Andresa Maria Ziegler",
           "aba": "Andresa Maria Ziegler",
-          "cargo": "CS Analyst",
+          "cargo": "Analista de Relacionamento",
           "area": "Relacionamento, Suporte e Onboarding",
           "nivel": "Júnior",
           "step": "III",
@@ -9445,11 +9445,11 @@
         {
           "nome": "Cauã Daniel Lima da Silva",
           "aba": "Cauã Daniel Lima da Silva",
-          "cargo": "CS Analyst",
+          "cargo": "Analista de Relacionamento",
           "area": "Relacionamento, Suporte e Onboarding",
           "nivel": "Júnior",
           "step": "II",
-          "gestor": "Renata Otacilio",
+          "gestor": "Andrieli Elmatos",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -9645,11 +9645,11 @@
         {
           "nome": "Joel Fernandes Dini",
           "aba": "Joel Fernandes Dini",
-          "cargo": "CS Analyst",
+          "cargo": "CS Onboarding Analyst",
           "area": "Relacionamento, Suporte e Onboarding",
           "nivel": "Pleno",
           "step": "IV",
-          "gestor": "Renata Otacilio",
+          "gestor": "Andrieli Elmatos",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -9747,11 +9747,11 @@
         {
           "nome": "Manoela Paola Walter",
           "aba": "Manoela Paola Walter",
-          "cargo": "CS Analyst",
+          "cargo": "Analista de Relacionamento",
           "area": "Relacionamento, Suporte e Onboarding",
           "nivel": "Júnior",
           "step": "I",
-          "gestor": "Renata Otacilio",
+          "gestor": "Andrieli Elmatos",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -9849,11 +9849,11 @@
         {
           "nome": "Pedro Paulo Magalhães Jeremi",
           "aba": "Pedro Paulo Magalhães Jeremi",
-          "cargo": "CS Analyst",
+          "cargo": "Líder de Dados",
           "area": "Relacionamento, Suporte e Onboarding",
           "nivel": "Júnior",
           "step": "I",
-          "gestor": "Renata Otacilio",
+          "gestor": "Rodrigo Costa",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -10053,7 +10053,7 @@
         {
           "nome": "Tuany Ribeiro",
           "aba": "Tuany Ribeiro",
-          "cargo": "CS Analyst",
+          "cargo": "Analista de Relacionamento",
           "area": "Relacionamento, Suporte e Onboarding",
           "nivel": "Júnior",
           "step": "III",
@@ -10155,7 +10155,7 @@
         {
           "nome": "Sabrina Vieira",
           "aba": "Sabrina Vieira",
-          "cargo": "Relacionamentos Manager",
+          "cargo": "CS & CX Manager",
           "area": "Relacionamento, Suporte e Onboarding",
           "nivel": "Gerência",
           "step": "I",
@@ -10257,7 +10257,7 @@
         {
           "nome": "Andrieli Elmatos",
           "aba": "Andrieli Elmatos",
-          "cargo": "Coordenadora de Implantação",
+          "cargo": "Coordenadora de Implatação",
           "area": "Relacionamento, Suporte e Onboarding",
           "nivel": "Coordenação",
           "step": "I",
@@ -10359,7 +10359,7 @@
         {
           "nome": "Joanna Rosa Mella Massing",
           "aba": "Joanna Rosa Mella Massing",
-          "cargo": "Coordenadora de Suporte",
+          "cargo": "Customer Experience Coordinator",
           "area": "Relacionamento, Suporte e Onboarding",
           "nivel": "Coordenação",
           "step": "I",
@@ -10461,7 +10461,7 @@
         {
           "nome": "Renata Otacilio",
           "aba": "Renata Otacilio",
-          "cargo": "Coordenadora de Relacionamentos",
+          "cargo": "Analista de Relacionamento",
           "area": "Relacionamento, Suporte e Onboarding",
           "nivel": "Coordenação",
           "step": "I",
@@ -10570,11 +10570,11 @@
         {
           "nome": "Augusto Degrazia",
           "aba": "Augusto Degrazia",
-          "cargo": "Executivo de Negócios",
+          "cargo": "Executivo(a) de Negócios",
           "area": "Sales",
           "nivel": "Júnior",
           "step": "II",
-          "gestor": null,
+          "gestor": "Guilherme Arquer Giacometti",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -10672,11 +10672,11 @@
         {
           "nome": "Dimaima Maicá",
           "aba": "Dimaima Maicá",
-          "cargo": "Executivo de Negócios",
+          "cargo": "Executivo(a) de Negócios",
           "area": "Sales",
           "nivel": "Júnior",
           "step": "I",
-          "gestor": "Ayrton de Sena",
+          "gestor": "Guilherme Arquer Giacometti",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -10774,11 +10774,11 @@
         {
           "nome": "Felipe Moreira",
           "aba": "Felipe Moreira",
-          "cargo": "Executivo de Negócios",
+          "cargo": "Executivo(a) de Negócios",
           "area": "Sales",
           "nivel": "Júnior",
           "step": "I",
-          "gestor": "Ayrton de Sena",
+          "gestor": "Guilherme Arquer Giacometti",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -10876,11 +10876,11 @@
         {
           "nome": "Jessica Correa",
           "aba": "Jessica Correa",
-          "cargo": "Executivo de Negócios",
+          "cargo": "Executivo(a) de Negócios",
           "area": "Sales",
           "nivel": "Pleno",
           "step": "V",
-          "gestor": "Ayrton de Sena",
+          "gestor": "Guilherme Arquer Giacometti",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -10978,11 +10978,11 @@
         {
           "nome": "Natália Cristina Mello de Se",
           "aba": "Natália Cristina Mello de Se",
-          "cargo": "Executivo de Negócios",
+          "cargo": "Executivo(a) de Negócios",
           "area": "Sales",
           "nivel": "Pleno",
           "step": "II",
-          "gestor": "Ayrton de Sena",
+          "gestor": "Guilherme Arquer Giacometti",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -11080,11 +11080,11 @@
         {
           "nome": "Vitoria Jessica Barbosa Melo",
           "aba": "Vitoria Jessica Barbosa Melo",
-          "cargo": "Executivo de Negócios",
+          "cargo": "SDR",
           "area": "Sales",
           "nivel": "Júnior",
           "step": "I",
-          "gestor": null,
+          "gestor": "Humberto Basso",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -11182,11 +11182,11 @@
         {
           "nome": "Wagner Augusto Ferreira",
           "aba": "Wagner Augusto Ferreira",
-          "cargo": "Executivo de Negócios",
+          "cargo": "Executivo(a) de Negócios",
           "area": "Sales",
           "nivel": "Júnior",
           "step": "I",
-          "gestor": "Ayrton de Sena",
+          "gestor": "Guilherme Arquer Giacometti",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -11284,11 +11284,11 @@
         {
           "nome": "Juliana Ferreira da Costa",
           "aba": "Juliana Ferreira da Costa",
-          "cargo": "Executivo de Negócios",
+          "cargo": "Executivo(a) de Negócios",
           "area": "Sales",
           "nivel": "Júnior",
           "step": "II",
-          "gestor": "Ayrton de Sena",
+          "gestor": "Guilherme Arquer Giacometti",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -11386,7 +11386,7 @@
         {
           "nome": "Willian Soares Alves",
           "aba": "Willian Soares Alves",
-          "cargo": "Executivo de ERP",
+          "cargo": "Analista de Sucesso do Parceiro",
           "area": "Sales",
           "nivel": "Júnior",
           "step": "III",
@@ -11590,7 +11590,7 @@
           "area": "Sales",
           "nivel": "Coordenação",
           "step": "I",
-          "gestor": "Gianluca Dal Zotto",
+          "gestor": "Guilherme Arquer Giacometti",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -11688,11 +11688,11 @@
         {
           "nome": "Bruno Antônio Veronese",
           "aba": "Bruno Antônio Veronese",
-          "cargo": "Coordenador de Vendas",
+          "cargo": "Coordenador de Sales",
           "area": "Sales",
           "nivel": "Coordenação",
           "step": "I",
-          "gestor": "Gianluca Dal Zotto",
+          "gestor": "Guilherme Arquer Giacometti",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -11790,7 +11790,7 @@
         {
           "nome": "Guilherme Arquer Giacometti",
           "aba": "Guilherme Arquer Giacometti",
-          "cargo": "Gerente de Vendas",
+          "cargo": "Sales Manager",
           "area": "Sales",
           "nivel": "Gerência",
           "step": "I",
@@ -11892,7 +11892,7 @@
         {
           "nome": "Humberto Basso",
           "aba": "Humberto Basso",
-          "cargo": "Coordenador de Vendas",
+          "cargo": "Coordenador de Sales",
           "area": "Sales",
           "nivel": "Coordenação",
           "step": "II",
@@ -11994,7 +11994,7 @@
         {
           "nome": "Bruno de Mattos Porto",
           "aba": "Bruno de Mattos Porto",
-          "cargo": "Executivo de Negócios",
+          "cargo": "Executivo de Banking Pleno",
           "area": "Sales",
           "nivel": "Júnior",
           "step": "I",
@@ -12096,11 +12096,11 @@
         {
           "nome": "Michelle Pacheco Soares",
           "aba": "Michelle Pacheco Soares",
-          "cargo": "Executivo de Negócios",
+          "cargo": "Executivo(a) de Negócios",
           "area": "Sales",
           "nivel": "Júnior",
           "step": "III",
-          "gestor": "Ayrton de Sena",
+          "gestor": "Guilherme Arquer Giacometti",
           "qtd_perguntas": 8,
           "perguntas": [
             {
@@ -12198,7 +12198,7 @@
         {
           "nome": "Gianluca Dal Zotto",
           "aba": "Gianluca Dal Zotto",
-          "cargo": "Head of Sales",
+          "cargo": "Head de Sales",
           "area": "Sales",
           "nivel": "S-Team",
           "step": "IV",

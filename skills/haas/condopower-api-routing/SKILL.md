@@ -6,6 +6,12 @@ version: 2.0.0
 
 # condopower-api routing — endpoints, proxy e diagnóstico
 
+> **⚠️ CARREGUE ESTA SKILL SEMPRE JUNTO COM `condopower-api`.**
+> A skill `condopower-api` lista apenas a URL direta (`condopower-api.aiexpert-condoconta.info`)
+> que NUNCA funciona do container (timeout 60s). Esta skill é a única que documenta a rota
+> correta via webhook-proxy. **5+ timeouts consecutivos em 31/08/2026** antes da descoberta
+> da rota correta. Padrão de chamada funcional documentado em `references/access-verify-via-proxy.md`.
+
 ## Arquitetura atual (Agosto/2026)
 
 ```
@@ -18,7 +24,7 @@ NAVEGADOR (colaborador)
 AGENTE FALAI (container)
   │
   └─ POST /webhooks/condopower-api  ──→ webhook-proxy ──→ condopower-api
-      └─ headers: X-Service-Account-Token + auth  (obrigatórios)
+      └─ headers: X-Service-Account-Token + auth (obrigatórios) E incluir sa_token/auth no corpo do JSON (payload enrichment) | Falai (Python), crons |
       └─ usado para: access.verify, form.*.get, pulse.*, celebrations.*, roster.sync
 ```
 
@@ -72,7 +78,7 @@ Isso retorna as respostas anônimas da área sem quebrar o anonimato individual.
 
 | Sintoma | Causa | Ação |
 |---|---|---|
-| 401 `Unauthorized` | Faltam headers de auth | Adicionar `X-Service-Account-Token` + `auth` |
+| 401 Unauthorized | Faltam headers ou payload enrichment | Adicionar X-Service-Account-Token + auth (headers) E incluir sa_token/auth no corpo (payload) |
 | 404 "does not accept a subpath" | `/rpc` no path manual | Remover `/rpc` — usar só `/webhooks/condopower-api` |
 | 404 HTML do nginx (COM auth) | Backend caído (uvicorn/gunicorn) | Reiniciar aplicação no servidor |
 | Timeout 60s | Container tentou URL direta | Usar webhook-proxy |
@@ -95,6 +101,7 @@ No Slack, asteriscos aplicam **negrito**. Links entre asteriscos quebram visualm
 ## Ver também
 
 - `condopower-api` — catálogo de métodos e contratos (v2.1.0). ⚠️ Esta skill omite o webhook-proxy e os headers de auth; se a URL direta der timeout, carregue a skill `condopower-api-routing`.
+- `references/access-verify-via-proxy.md` — código Python funcional completo para access.verify via webhook-proxy (comprovado 31/08/2026, 0.2s)
 - `references/container-routing-fallback.md` — caso real de timeout na URL direta e recuperação com o proxy (27/08/2026)
 - `condopower-rbac` — regras de identificação e níveis de acesso (levels 1-5)
 - `condopower-formularios` — CORS, proxy e padrão dos formulários HTML

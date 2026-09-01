@@ -117,7 +117,7 @@ whatsapp:
   port: 3000
   require_mention: true
 telegram:
-  allowed_chats: 5772183211,8523247194,5925310763
+  allowed_chats: 5772183211,8523247194,5925310763,-5378502157
 command_allowlist:
   - overwrite project env/config file
   - script execution via heredoc

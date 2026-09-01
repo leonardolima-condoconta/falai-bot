@@ -7,7 +7,7 @@ version: 1.2.0
 # condopower-formularios — formulários HTML de People
 
 ## Changelog
-- **v1.2.0 (28/08/2026):** Reordenação de perguntas: Q7↔Q8 na autoavaliação (swap + rotação de `n`), Q5→Q7→Q6→Q5 no líder (rotação de 3 posições). Step atual do Confluence no form do líder. Layout 1x1 full-screen (60/40, 9box grande, scroll único). GitHub push com limpeza de tokens.
+- **v1.3.0 (01/09/2026):** 1x1 refatorado com `div.stars` (padrão autoavaliação/líder) + mapeamento semântico por palavra-chave. Skill `falai-form-1x1` criada com referências. Duplicatas removidas: `gerar_form_avaliacao_v2.py`, `gerar_form_autoavaliacao.py`, `gerar_form_lider_v2.py` (usar apenas `gerar_form_avaliacao.py`, `gerar_form_lider.py`, `gerar_form_1x1.py`). Hermes tem suporte nativo a webhooks (`platforms.webhook`) para receber POST de serviços externos.
 - **v1.1.0 (27/08/2026):** Endpoint do webhook-proxy corrigido (sem `/rpc`). `gerar_form_lider.py` reescrito 100% client-side. Pergunta de Recomendação removida. Validação JS de obrigatoriedade adicionada em todos os forms.
 
 ## Arquivos por formulário

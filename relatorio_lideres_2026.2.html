@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Relatório de Líderes e Liderados — Ciclo 2026.2 — CondoConta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F4F6FA;--ink:#0C2440;--navy:#14365C;--navy-deep:#0A2138;
+  --gold:#F4B72C;--gold-deep:#C98F0C;--muted:#5E748C;--line:#DCE3EC;
+  --line-2:#EAEFF5;--card:#FFFFFF;--green:#2E7D4F;--red:#B23B3B;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{
+  background:var(--paper);color:var(--ink);
+  font-family:'Inter',system-ui,sans-serif;line-height:1.5;
+  -webkit-font-smoothing:antialiased;padding:40px 20px;
+}
+.sheet{max-width:1100px;margin:0 auto;background:var(--card);
+  box-shadow:0 24px 60px -28px rgba(12,36,64,.35),0 0 0 1px var(--line);}
+header{
+  background:var(--navy-deep);color:#fff;padding:30px 44px;
+}
+.brandrow{display:flex;justify-content:space-between;align-items:center;
+  margin-bottom:22px;flex-wrap:wrap;gap:8px;}
+.brandrow .logo{display:flex;align-items:center;gap:10px;
+  font-family:'Sora',sans-serif;font-weight:700;font-size:15px;}
+.brandrow .logo b{color:var(--gold)}
+.brandrow .logo span{color:#AFC1D6;font-weight:600}
+.tag-conf{font-family:'IBM Plex Mono',monospace;font-size:10px;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--gold);
+  border:1px solid rgba(244,183,44,.4);padding:5px 10px;border-radius:4px;}
+header h1{font-family:'Sora',sans-serif;font-size:28px;font-weight:800;
+  letter-spacing:-.02em;line-height:1.1}
+header h1 em{color:var(--gold);font-style:normal}
+header .sub{color:#AFC1D6;margin-top:8px;font-size:13px}
+.stats-bar{display:flex;gap:16px;padding:20px 44px;
+  border-bottom:1px solid var(--line);flex-wrap:wrap;}
+.stat-item{flex:1;min-width:120px;text-align:center;
+  padding:14px 10px;background:#FBFCFE;border-radius:8px;
+  border:1px solid var(--line-2);}
+.stat-item .num{font-family:'Sora',sans-serif;font-size:28px;font-weight:800;
+  color:var(--navy);display:block;line-height:1.1}
+.stat-item .label{font-size:11px;color:var(--muted);margin-top:4px;
+  font-family:'IBM Plex Mono',monospace;text-transform:uppercase;
+  letter-spacing:.04em;}
+.pad{padding:20px 44px}
+.leader-block{margin-bottom:28px;border:1px solid var(--line);
+  border-radius:10px;overflow:hidden;}
+.leader-head{background:var(--navy);color:#fff;padding:16px 22px;
+  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;}
+.leader-head h3{font-family:'Sora',sans-serif;font-size:16px;font-weight:700;}
+.leader-head .badge{font-family:'IBM Plex Mono',monospace;font-size:10px;
+  background:rgba(244,183,44,.18);color:var(--gold);padding:4px 10px;
+  border-radius:4px;letter-spacing:.08em;text-transform:uppercase;}
+.leader-head .count{font-family:'Sora',sans-serif;font-size:13px;
+  color:#AFC1D6;font-weight:500;}
+table{width:100%;border-collapse:collapse;}
+thead th{background:#F4F6FA;color:var(--muted);font-family:'IBM Plex Mono',monospace;
+  font-size:10px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;
+  text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);}
+tbody td{padding:10px 14px;font-size:13px;border-bottom:1px solid var(--line-2);}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:hover{background:#FAFBFD}
+td.name{font-weight:600;color:var(--navy);}
+td.job{color:var(--ink);font-size:12.5px}
+td.dept{color:var(--muted);font-size:11.5px}
+td.email{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--muted);}
+td.link a{font-family:'IBM Plex Mono',monospace;font-size:10.5px;
+  color:var(--navy);text-decoration:none;border-bottom:1px dashed var(--line);
+  padding-bottom:1px;}
+td.link a:hover{color:var(--gold-deep);border-bottom-color:var(--gold-deep)}
+td.link .na{color:#ccc;font-size:10.5px;font-family:'IBM Plex Mono',monospace;}
+footer{
+  background:var(--navy-deep);color:#AFC1D6;padding:20px 44px;
+  display:flex;justify-content:space-between;
+  font-family:'IBM Plex Mono',monospace;font-size:10.5px;flex-wrap:wrap;gap:8px;}
+footer b{color:#fff}footer .gold{color:var(--gold)}
+
+@media (max-width:680px){
+  body{padding:14px 8px}
+  header,.pad,.stats-bar,footer{padding-left:20px;padding-right:20px}
+  header h1{font-size:22px}
+  .stats-bar{flex-direction:column;gap:8px}
+  thead th,tbody td{padding:8px 10px;font-size:11px}
+  td.email,td.link a{font-size:9.5px}
+}
+@media print{
+  body{background:#fff;padding:0}
+  .sheet{box-shadow:none;max-width:100%}
+  header,footer{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+</style>
+</head>
+<body>
+<div class="sheet">
+<header>
+<div class="brandrow">
+<div class="logo"><b>CondoConta</b><span>· People</span></div>
+<div class="tag-conf">Confidencial</div>
+</div>
+<h1>Relatório de <em>Líderes e Liderados</em></h1>
+<div class="sub">Ciclo de Avaliação de Desempenho 2026.2 · Gerado em 31/08/2026</div>
+</header>
+
+<div class="stats-bar">
+<div class="stat-item"><span class="num">25</span><span class="label">Líderes</span></div>
+<div class="stat-item"><span class="num">121</span><span class="label">Liderados</span></div>
+<div class="stat-item"><span class="num">117</span><span class="label">Com e-mail</span></div>
+<div class="stat-item"><span class="num">4</span><span class="label">Sem e-mail</span></div>
+</div>
+
+<div class="pad">
+<div class="leader-block">
+<div class="leader-head">
+<div><h3>Andrieli Elmatos</h3></div>
+<div style="display:flex;align-items:center;gap:12px">
+<span class="count">10 liderados</span>
+<span class="badge">Avaliação Líder</span>
+</div></div>
+<table><thead><tr><th>Liderado</th><th>Cargo</th><th>Área</th><th>E-mail</th><th>Link Avaliação</th></tr></thead><tbody>
+<tr>
+<td class="name">Ana Paula Bunn</td>
+<td class="job">Analista de Relacionamento</td>
+<td class="dept">Relacionamento</td>
+<td class="email">ana.bunn@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-ana-paula-bunn.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Cauã Daniel Lima da Silva</td>
+<td class="job">Analista de Relacionamento</td>
+<td class="dept">Relacionamento</td>
+<td class="email">caua.lima@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-cau-daniel-lima-da-silva.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Dasaev Melo Menezes</td>
+<td class="job">CS Onboarding Analyst</td>
+<td class="dept">Implantação</td>
+<td class="email">dasaev.menezes@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-dasaev-melo-menezes.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Failla de Oliveira Pires</td>
+<td class="job">Registration Analyst</td>
+<td class="dept">Implantação</td>
+<td class="email">failla.pires@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-failla-de-oliveira-pires.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Joel Fernandes Dini</td>
+<td class="job">CS Onboarding Analyst</td>
+<td class="dept">Implantação</td>
+<td class="email">joel.dini@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-joel-fernandes-dini.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Lucas Garcia Freitas</td>
+<td class="job">Registration Analyst</td>
+<td class="dept">Implantação</td>
+<td class="email">lucas.freitas@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-lucas-garcia-freitas.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Manoela Paola Walter</td>
+<td class="job">Analista de Relacionamento</td>
+<td class="dept">Relacionamento</td>
+<td class="email">manoela.walter@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-manoela-paola-walter.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Olivio Cichovicz Neto</td>
+<td class="job">Registration Analyst</td>
+<td class="dept">Implantação</td>
+<td class="email">olivio.neto@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-olivio-cichovicz-neto.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Pedro Paulo Magalhães Jeremias</td>
+<td class="job">CS Onboarding Analyst</td>
+<td class="dept">Implantação</td>
+<td class="email">pedro.jeremias@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-pedro-paulo-magalhes-jeremias.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Vitória Kimberllan Carvalho Lemos de Sousa</td>
+<td class="job">Analista de Relacionamento</td>
+<td class="dept">Implantação</td>
+<td class="email">vitoria.sousa@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-vitria-kimberllan-carvalho-lemos-de-sous.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+</tbody></table></div>
+
+<div class="leader-block">
+<div class="leader-head">
+<div><h3>Ayrton de Sena</h3></div>
+<div style="display:flex;align-items:center;gap:12px">
+<span class="count">1 liderado</span>
+<span class="badge">Avaliação Líder</span>
+</div></div>
+<table><thead><tr><th>Liderado</th><th>Cargo</th><th>Área</th><th>E-mail</th><th>Link Avaliação</th></tr></thead><tbody>
+<tr>
+<td class="name">Douglas Filipe de Souza Moreira</td>
+<td class="job">Gerente Comercial</td>
+<td class="dept">Sales</td>
+<td class="email">—</td>
+<td class="link"><span class="na">sem e-mail</span></td>
+</tr>
+</tbody></table></div>
+
+<div class="leader-block">
+<div class="leader-head">
+<div><h3>Franco Maiole Brognoli</h3></div>
+<div style="display:flex;align-items:center;gap:12px">
+<span class="count">3 liderados</span>
+<span class="badge">Avaliação Líder</span>
+</div></div>
+<table><thead><tr><th>Liderado</th><th>Cargo</th><th>Área</th><th>E-mail</th><th>Link Avaliação</th></tr></thead><tbody>
+<tr>
+<td class="name">André Romão de Oliveira</td>
+<td class="job">Analista de Dados</td>
+<td class="dept">Finance</td>
+<td class="email">andre.oliveira@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-andr-romo-de-oliveira.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Leonardo de Lima</td>
+<td class="job">AI Expert Analyst</td>
+<td class="dept">Finance</td>
+<td class="email">leonardo.lima@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-leonardo-de-lima.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Marina Júlia Mariano</td>
+<td class="job">Analista Contábil</td>
+<td class="dept">Finance</td>
+<td class="email">—</td>
+<td class="link"><span class="na">sem e-mail</span></td>
+</tr>
+</tbody></table></div>
+
+<div class="leader-block">
+<div class="leader-head">
+<div><h3>Gianluca Dal Zotto</h3></div>
+<div style="display:flex;align-items:center;gap:12px">
+<span class="count">2 liderados</span>
+<span class="badge">Avaliação Líder</span>
+</div></div>
+<table><thead><tr><th>Liderado</th><th>Cargo</th><th>Área</th><th>E-mail</th><th>Link Avaliação</th></tr></thead><tbody>
+<tr>
+<td class="name">Guilherme Arquer Giacometti</td>
+<td class="job">Sales Manager</td>
+<td class="dept">Sales</td>
+<td class="email">guilherme.giacometti@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-guilherme-arquer-giacometti.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Humberto Basso</td>
+<td class="job">Coordenador de Sales</td>
+<td class="dept">Sales</td>
+<td class="email">humberto.basso@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-humberto-basso.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+</tbody></table></div>
+
+<div class="leader-block">
+<div class="leader-head">
+<div><h3>Guilherme Arquer Giacometti</h3></div>
+<div style="display:flex;align-items:center;gap:12px">
+<span class="count">9 liderados</span>
+<span class="badge">Avaliação Líder</span>
+</div></div>
+<table><thead><tr><th>Liderado</th><th>Cargo</th><th>Área</th><th>E-mail</th><th>Link Avaliação</th></tr></thead><tbody>
+<tr>
+<td class="name">Ayrton de Sena</td>
+<td class="job">Coordenador de Sales</td>
+<td class="dept">Sales</td>
+<td class="email">ayrton.sena@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-ayrton-de-sena.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Bruno Antônio Veronese</td>
+<td class="job">Coordenador de Sales</td>
+<td class="dept">Sales</td>
+<td class="email">bruno.veronese@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-bruno-antnio-veronese.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Dimaima Maicá</td>
+<td class="job">Executivo(a) de Negócios</td>
+<td class="dept">Sales</td>
+<td class="email">dimaima.maica@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-dimaima-maic.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Felipe Moreira</td>
+<td class="job">Executivo(a) de Negócios</td>
+<td class="dept">Sales</td>
+<td class="email">felipe.moreira@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-felipe-moreira.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Jessica Correa</td>
+<td class="job">Executivo(a) de Negócios</td>
+<td class="dept">Sales</td>
+<td class="email">jessica.correa@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-jessica-correa.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Juliana Ferreira da Costa</td>
+<td class="job">Executivo(a) de Negócios</td>
+<td class="dept">Sales</td>
+<td class="email">juliana.costa@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-juliana-ferreira-da-costa.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Michelle Pacheco Soares</td>
+<td class="job">Executivo(a) de Negócios</td>
+<td class="dept">Sales</td>
+<td class="email">michelle.Pacheco@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-michelle-pacheco-soares.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Natália Cristina Mello de Seabra</td>
+<td class="job">Executivo(a) de Negócios</td>
+<td class="dept">Sales</td>
+<td class="email">natalia.seabra@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-natlia-cristina-mello-de-seabra.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Wagner Augusto Ferreira</td>
+<td class="job">Executivo(a) de Negócios</td>
+<td class="dept">Sales</td>
+<td class="email">wagner.ferreira@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-wagner-augusto-ferreira.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+</tbody></table></div>
+
+<div class="leader-block">
+<div class="leader-head">
+<div><h3>Humberto Basso</h3></div>
+<div style="display:flex;align-items:center;gap:12px">
+<span class="count">3 liderados</span>
+<span class="badge">Avaliação Líder</span>
+</div></div>
+<table><thead><tr><th>Liderado</th><th>Cargo</th><th>Área</th><th>E-mail</th><th>Link Avaliação</th></tr></thead><tbody>
+<tr>
+<td class="name">Bruno de Mattos Porto</td>
+<td class="job">Executivo de Banking Pleno</td>
+<td class="dept">Sales</td>
+<td class="email">bruno.mattos@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-bruno-de-mattos-porto.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Vitoria Jessica Barbosa Melo</td>
+<td class="job">SDR</td>
+<td class="dept">Sales</td>
+<td class="email">vitoria.melo@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-vitoria-jessica-barbosa-melo.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Willian Soares Alves</td>
+<td class="job">Analista de Sucesso do Parceiro</td>
+<td class="dept">Sales</td>
+<td class="email">willian.alves@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-willian-soares-alves.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+</tbody></table></div>
+
+<div class="leader-block">
+<div class="leader-head">
+<div><h3>Joanna Rosa Mella Massing</h3></div>
+<div style="display:flex;align-items:center;gap:12px">
+<span class="count">6 liderados</span>
+<span class="badge">Avaliação Líder</span>
+</div></div>
+<table><thead><tr><th>Liderado</th><th>Cargo</th><th>Área</th><th>E-mail</th><th>Link Avaliação</th></tr></thead><tbody>
+<tr>
+<td class="name">Caroline Regina Ramos de Oliveira</td>
+<td class="job">Analista de Suporte</td>
+<td class="dept">Suporte</td>
+<td class="email">caroline.oliveira@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-caroline-regina-ramos-de-oliveira.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Daiane de Souza Lopes</td>
+<td class="job">Analista de Suporte</td>
+<td class="dept">Suporte</td>
+<td class="email">daiane.lopes@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-daiane-de-souza-lopes.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Francisco Bieging Gomes</td>
+<td class="job">Analista de Suporte</td>
+<td class="dept">Suporte</td>
+<td class="email">francisco.gomes@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-francisco-bieging-gomes.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Juliana Xavier Simões</td>
+<td class="job">Analista de Suporte</td>
+<td class="dept">Suporte</td>
+<td class="email">juliana.simoes@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-juliana-xavier-simes.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Lucas da Silva Ferreira</td>
+<td class="job">Analista de Qualidade</td>
+<td class="dept">Suporte</td>
+<td class="email">lucas.ferreira@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-lucas-da-silva-ferreira.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Rafael Ian Barreto de Menezes</td>
+<td class="job">Analista de Suporte</td>
+<td class="dept">Suporte</td>
+<td class="email">rafael.menezes@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-rafael-ian-barreto-de-menezes.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+</tbody></table></div>
+
+<div class="leader-block">
+<div class="leader-head">
+<div><h3>Juliano Fernandes Santana</h3></div>
+<div style="display:flex;align-items:center;gap:12px">
+<span class="count">4 liderados</span>
+<span class="badge">Avaliação Líder</span>
+</div></div>
+<table><thead><tr><th>Liderado</th><th>Cargo</th><th>Área</th><th>E-mail</th><th>Link Avaliação</th></tr></thead><tbody>
+<tr>
+<td class="name">Eduardo Silva</td>
+<td class="job">Product Marketing Manager</td>
+<td class="dept">Product</td>
+<td class="email">eduardo.silva@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-eduardo-silva.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Felipe Andre Deistel Ferreira da Silva</td>
+<td class="job">Product Manager</td>
+<td class="dept">Product</td>
+<td class="email">felipe.deistel@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-felipe-andre-deistel-ferreira-da-silva.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Rodrigo Silva da Luz</td>
+<td class="job">Tech Lead AI Expert</td>
+<td class="dept">Product</td>
+<td class="email">rodrigo.luz@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-rodrigo-silva-da-luz.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Vinicius Marques Rocha</td>
+<td class="job">Product Designer</td>
+<td class="dept">Product</td>
+<td class="email">vinicius.rocha@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-vinicius-marques-rocha.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+</tbody></table></div>
+
+<div class="leader-block">
+<div class="leader-head">
+<div><h3>Kauê B. Tomazelli</h3></div>
+<div style="display:flex;align-items:center;gap:12px">
+<span class="count">3 liderados</span>
+<span class="badge">Avaliação Líder</span>
+</div></div>
+<table><thead><tr><th>Liderado</th><th>Cargo</th><th>Área</th><th>E-mail</th><th>Link Avaliação</th></tr></thead><tbody>
+<tr>
+<td class="name">Melissa Alves Camargo</td>
+<td class="job">Analista de Marketing</td>
+<td class="dept">Marketing</td>
+<td class="email">melissa.camargo@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-melissa-alves-camargo.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Thalita Leal Dutra Bristot</td>
+<td class="job">Analista de Marketing</td>
+<td class="dept">Marketing</td>
+<td class="email">thalita.dutra@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-thalita-leal-dutra-bristot.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Valter Fadul Perez</td>
+<td class="job">AI Expert Analyst</td>
+<td class="dept">Marketing</td>
+<td class="email">valter.perez@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-valter-fadul-perez.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+</tbody></table></div>
+
+<div class="leader-block">
+<div class="leader-head">
+<div><h3>Leonardo Luís Perin</h3></div>
+<div style="display:flex;align-items:center;gap:12px">
+<span class="count">7 liderados</span>
+<span class="badge">Avaliação Líder</span>
+</div></div>
+<table><thead><tr><th>Liderado</th><th>Cargo</th><th>Área</th><th>E-mail</th><th>Link Avaliação</th></tr></thead><tbody>
+<tr>
+<td class="name">Bruno Bender Ribeiro</td>
+<td class="job">Cientista de Dados</td>
+<td class="dept">Credit Risk</td>
+<td class="email">bruno.bender@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-bruno-bender-ribeiro.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Fernando Legat Springmann</td>
+<td class="job">Analista de FP&A</td>
+<td class="dept">Finance</td>
+<td class="email">fernando.springmann@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-fernando-legat-springmann.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Franco Maiole Brognoli</td>
+<td class="job">Coordenador de Controladoria</td>
+<td class="dept">Finance</td>
+<td class="email">franco.brognoli@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-franco-maiole-brognoli.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Gregori Anastase Teixeira Koumoulentzos</td>
+<td class="job">Analista de Crédito</td>
+<td class="dept">Credit Risk</td>
+<td class="email">gregori.anastase@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-gregori-anastase-teixeira-koumoulentzos.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Laiane Nikitenko</td>
+<td class="job">Financial Specialist</td>
+<td class="dept">Finance</td>
+<td class="email">laiane.nikitenko@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-laiane-nikitenko.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Larissa Gonçalves Becker</td>
+<td class="job">Analista de Crédito</td>
+<td class="dept">Credit Risk</td>
+<td class="email">larissa.becker@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-larissa-gonalves-becker.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Wiliam Midon Pedroso</td>
+<td class="job">Analista de Crédito e Risco</td>
+<td class="dept">Credit Risk</td>
+<td class="email">wiliam.pedroso@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-wiliam-midon-pedroso.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+</tbody></table></div>
+
+<div class="leader-block">
+<div class="leader-head">
+<div><h3>Luciano Helio Bernardi</h3></div>
+<div style="display:flex;align-items:center;gap:12px">
+<span class="count">3 liderados</span>
+<span class="badge">Avaliação Líder</span>
+</div></div>
+<table><thead><tr><th>Liderado</th><th>Cargo</th><th>Área</th><th>E-mail</th><th>Link Avaliação</th></tr></thead><tbody>
+<tr>
+<td class="name">Leonardo Luís Perin</td>
+<td class="job">Head of Finance & Credito</td>
+<td class="dept">Finance</td>
+<td class="email">leonardo.perin@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-leonardo-lus-perin.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Renata Leticia Bacoff Paim</td>
+<td class="job">Treasury Manager</td>
+<td class="dept">Banking Operations</td>
+<td class="email">renata.paim@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-renata-leticia-bacoff-paim.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Wilson Rodrigo Dalmolin</td>
+<td class="job">Gerente de Cobrança</td>
+<td class="dept">Collection</td>
+<td class="email">wilson.dalmolin@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-wilson-rodrigo-dalmolin.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+</tbody></table></div>
+
+<div class="leader-block">
+<div class="leader-head">
+<div><h3>Marcelo Cruz</h3></div>
+<div style="display:flex;align-items:center;gap:12px">
+<span class="count">2 liderados</span>
+<span class="badge">Avaliação Líder</span>
+</div></div>
+<table><thead><tr><th>Liderado</th><th>Cargo</th><th>Área</th><th>E-mail</th><th>Link Avaliação</th></tr></thead><tbody>
+<tr>
+<td class="name">Juliano Fernandes Santana</td>
+<td class="job">Group Product Manager</td>
+<td class="dept">Product</td>
+<td class="email">juliano.santana@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-juliano-fernandes-santana.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Paulo Fernando da Costa Pereira Filho</td>
+<td class="job">Head AI Expert</td>
+<td class="dept">Product</td>
+<td class="email">caju@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-paulo-fernando-da-costa-pereira-filho.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+</tbody></table></div>
+
+<div class="leader-block">
+<div class="leader-head">
+<div><h3>Mateus Medeiros de Araújo</h3></div>
+<div style="display:flex;align-items:center;gap:12px">
+<span class="count">8 liderados</span>
+<span class="badge">Avaliação Líder</span>
+</div></div>
+<table><thead><tr><th>Liderado</th><th>Cargo</th><th>Área</th><th>E-mail</th><th>Link Avaliação</th></tr></thead><tbody>
+<tr>
+<td class="name">André Luiz Nunes Amaru</td>
+<td class="job">Desenvolvedor Backend</td>
+<td class="dept">Engineering</td>
+<td class="email">andre.amaru@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-andr-luiz-nunes-amaru.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Arthur de Angellis Oliveira Saraiva</td>
+<td class="job">Analista de Service Desk</td>
+<td class="dept">Engineering</td>
+<td class="email">arthur.saraiva@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-arthur-de-angellis-oliveira-saraiva.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Eduardo Victor Nóbrega Fernandes</td>
+<td class="job">Desenvolvedor Backend</td>
+<td class="dept">Engineering</td>
+<td class="email">eduardo.nobrega@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-eduardo-victor-nbrega-fernandes.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Everton Mutti Castro</td>
+<td class="job">Desenvolvedor Backend</td>
+<td class="dept">Engineering</td>
+<td class="email">everton.castro@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-everton-mutti-castro.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">João Guilherme Teixeira Braga Carvalho</td>
+<td class="job">Desenvolvedor</td>
+<td class="dept">Engineering</td>
+<td class="email">joao.carvalho@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-joo-guilherme-teixeira-braga-carvalho.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Lucas José de Souza</td>
+<td class="job">Engenheiro DevOPS</td>
+<td class="dept">Engineering</td>
+<td class="email">lucas.souza@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-lucas-jos-de-souza.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Michael Douglas da Silva Alves</td>
+<td class="job">Desenvolvedor Mobile</td>
+<td class="dept">Engineering</td>
+<td class="email">michael.alves@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-michael-douglas-da-silva-alves.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Samuel Figueiredo de Andrade</td>
+<td class="job">Desenvolvedor Front-End</td>
+<td class="dept">Engineering</td>
+<td class="email">samuel.andrade@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-samuel-figueiredo-de-andrade.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+</tbody></table></div>
+
+<div class="leader-block">
+<div class="leader-head">
+<div><h3>Pedro Della Rocca</h3></div>
+<div style="display:flex;align-items:center;gap:12px">
+<span class="count">1 liderado</span>
+<span class="badge">Avaliação Líder</span>
+</div></div>
+<table><thead><tr><th>Liderado</th><th>Cargo</th><th>Área</th><th>E-mail</th><th>Link Avaliação</th></tr></thead><tbody>
+<tr>
+<td class="name">Vladimir Alves Vidal</td>
+<td class="job">Engenheiro de Dados</td>
+<td class="dept">Engineering</td>
+<td class="email">vladimir.vidal@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-vladimir-alves-vidal.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+</tbody></table></div>
+
+<div class="leader-block">
+<div class="leader-head">
+<div><h3>Renata Leticia Bacoff Paim</h3></div>
+<div style="display:flex;align-items:center;gap:12px">
+<span class="count">6 liderados</span>
+<span class="badge">Avaliação Líder</span>
+</div></div>
+<table><thead><tr><th>Liderado</th><th>Cargo</th><th>Área</th><th>E-mail</th><th>Link Avaliação</th></tr></thead><tbody>
+<tr>
+<td class="name">Julia Eulalia Baldoino Marques</td>
+<td class="job">Analista de Tesouraria Júnior</td>
+<td class="dept">Banking Operations</td>
+<td class="email">julia.marques@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-julia-eulalia-baldoino-marques.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Mateus Fantucci</td>
+<td class="job">Analista de Tesouraria</td>
+<td class="dept">Banking Operations</td>
+<td class="email">mateus.fantucci@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-mateus-fantucci.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Mayara do Livramento da Rocha</td>
+<td class="job">Analista de Tesouraria Pleno</td>
+<td class="dept">Banking Operations</td>
+<td class="email">mayara.rocha@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-mayara-do-livramento-da-rocha.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Pâmela Rachadel</td>
+<td class="job">Analista de Tesouraria</td>
+<td class="dept">Banking Operations</td>
+<td class="email">pamela.rachadel@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-pmela-rachadel.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Rodrigo Rachelle Wagner</td>
+<td class="job">AI Expert Analyst</td>
+<td class="dept">Banking Operations</td>
+<td class="email">rodrigo.wagner@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-rodrigo-rachelle-wagner.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Vitor Pacheco</td>
+<td class="job">AI Expert Analyst</td>
+<td class="dept">Banking Operations</td>
+<td class="email">vitor.pacheco@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-vitor-pacheco.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+</tbody></table></div>
+
+<div class="leader-block">
+<div class="leader-head">
+<div><h3>Renata Otacilio</h3></div>
+<div style="display:flex;align-items:center;gap:12px">
+<span class="count">4 liderados</span>
+<span class="badge">Avaliação Líder</span>
+</div></div>
+<table><thead><tr><th>Liderado</th><th>Cargo</th><th>Área</th><th>E-mail</th><th>Link Avaliação</th></tr></thead><tbody>
+<tr>
+<td class="name">Alisson Barbosa</td>
+<td class="job">Analista de Relacionamento</td>
+<td class="dept">Relacionamento</td>
+<td class="email">alisson.barbosa@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-alisson-barbosa.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Andresa Maria Ziegler</td>
+<td class="job">Analista de Relacionamento</td>
+<td class="dept">Relacionamento</td>
+<td class="email">andresa.ziegler@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-andresa-maria-ziegler.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Caroline Monguilhott Duarte</td>
+<td class="job">Analista de Relacionamento</td>
+<td class="dept">Relacionamento</td>
+<td class="email">caroline.duarte@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-caroline-monguilhott-duarte.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Tuany Ribeiro</td>
+<td class="job">Analista de Relacionamento</td>
+<td class="dept">Relacionamento</td>
+<td class="email">tuany.ribeiro@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-tuany-ribeiro.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+</tbody></table></div>
+
+<div class="leader-block">
+<div class="leader-head">
+<div><h3>Rodrigo Alexandre Catarcione</h3></div>
+<div style="display:flex;align-items:center;gap:12px">
+<span class="count">4 liderados</span>
+<span class="badge">Avaliação Líder</span>
+</div></div>
+<table><thead><tr><th>Liderado</th><th>Cargo</th><th>Área</th><th>E-mail</th><th>Link Avaliação</th></tr></thead><tbody>
+<tr>
+<td class="name">Amanda Elena de Almeida</td>
+<td class="job">Analista de Endomarketing</td>
+<td class="dept">People</td>
+<td class="email">amanda.almeida@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-amanda-elena-de-almeida.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Ana Paula de Britto Sosa</td>
+<td class="job">Analista Administrativo</td>
+<td class="dept">People</td>
+<td class="email">ana.britto@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-ana-paula-de-britto-sosa.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Luana Beatrís Xavier</td>
+<td class="job">Business Partner</td>
+<td class="dept">People</td>
+<td class="email">luana.xavier@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-luana-beatrs-xavier.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Schaiane da Cruz</td>
+<td class="job">Auxiliar de Facilities</td>
+<td class="dept">People</td>
+<td class="email">—</td>
+<td class="link"><span class="na">sem e-mail</span></td>
+</tr>
+</tbody></table></div>
+
+<div class="leader-block">
+<div class="leader-head">
+<div><h3>Rodrigo Borer Magela de Oliveira</h3></div>
+<div style="display:flex;align-items:center;gap:12px">
+<span class="count">3 liderados</span>
+<span class="badge">Avaliação Líder</span>
+</div></div>
+<table><thead><tr><th>Liderado</th><th>Cargo</th><th>Área</th><th>E-mail</th><th>Link Avaliação</th></tr></thead><tbody>
+<tr>
+<td class="name">Gianluca Dal Zotto</td>
+<td class="job">Head de Sales</td>
+<td class="dept">Sales</td>
+<td class="email">gianluca.dalzotto@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-gianluca-dal-zotto.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Kauê B. Tomazelli</td>
+<td class="job">Gerente de Growth Marketing</td>
+<td class="dept">Marketing</td>
+<td class="email">kaue.tomazelli@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-kau-b-tomazelli.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Sabrina Vieira</td>
+<td class="job">CS & CX Manager</td>
+<td class="dept">Relacionamento</td>
+<td class="email">sabrina.vieira@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-sabrina-vieira.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+</tbody></table></div>
+
+<div class="leader-block">
+<div class="leader-head">
+<div><h3>Rodrigo Costa</h3></div>
+<div style="display:flex;align-items:center;gap:12px">
+<span class="count">4 liderados</span>
+<span class="badge">Avaliação Líder</span>
+</div></div>
+<table><thead><tr><th>Liderado</th><th>Cargo</th><th>Área</th><th>E-mail</th><th>Link Avaliação</th></tr></thead><tbody>
+<tr>
+<td class="name">Mateus Medeiros de Araújo</td>
+<td class="job">Backend Lead</td>
+<td class="dept">Engineering</td>
+<td class="email">mateus.araujo@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-mateus-medeiros-de-arajo.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Pedro Della Rocca</td>
+<td class="job">Líder de Dados</td>
+<td class="dept">Engineering</td>
+<td class="email">pedro.rocca@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-pedro-della-rocca.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Raphael de Carvalho Cortes</td>
+<td class="job">Analista de Suporte Técnico</td>
+<td class="dept">IT Operations</td>
+<td class="email">raphael.cortes@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-raphael-de-carvalho-cortes.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Victor Oliveira Barros do Nascimento</td>
+<td class="job">Backend Lead</td>
+<td class="dept">Engineering</td>
+<td class="email">victor.barros@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-victor-oliveira-barros-do-nascimento.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+</tbody></table></div>
+
+<div class="leader-block">
+<div class="leader-head">
+<div><h3>Rodrigo Della Rocca Cruz</h3></div>
+<div style="display:flex;align-items:center;gap:12px">
+<span class="count">6 liderados</span>
+<span class="badge">Avaliação Líder</span>
+</div></div>
+<table><thead><tr><th>Liderado</th><th>Cargo</th><th>Área</th><th>E-mail</th><th>Link Avaliação</th></tr></thead><tbody>
+<tr>
+<td class="name">Luciano Helio Bernardi</td>
+<td class="job">CFO - Chief Financial Officer</td>
+<td class="dept">Corporate</td>
+<td class="email">luciano.bernardi@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-luciano-helio-bernardi.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Marcelo Cruz</td>
+<td class="job">COO - Chief Operating Officer</td>
+<td class="dept">Corporate</td>
+<td class="email">marcelo@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-marcelo-cruz.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Rodolfo Pinotti Rodrigues de Oliveira</td>
+<td class="job">Chief of Staff</td>
+<td class="dept">Corporate</td>
+<td class="email">rodolfo.pinotti@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-rodolfo-pinotti-rodrigues-de-oliveira.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Rodrigo Borer Magela de Oliveira</td>
+<td class="job">CRO - Chief Revenue Officer</td>
+<td class="dept">Corporate</td>
+<td class="email">rodrigo.borer@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-rodrigo-borer-magela-de-oliveira.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Rodrigo Costa</td>
+<td class="job">CTO</td>
+<td class="dept">Corporate</td>
+<td class="email">rodrigo.costa@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-rodrigo-costa.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Rodrigo Alexandre Catarcione</td>
+<td class="job">Head of People</td>
+<td class="dept">People</td>
+<td class="email">rodrigo.catarcione@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-rodrigo-alexandre-catarcione.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+</tbody></table></div>
+
+<div class="leader-block">
+<div class="leader-head">
+<div><h3>Sabrina Vieira</h3></div>
+<div style="display:flex;align-items:center;gap:12px">
+<span class="count">4 liderados</span>
+<span class="badge">Avaliação Líder</span>
+</div></div>
+<table><thead><tr><th>Liderado</th><th>Cargo</th><th>Área</th><th>E-mail</th><th>Link Avaliação</th></tr></thead><tbody>
+<tr>
+<td class="name">Andrieli Elmatos</td>
+<td class="job">Coordenadora de Implatação</td>
+<td class="dept">Implantação</td>
+<td class="email">andrieli.elmatos@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-andrieli-elmatos.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Joanna Rosa Mella Massing</td>
+<td class="job">Customer Experience Coordinator</td>
+<td class="dept">Suporte</td>
+<td class="email">joanna.massing@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-joanna-rosa-mella-massing.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Rafael Pacífico Segundo Lima</td>
+<td class="job">AI Expert Analyst</td>
+<td class="dept">Relacionamento</td>
+<td class="email">rafael.lima@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-rafael-pacfico-segundo-lima.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Renata Otacilio</td>
+<td class="job">Analista de Relacionamento</td>
+<td class="dept">Relacionamento</td>
+<td class="email">renata.otacilio@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-renata-otacilio.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+</tbody></table></div>
+
+<div class="leader-block">
+<div class="leader-head">
+<div><h3>Silvana Muller</h3></div>
+<div style="display:flex;align-items:center;gap:12px">
+<span class="count">9 liderados</span>
+<span class="badge">Avaliação Líder</span>
+</div></div>
+<table><thead><tr><th>Liderado</th><th>Cargo</th><th>Área</th><th>E-mail</th><th>Link Avaliação</th></tr></thead><tbody>
+<tr>
+<td class="name">Daniela Oliveira Dutra da Silva</td>
+<td class="job">Collection Specialist</td>
+<td class="dept">CondoJud</td>
+<td class="email">daniela.dutra@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-daniela-oliveira-dutra-da-silva.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Danielly Maire Oliveira da Costa</td>
+<td class="job">Controller Jurídico</td>
+<td class="dept">CondoJud</td>
+<td class="email">danielly.costa@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-danielly-maire-oliveira-da-costa.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Izadora Maria Vidor Camara</td>
+<td class="job">Analista Jurídico</td>
+<td class="dept">Collection</td>
+<td class="email">izadora.camara@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-izadora-maria-vidor-camara.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Letícia Francisco dos Santos</td>
+<td class="job">Assistente Administrativo</td>
+<td class="dept">CondoJud</td>
+<td class="email">leticia.santos@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-letcia-francisco-dos-santos.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Lilian Cantuária Delis da Costa</td>
+<td class="job">Assistente Jurídico</td>
+<td class="dept">CondoJud</td>
+<td class="email">lilian.delis@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-lilian-canturia-delis-da-costa.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Mara Giovanna Valente Pinto</td>
+<td class="job">Assistente Jurídico</td>
+<td class="dept">CondoJud</td>
+<td class="email">mara.pinto@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-mara-giovanna-valente-pinto.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Matheus da Silva Ferreira</td>
+<td class="job">Analista Jurídico</td>
+<td class="dept">CondoJud</td>
+<td class="email">matheus.ferreira@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-matheus-da-silva-ferreira.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Raissa Estefany Venâncio Costa</td>
+<td class="job">Assistente Administrativo</td>
+<td class="dept">CondoJud</td>
+<td class="email">raissa.costa@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-raissa-estefany-venncio-costa.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Tamara Mesquita Martio</td>
+<td class="job">Assistente Jurídico</td>
+<td class="dept">CondoJud</td>
+<td class="email">tamara.martio@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-tamara-mesquita-martio.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+</tbody></table></div>
+
+<div class="leader-block">
+<div class="leader-head">
+<div><h3>Solange Gonçalves da Costa Pereira</h3></div>
+<div style="display:flex;align-items:center;gap:12px">
+<span class="count">12 liderados</span>
+<span class="badge">Avaliação Líder</span>
+</div></div>
+<table><thead><tr><th>Liderado</th><th>Cargo</th><th>Área</th><th>E-mail</th><th>Link Avaliação</th></tr></thead><tbody>
+<tr>
+<td class="name">Aline Matos Vieira Albino</td>
+<td class="job">Analista de Cobrança</td>
+<td class="dept">ExtraJudicial</td>
+<td class="email">aline.albino@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-aline-matos-vieira-albino.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Andréa Carlos de Araujo</td>
+<td class="job">Analista de Cobrança</td>
+<td class="dept">ExtraJudicial</td>
+<td class="email">andrea.araujo@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-andra-carlos-de-araujo.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Daniele Vanessa Severo Silva</td>
+<td class="job">Analista de Cobrança</td>
+<td class="dept">ExtraJudicial</td>
+<td class="email">daniele.silva@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-daniele-vanessa-severo-silva.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Fernanda Marques Farias Severo</td>
+<td class="job">Analista de Cobrança</td>
+<td class="dept">ExtraJudicial</td>
+<td class="email">fernanda.severo@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-fernanda-marques-farias-severo.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Fernanda Garcia</td>
+<td class="job">Analista de Cobrança</td>
+<td class="dept">ExtraJudicial</td>
+<td class="email">—</td>
+<td class="link"><span class="na">sem e-mail</span></td>
+</tr>
+<tr>
+<td class="name">Gabriela Fournaris Corrêa</td>
+<td class="job">Analista de Cobrança</td>
+<td class="dept">ExtraJudicial</td>
+<td class="email">gabriela.correa@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-gabriela-fournaris-corra.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">George Antônio do Senhor Siqueira</td>
+<td class="job">Analista de Cobrança</td>
+<td class="dept">ExtraJudicial</td>
+<td class="email">george.siqueira@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-george-antnio-do-senhor-siqueira.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Jaqueline de Oliveira Didier</td>
+<td class="job">Analista de Cobrança</td>
+<td class="dept">ExtraJudicial</td>
+<td class="email">Jaqueline.Didier@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-jaqueline-de-oliveira-didier.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Jennifer dos Santos Maciel</td>
+<td class="job">Analista de Cobrança</td>
+<td class="dept">ExtraJudicial</td>
+<td class="email">jennifer.santos@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-jennifer-dos-santos-maciel.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Laryssa Cristiny Fernandes</td>
+<td class="job">Analista de Cobrança</td>
+<td class="dept">ExtraJudicial</td>
+<td class="email">laryssa.fernandes@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-laryssa-cristiny-fernandes.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Paula Eduarda Cardoso Betinardi</td>
+<td class="job">Assistente de Cobrança</td>
+<td class="dept">ExtraJudicial</td>
+<td class="email">paula.betinardi@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-paula-eduarda-cardoso-betinardi.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Vanessa da Silva</td>
+<td class="job">Analista de Cobrança</td>
+<td class="dept">ExtraJudicial</td>
+<td class="email">vanessa.silva@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-vanessa-da-silva.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+</tbody></table></div>
+
+<div class="leader-block">
+<div class="leader-head">
+<div><h3>Victor Oliveira Barros do Nascimento</h3></div>
+<div style="display:flex;align-items:center;gap:12px">
+<span class="count">2 liderados</span>
+<span class="badge">Avaliação Líder</span>
+</div></div>
+<table><thead><tr><th>Liderado</th><th>Cargo</th><th>Área</th><th>E-mail</th><th>Link Avaliação</th></tr></thead><tbody>
+<tr>
+<td class="name">Lucas Fernandes Gauer</td>
+<td class="job">Desenvolvedor de Software</td>
+<td class="dept">Engineering</td>
+<td class="email">Lucas.Gauer@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-lucas-fernandes-gauer.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Victor Hugo Morais Predebon</td>
+<td class="job">Desenvolvedor Backend</td>
+<td class="dept">Engineering</td>
+<td class="email">victor.predebon@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-victor-hugo-morais-predebon.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+</tbody></table></div>
+
+<div class="leader-block">
+<div class="leader-head">
+<div><h3>Wilson Rodrigo Dalmolin</h3></div>
+<div style="display:flex;align-items:center;gap:12px">
+<span class="count">5 liderados</span>
+<span class="badge">Avaliação Líder</span>
+</div></div>
+<table><thead><tr><th>Liderado</th><th>Cargo</th><th>Área</th><th>E-mail</th><th>Link Avaliação</th></tr></thead><tbody>
+<tr>
+<td class="name">Magda Mayara dos Santos Monteiro</td>
+<td class="job">AI Expert Analyst</td>
+<td class="dept">Collection</td>
+<td class="email">magda.monteiro@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-magda-mayara-dos-santos-monteiro.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Pedro Reis</td>
+<td class="job">AI Expert Analyst</td>
+<td class="dept">Collection</td>
+<td class="email">pedro.reis@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-pedro-reis.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Silvana Muller</td>
+<td class="job">Coordenador de Legal Ops</td>
+<td class="dept">CondoJud</td>
+<td class="email">silvana.muller@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-silvana-muller.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Solange Gonçalves da Costa Pereira</td>
+<td class="job">Collection Coordinator</td>
+<td class="dept">ExtraJudicial</td>
+<td class="email">solange.pereira@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-solange-gonalves-da-costa-pereira.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+<tr>
+<td class="name">Vinícius Gomes Machado Gloria</td>
+<td class="job">AI Expert Analyst</td>
+<td class="dept">Collection</td>
+<td class="email">vinicius.gloria@condoconta.com.br</td>
+<td class="link"><a href="https://static-server.aiexpert-condoconta.info/avaliacao-vincius-gomes-machado-gloria.html" target="_blank">📝 abrir formulário</a></td>
+</tr>
+</tbody></table></div>
+
+<div class="leader-block" style="border-color:var(--gold);">
+<div class="leader-head" style="background:var(--gold-deep);">
+<div><h3>⚠️ Sem Supervisor Definido</h3></div>
+<span class="count">2 colaboradores</span>
+</div>
+<table><thead><tr><th>Colaborador</th><th>Cargo</th><th>Área</th><th>E-mail</th><th></th></tr></thead><tbody>
+<tr>
+<td class="name">Mathias Dziekaniak Vecchietti</td>
+<td class="job">Assistente de Vendas</td>
+<td class="dept">Sales</td>
+<td class="email">mathias.vecchietti@condoconta.com.br</td>
+<td></td>
+</tr>
+<tr>
+<td class="name">Rodrigo Della Rocca Cruz</td>
+<td class="job">CEO</td>
+<td class="dept">Corporate</td>
+<td class="email">rodrigo@condoconta.com.br</td>
+<td></td>
+</tr>
+</tbody></table></div>
+
+</div>
+
+<footer>
+<div><b>FALAI</b> · People</div>
+<div class="gold">condoconta.com.br</div>
+<div>by Falai — CC People</div>
+</footer>
+</div>
+</body>
+</html>

@@ -9,6 +9,8 @@ auth.json
 auth.lock
 oauth_state.txt
 convenia.env
+.env_convenia
+catarcione-api.json
 
 # Dados sensíveis
 cargos_colaboradores.csv
@@ -52,6 +54,9 @@ gateway_state.json
 gateway-starts.log
 gateway.lock
 gateway.pid
+channel_directory.json
+.restart_last_processed.json
+.skills_prompt_snapshot.json
 
 # Runtime
 __pycache__/
@@ -86,15 +91,30 @@ pending_messages/
 cron/
 output/
 
+# Sem permissão
+shared/
+
+# Diretório pessoal
+home/
+
+# Skills internas
+skills/.bundled_manifest
+skills/.curator_state
+skills/.hub/
+skills/.usage.json
+
+# Arquivos grandes
+models_dev_cache.json
+*.xlsx
+*.docx
+
 # Outros
 hermes.db
 response_store.db
 response_store.db-shm
 response_store.db-wal
 verification_evidence.db
-models_dev_cache.json
-.restart_last_processed.json
-.skills_prompt_snapshot.json
 dotenv-export.txt
 user_prefs_catar.txt
-skills_checklist.txtshared/
+skills_checklist.txt
+processes.json

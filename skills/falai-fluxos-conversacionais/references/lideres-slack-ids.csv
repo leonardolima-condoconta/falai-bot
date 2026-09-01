@@ -1,0 +1,28 @@
+# Líderes CondoConta — Slack IDs
+# Atualizado: 11/08/2026 via Slack API users.list (814 membros, 5 páginas)
+# Fonte CSV: /opt/data/cargos_colaboradores.csv
+
+nome,email,slack_id,cargo,departamento
+Andrieli Elmatos,andrieli.elmatos@condoconta.com.br,U02EV1E32V6,Coordenadora de Implatação,Customer Support
+Franco Maiole Brognoli,franco.brognoli@condoconta.com.br,U060JF6VCKG,Coordenador de Controladoria,Finance
+Gianluca Dal Zotto,gianluca.dalzotto@condoconta.com.br,U098SNYM69J,Head de Sales,Sales
+Guilherme Arquer Giacometti,guilherme.giacometti@condoconta.com.br,U0ALCSHP91T,Sales Manager,Sales
+Humberto Basso,humberto.basso@condoconta.com.br,U0ALKSS84E8,Coordenador de Sales,Sales
+Joanna Rosa Mella Massing,joanna.massing@condoconta.com.br,U0290JKR3QW,Customer Experience Coordinator,Customer Support
+Juliano Fernandes Santana,juliano.santana@condoconta.com.br,U02582L7HKR,Group Product Manager,Product
+Kauê B. Tomazelli,kaue.tomazelli@condoconta.com.br,U09JLLDQETC,Gerente de Growth Marketing,Marketing
+Leonardo Luís Perin,leonardo.perin@condoconta.com.br,U02G2AU8WH0,Head of Finance & Credito,Finance
+Luciano Helio Bernardi,luciano.bernardi@condoconta.com.br,U02FH0KBFF0,CFO,Corporate
+Marcelo Cruz,marcelo@condoconta.com.br,U01153MEV8D,COO,Corporate
+Mateus Medeiros de Araújo,mateus.araujo@condoconta.com.br,U06HQUCCU3E,Backend Lead,Engineering
+Pedro Della Rocca,pedro.rocca@condoconta.com.br,U0927CN3PJP,Líder de Dados,Engineering
+Renata Leticia Bacoff Paim,renata.paim@condoconta.com.br,U02HG0F9P16,Treasury Manager,Banking Operations
+Renata Otacilio,renata.otacilio@condoconta.com.br,U0297N00KHN,Analista de Relacionamento,Customer Success
+Rodrigo Alexandre Catarcione,rodrigo.catarcione@condoconta.com.br,U0AFGRGC80P,Head of People,People
+Rodrigo Borer Magela de Oliveira,rodrigo.borer@condoconta.com.br,U05DV5895K7,CRO,Corporate
+Rodrigo Costa,rodrigo.costa@condoconta.com.br,U08P9300HKL,CTO,Corporate
+Rodrigo Della Rocca Cruz,rodrigo@condoconta.com.br,U010SC230V8,CEO,Corporate
+Sabrina Vieira,sabrina.vieira@condoconta.com.br,U02E4JHL545,CS & CX Manager,Customer Success
+Silvana Muller,silvana.muller@condoconta.com.br,U0B0J1WKC7R,Coordenador de Legal Ops,Collection
+Solange Gonçalves da Costa Pereira,solange.pereira@condoconta.com.br,U02NA4JSHFW,Collection Coordinator,Finance
+Wilson Rodrigo Dalmolin,wilson.dalmolin@condoconta.com.br,U0677QWNEQ2,Gerente de Cobrança,Collection

@@ -55,6 +55,35 @@ for area in lider_json.get("areas", []):
 
 perguntas_map_json = json.dumps(perguntas_map, ensure_ascii=False)
 
+# Mapa de senioridade: nome → {senioridade, nivel_senioridade}
+senioridade_map = {}
+for area in lider_json.get("areas", []):
+    for col in area["colaboradores"]:
+        nome = col["nome"]
+        sen = col.get("senioridade","") or col.get("nivel","")
+        nv = col.get("nivel_senioridade","") or col.get("step","")
+        if sen or nv:
+            senioridade_map[nome.lower()] = {"senioridade": sen, "nivel_senioridade": nv}
+            if nome.lower().split():
+                senioridade_map[nome.lower().split()[0]] = {"senioridade": sen, "nivel_senioridade": nv}
+            key = strip_accents(nome.lower())
+            senioridade_map[key] = {"senioridade": sen, "nivel_senioridade": nv}
+senioridade_map_json = json.dumps(senioridade_map, ensure_ascii=False)
+
+# Mapa de step_atual: nome → descricao do step atual
+step_atual_map = {}
+for area in lider_json.get("areas", []):
+    for col in area["colaboradores"]:
+        nome = col["nome"]
+        sat = col.get("step_atual","")
+        if sat:
+            step_atual_map[nome.lower()] = sat
+            if nome.lower().split():
+                step_atual_map[nome.lower().split()[0]] = sat
+            key = strip_accents(nome.lower())
+            step_atual_map[key] = sat
+step_atual_json = json.dumps(step_atual_map, ensure_ascii=False)
+
 # 2. Gerar HTML (sem access.verify no Python)
 html = f"""<!DOCTYPE html>
 <html lang="pt-BR">
@@ -140,10 +169,32 @@ footer b{{color:#fff}}footer .gold{{color:var(--gold)}}
 <script>
 var LIDER_EMAIL = {json.dumps(EMAIL)};
 var PERGUNTAS_MAP = {perguntas_map_json};
+var SENIORIDADE_MAP = {senioridade_map_json};
+var STEP_ATUAL_MAP = {step_atual_json};
 var LIDERADOS = [];
 var LEADER_ID = '';
 var LEADER_NOME = '';
 var LEADER_CARGO = '';
+
+function matchSenioridade(nome){{
+  var key = stripAccents(nome.toLowerCase());
+  if(SENIORIDADE_MAP[key]) return SENIORIDADE_MAP[key];
+  var partes = stripAccents(nome.toLowerCase()).split(' ');
+  for(var i=0;i<partes.length;i++){{
+    if(SENIORIDADE_MAP[partes[i]]) return SENIORIDADE_MAP[partes[i]];
+  }}
+  return {{}};
+}}
+
+function matchStepAtual(nome){{
+  var key = stripAccents(nome.toLowerCase());
+  if(STEP_ATUAL_MAP[key]) return STEP_ATUAL_MAP[key];
+  var partes = stripAccents(nome.toLowerCase()).split(' ');
+  for(var i=0;i<partes.length;i++){{
+    if(STEP_ATUAL_MAP[partes[i]]) return STEP_ATUAL_MAP[partes[i]];
+  }}
+  return '';
+}}
 
 function stripAccents(s){{ return s.normalize('NFD').replace(/[\\u0300-\\u036f]/g,''); }}
 
@@ -169,7 +220,8 @@ function rebuildDropdown(){{
   sel.innerHTML='<option value="">Escolha um liderado...</option>';
   LIDERADOS.forEach(function(l,i){{
     if(feitos.indexOf(l.id)<0){{
-      var o=document.createElement('option'); o.value=i; o.textContent=l.nome+' — '+l.cargo; sel.appendChild(o);
+      var srLabel = l.senioridade ? ' · ' + l.senioridade + (l.nivel_senioridade ? ' ' + l.nivel_senioridade : '') : '';
+      var o=document.createElement('option'); o.value=i; o.textContent=l.nome + ' — ' + l.cargo + srLabel; sel.appendChild(o);
     }}
   }});
   if(sel.options.length===1){{
@@ -194,12 +246,15 @@ function rebuildDropdown(){{
       var reports = r.result.reports || [];
       document.getElementById('header-sub').textContent = LEADER_NOME + ' · ' + LEADER_CARGO + ' · ' + reports.length + ' liderados';
       LIDERADOS = reports.map(function(rep){{
+        var sr = matchSenioridade(rep.full_name);
         return {{
           id: rep.id,
           nome: rep.full_name,
           email: rep.email || '',
           cargo: rep.job || '',
           departamento: rep.department || '',
+          senioridade: sr.senioridade || '',
+          nivel_senioridade: sr.nivel_senioridade || '',
           perguntas: matchPerguntas(rep.full_name)
         }};
       }});
@@ -219,7 +274,12 @@ function carregarPerguntas(idx){{
     return;
   }}
   var l = LIDERADOS[idx];
-  var html = '<div style="color:var(--muted);font-size:12px;margin-bottom:18px">Avaliando: <b>' + l.nome + '</b> · ' + l.cargo + '</div>';
+  var srInfo = l.senioridade ? ' · ' + l.senioridade + (l.nivel_senioridade ? ' ' + l.nivel_senioridade : '') : '';
+  var stepInfo = matchStepAtual(l.nome);
+  var html = '<div style="color:var(--muted);font-size:12px;margin-bottom:6px">Avaliando: <b>' + l.nome + '</b> · ' + l.cargo + srInfo + '</div>';
+  if(stepInfo){{
+    html += '<div style="background:var(--lider-bg);border:1px solid var(--lider-border);border-radius:6px;padding:10px 12px;margin-bottom:18px;font-size:11px;color:var(--navy);line-height:1.5"><span style="font-weight:700;font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)">Step Atual</span><br>' + stepInfo + '</div>';
+  }}
   if(!l.perguntas || l.perguntas.length===0){{
     html += '<div style="color:#C62828;font-size:13px">⚠️ Nenhuma pergunta configurada para este liderado no ciclo atual.</div>';
   }} else {{

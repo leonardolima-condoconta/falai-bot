@@ -27,24 +27,47 @@ cemail = EMAIL
 with open("/opt/data/convenia/autoavaliacao_perguntas.json") as f:
     auto = json.load(f)
 
+# Override map para colisoes de fuzzy matching
+import os as _os
+_override_path = "/opt/data/convenia/email_override_map.json"
+_email_overrides = {}
+if _os.path.exists(_override_path):
+    with open(_override_path) as _f:
+        _email_overrides = json.load(_f)
+
 all_cols = []
 for area in auto.get("areas", []):
     for col in area["colaboradores"]:
         all_cols.append(("autoavaliacao", auto, col))
 
-parts = EMAIL.lower().replace("@condoconta.com.br","").replace("@","").split(".")
-best, best_score = None, 0
+# Priority 1: exact override by email
 colaborador = None
-for t, src, col in all_cols:
-    nome = col["nome"].lower()
-    np = nome.split()
-    if EMAIL.lower() == col.get("email","").lower():
-        best = (t, src, col); break
-    sc = sum(2 for p in parts for n in np if len(n)>=3 and (n in p or p in n))
-    if sc > best_score:
-        best_score = sc; best = (t, src, col)
-if best and best_score >= 2:
-    tipo_form, source_data, colaborador = best
+tipo_form = source_data = None
+override_name = _email_overrides.get(EMAIL.lower())
+if override_name:
+    override_lower = override_name.lower()
+    for t, src, col in all_cols:
+        nome_lower = col["nome"].lower()
+        # Match by prefix (autoavaliacao names are truncated at ~31 chars)
+        if nome_lower == override_lower or override_lower.startswith(nome_lower) or nome_lower.startswith(override_lower[:len(nome_lower)]):
+            tipo_form, source_data, colaborador = t, src, col
+            break
+
+# Priority 2: fuzzy matching
+if not colaborador:
+    parts = EMAIL.lower().replace("@condoconta.com.br","").replace("@","").split(".")
+    best, best_score = None, 0
+    for t, src, col in all_cols:
+        nome = col["nome"].lower()
+        np = nome.split()
+        if EMAIL.lower() == col.get("email","").lower():
+            best = (t, src, col); break
+        sc = sum(2 for p in parts for n in np if len(n)>=3 and (n in p or p in n))
+        if sc > best_score:
+            best_score = sc; best = (t, src, col)
+    if best and best_score >= 2:
+        tipo_form, source_data, colaborador = best
+
 if not colaborador:
     print("Colaborador nao encontrado: " + EMAIL); sys.exit(1)
 
@@ -56,7 +79,12 @@ cstep = colaborador.get("nivel_senioridade","") or colaborador.get("step","")
 ciclo = source_data.get("ciclo","2026.2")
 
 ph = ""
-for p in colaborador["perguntas"]:
+perguntas_render = list(colaborador["perguntas"])
+# Swap Q7 and Q8 (index 6 and 7) — manter o n correto
+if len(perguntas_render) >= 8:
+    perguntas_render[6], perguntas_render[7] = perguntas_render[7], perguntas_render[6]
+    perguntas_render[6]["n"], perguntas_render[7]["n"] = perguntas_render[7]["n"], perguntas_render[6]["n"]
+for p in perguntas_render:
     n = p["n"]; pergunta = p["pergunta"]; tipo = p["tipo"]
     pk = "q" + str(n)
     pqe = pergunta.replace("&","&amp;").replace('"',"&quot;").replace("<","&lt;").replace(">","&gt;")

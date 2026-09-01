@@ -106,7 +106,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: define a arquitetura de MIS e BI da empresa. Competência: lidera a estratégia de democratização de dados. Autonomia: suporta o Head com análises estratégicas sem direcionamento. Comportamento: pensa em dados acessíveis como vantagem competitiva. Avança quando: desenvolve o roadmap de BI alinhado ao negócio."
         },
         {
           "nome": "Lucas José de Souza",
@@ -201,7 +202,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: co-define a visão técnica da empresa. Competência: desenvolve o time com foco em excelência. Autonomia: é parceiro estratégico de produto, dados e IA. Comportamento: atua como liderança técnica reconhecida. Avança quando: é referência máxima em backend."
         },
         {
           "nome": "Magda Mayara dos Santos Mont",
@@ -296,7 +298,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: implementa soluções de IA em produção de forma aut&ocirc;noma. Competência: define a arquitetura de modelos para casos de uso de negócio. Autonomia: elabora relatórios de performance sem necessidade de revisão. Comportamento: assume responsabilidade pela qualidade dos modelos em produção. Avança quando: passa a desenvolver modelos de ML/DL para problemas específicos."
         },
         {
           "nome": "Paulo Fernando da Costa Pere",
@@ -391,7 +394,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: é parceiro estratégico máximo do CEO em IA. Competência: tem influência máxima na direção de IA da empresa. Autonomia: atua com plena independência e visão de longo prazo. Comportamento: pronto para representar a empresa em qualquer fórum. Avança quando: está pronto para CAIO ou membro de conselho com especialidade em IA."
         },
         {
           "nome": "Pedro Della Rocca",
@@ -486,7 +490,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: define a arquitetura da plataforma de dados da empresa. Competência: lidera decisões técnicas de alto impacto. Autonomia: suporta o Head com análises estratégicas sem direcionamento. Comportamento: pensa na plataforma de dados como infraestrutura crítica do negócio. Avança quando: desenvolve o roadmap técnico de dados."
         },
         {
           "nome": "Rafael Pacífico Segundo Lima",
@@ -581,7 +586,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: desenvolve o roadmap de IA alinhado ao negócio. Competência: lidera a implementação de soluções de IA generativa. Autonomia: mentora analistas Pleno com plano de desenvolvimento. Comportamento: conecta avanços técnicos com oportunidades de negócio. Avança quando: representa a empresa em eventos e fóruns de IA."
         },
         {
           "nome": "Rodrigo Rachelle Wagner",
@@ -676,7 +682,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: implementa soluções de IA em produção de forma aut&ocirc;noma. Competência: define a arquitetura de modelos para casos de uso de negócio. Autonomia: elabora relatórios de performance sem necessidade de revisão. Comportamento: assume responsabilidade pela qualidade dos modelos em produção. Avança quando: passa a desenvolver modelos de ML/DL para problemas específicos."
         },
         {
           "nome": "Rodrigo Silva da Luz",
@@ -771,7 +778,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: é parceiro estratégico máximo do CEO em IA. Competência: tem influência máxima na direção de IA da empresa. Autonomia: atua com plena independência e visão de longo prazo. Comportamento: pronto para representar a empresa em qualquer fórum. Avança quando: está pronto para CAIO ou membro de conselho com especialidade em IA."
         },
         {
           "nome": "Valter Fadul Perez",
@@ -866,7 +874,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: implementa soluções de IA em produção de forma aut&ocirc;noma. Competência: define a arquitetura de modelos para casos de uso de negócio. Autonomia: elabora relatórios de performance sem necessidade de revisão. Comportamento: assume responsabilidade pela qualidade dos modelos em produção. Avança quando: passa a desenvolver modelos de ML/DL para problemas específicos."
         },
         {
           "nome": "Vinicius Marques Rocha",
@@ -961,7 +970,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: representa design em decisões estratégicas. Competência: influencia o roadmap de produto com dados de UX. Autonomia: produz relatórios para liderança sem revisão prévia. Comportamento: comunica com segurança em ambientes de alta liderança. Avança quando: co-define a visão de produto com o GPM."
         },
         {
           "nome": "Vladimir Alves Vidal",
@@ -1056,7 +1066,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: lidera a evolução do data warehouse/lakehouse. Competência: implementa soluções de real-time processing. Autonomia: é referência técnica da equipe de dados. Comportamento: equilibra inovação técnica com estabilidade da plataforma. Avança quando: define padrões de engenharia de dados."
         }
       ]
     },
@@ -1158,7 +1169,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: lidera o desenvolvimento de módulos complexos. Competência: contribui com a arquitetura de microserviços. Autonomia: documenta APIs e decisões técnicas sem necessidade de cobrança. Comportamento: pensa em impacto arquitetural das decisões técnicas. Avança quando: desenvolve soluções de alta complexidade de forma aut&ocirc;noma."
         },
         {
           "nome": "Arthur de Angellis Oliveira ",
@@ -1253,7 +1265,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: atende chamados de TI com base em base de conhecimento. Competência: escala problemas complexos com contexto adequado. Autonomia: trabalha com acompanhamento próximo do gestor. Comportamento: empático e organizado no atendimento ao usuário interno. Avança quando: resolve chamados dentro do SLA por 2 meses consecutivos."
         },
         {
           "nome": "Eduardo Victor Nóbrega Ferna",
@@ -1348,7 +1361,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: define a estratégia técnica do backend com o Tech Lead. Competência: lidera a migração e modernização de sistemas. Autonomia: suporta decisões de arquitetura sem necessidade de direcionamento. Comportamento: equilibra inovação técnica com estabilidade do sistema. Avança quando: é referência técnica backend."
         },
         {
           "nome": "Everton Mutti Castro",
@@ -1443,7 +1457,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: desenvolve funcionalidades de média complexidade com autonomia crescente. Competência: implementa testes unitários e de integração. Autonomia: identifica e corrige bugs sem necessidade de direcionamento. Comportamento: testa o próprio código antes de abrir PR. Avança quando: conduz o desenvolvimento de features end-to-end."
         },
         {
           "nome": "João Guilherme Teixeira Brag",
@@ -1538,7 +1553,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: desenvolve soluções de alta complexidade de forma aut&ocirc;noma. Competência: propõe evoluções técnicas fundamentadas. Autonomia: atua com independência técnica plena. Comportamento: pensa em qualidade, performance e manutenibilidade. Avança quando: está pronto para Pleno."
         },
         {
           "nome": "Lucas Fernandes Gauer",
@@ -1633,7 +1649,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: implementa funcionalidades simples com orientação técnica. Competência: escreve código limpo e testado. Autonomia: participa de code reviews aprendendo com o feedback. Comportamento: receptivo ao feedback e proativo em buscar orientação. Avança quando: entrega features sem bugs críticos por 2 meses consecutivos."
         },
         {
           "nome": "Mateus Medeiros de Araújo",
@@ -1728,7 +1745,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: é parceiro estratégico máximo do CEO em tecnologia. Competência: tem influência máxima na direção técnica da empresa. Autonomia: atua com plena independência e visão de longo prazo. Comportamento: pronto para representar a empresa em qualquer fórum. Avança quando: está pronto para CTO ou VP de Engenharia."
         },
         {
           "nome": "Michael Douglas da Silva Alv",
@@ -1823,7 +1841,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: é referência técnica backend. Competência: lidera transformações técnicas de alto impacto. Autonomia: atua com independência técnica plena. Comportamento: pensa estrategicamente sobre a evolução da plataforma. Avança quando: está pronto para Sênior ou Backend Lead."
         },
         {
           "nome": "Raphael de Carvalho Cortes",
@@ -1918,7 +1937,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: resolve tickets de alta complexidade com autonomia. Competência: tem visão sistêmica do suporte. Autonomia: atua como referência técnica para o time Jr. Comportamento: pensa em prevenção e deflexão, não só resolução. Avança quando: está pronto para Pleno."
         },
         {
           "nome": "Samuel Figueiredo de Andrade",
@@ -2013,7 +2033,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: conduz o desenvolvimento de features end-to-end com pouca supervisão. Competência: propõe melhorias técnicas fundamentadas. Autonomia: suporta colegas Jr em code reviews. Comportamento: compartilha conhecimento em code reviews de forma construtiva. Avança quando: lidera o desenvolvimento de módulos complexos."
         },
         {
           "nome": "Victor Hugo Morais Predebon",
@@ -2108,7 +2129,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: é referência técnica backend. Competência: lidera transformações técnicas de alto impacto. Autonomia: atua com independência técnica plena. Comportamento: pensa estrategicamente sobre a evolução da plataforma. Avança quando: está pronto para Sênior ou Backend Lead."
         },
         {
           "nome": "Victor Oliveira Barros do Na",
@@ -2203,7 +2225,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: lidera o desenvolvimento de componentes críticos do sistema. Competência: propõe e implementa melhorias de arquitetura. Autonomia: é referência técnica do time backend. Comportamento: pensa em trade-offs técnicos e apresenta opções. Avança quando: define a estratégia técnica do backend com o Tech Lead."
         }
       ]
     },
@@ -2305,7 +2328,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: desenvolve o roadmap de modelos e experimentos. Competência: lidera a implementação de LLMs e IA generativa aplicada. Autonomia: mentora cientistas Pleno com plano de desenvolvimento. Comportamento: conecta avanços em IA com oportunidades de negócio. Avança quando: representa ciência de dados em decisões estratégicas."
         },
         {
           "nome": "Fernando Legat Springmann",
@@ -2400,7 +2424,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: é referência técnica em FP&amp;A na empresa. Competência: propõe e implementa frameworks de análise financeira. Autonomia: representa a área em discussões estratégicas com outras lideranças. Comportamento: pensa de forma estratégica sobre o futuro do planejamento financeiro. Avança quando: está pronto para definir o calendário e metodologia do ciclo de planejamento (Sênior I)."
         },
         {
           "nome": "Franco Maiole Brognoli",
@@ -2495,7 +2520,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: lidera projetos de transformação de controladoria. Competência: propõe frameworks de gestão contábil. Autonomia: atua com independência técnica plena. Comportamento: pensa estrategicamente sobre a evolução da controladoria. Avança quando: está pronto para coordenar uma equipe de controladoria (Sênior I)."
         },
         {
           "nome": "Gregori Anastase Teixeira Ko",
@@ -2590,7 +2616,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: lidera revisões periódicas da política de crédito. Competência: analisa concentração e correlação de riscos na carteira. Autonomia: suporta o time em análises complexas sem precisar de validação prévia. Comportamento: equilibra rigor analítico com pragmatismo de negócio. Avança quando: passa a desenvolver relatórios executivos de risco de carteira."
         },
         {
           "nome": "Julia Eulalia Baldoino Marqu",
@@ -2685,7 +2712,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: identifica divergências em conciliações e propõe explicação antes de escalar. Competência: apoia a montagem do relatório diário de posição de caixa. Autonomia: executa conciliações com supervisão pontual, não diária. Comportamento: comunica problemas com contexto, não só o sintoma. Avança quando: conduz o relatório diário de caixa com qualidade, sem retrabalho do gestor."
         },
         {
           "nome": "Laiane Nikitenko",
@@ -2780,7 +2808,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: é referência técnica em finanças operacionais. Competência: propõe frameworks de controle financeiro. Autonomia: atua com independência em decisões técnicas do dia a dia. Comportamento: pensa de forma estratégica sobre os processos financeiros. Avança quando: está pronto para liderar projetos ou pequenas equipes (Sênior I)."
         },
         {
           "nome": "Larissa Gonçalves Becker",
@@ -2875,7 +2904,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: coleta e organiza dados de crédito de clientes conforme critérios definidos. Competência: executa análises de bureau e relatórios de crédito padronizados. Autonomia: trabalha com checklist e revisão do Pleno em cada entrega. Comportamento: cuidadoso e preciso na manipulação de dados sensíveis. Avança quando: entrega relatórios de bureau sem erros por 2 meses consecutivos."
         },
         {
           "nome": "Leonardo Luís Perin",
@@ -2970,7 +3000,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: é parceiro estratégico do CFO em decisões de capital e risco. Competência: tem influência máxima na estratégia de capital da empresa. Autonomia: atua com total independência e visão de longo prazo. Comportamento: pronto para representar a empresa em qualquer fórum financeiro/executivo. Avança quando: está pronto para assumir a Direção Financeira (CFO)."
         },
         {
           "nome": "Leonardo de Lima",
@@ -3065,7 +3096,8 @@
             }
           ],
           "nivel_senioridade": "V",
-          "senioridade": "Pleno"
+          "senioridade": "Pleno",
+          "step_atual": "Entrega: é referência técnica em IA. Competência: lidera transformações de alto impacto com IA. Autonomia: atua com independência técnica plena. Comportamento: pensa estrategicamente sobre o futuro da IA na empresa. Avança quando: está pronto para Sênior ou papel de especialista-chefe."
         },
         {
           "nome": "Margie Antonia Angulski da C",
@@ -3156,7 +3188,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": ""
         },
         {
           "nome": "Mateus Fantucci",
@@ -3251,7 +3284,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: executa rotinas complexas de tesouraria sem necessidade de supervisão. Competência: analisa inconsistências e propõe soluções fundamentadas. Autonomia: atua como referência operacional para o time Jr. Comportamento: demonstra visão de dono sobre os processos que executa. Avança quando: está pronto para assumir responsabilidades analíticas de Pleno I (gestão de caixa, projeções)."
         },
         {
           "nome": "Mayara do Livramento da Roch",
@@ -3346,7 +3380,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: conduz o fluxo de caixa diário de forma independente. Competência: domina todas as ferramentas e relatórios do ERP de tesouraria. Autonomia: propõe ajustes em rotinas repetitivas sem precisar de aprovação prévia. Comportamento: proativo na identificação de pequenas melhorias de processo. Avança quando: assume participação ativa nas reuniões de fechamento mensal."
         },
         {
           "nome": "Pedro Reis",
@@ -3441,7 +3476,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: é referência técnica em IA. Competência: lidera transformações de alto impacto com IA. Autonomia: atua com independência técnica plena. Comportamento: pensa estrategicamente sobre o futuro da IA na empresa. Avança quando: está pronto para Sênior ou papel de especialista-chefe."
         },
         {
           "nome": "Pâmela Rachadel",
@@ -3536,7 +3572,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: antecipa necessidades de caixa no horizonte de 30 dias. Competência: relaciona-se diretamente com bancos para questões operacionais. Autonomia: identifica oportunidades de eficiência sem provocação externa. Comportamento: traz soluções junto com os problemas que reporta. Avança quando: propõe e implementa pelo menos uma melhoria de processo."
         },
         {
           "nome": "Renata Leticia Bacoff Paim",
@@ -3631,7 +3668,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: é referência de gestão em tesouraria na empresa. Competência: define o modelo operacional da área. Autonomia: atua com total independência estratégica. Comportamento: pronto para representar a função em qualquer fórum executivo. Avança quando: está pronto para evolução para diretoria financeira (Sênior I)."
         },
         {
           "nome": "Vitor Pacheco",
@@ -3726,7 +3764,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: lidera projetos de IA de alta complexidade. Competência: avalia e integra LLMs e ferramentas de IA generativa. Autonomia: representa a área em fóruns técnicos sem necessidade de acompanhamento. Comportamento: equilibra inovação com viabilidade técnica. Avança quando: define o framework de avaliação e governança de IA."
         },
         {
           "nome": "Wiliam Midon Pedroso",
@@ -3821,7 +3860,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: conduz análises de portfólio de forma aut&ocirc;noma. Competência: identifica padrões de risco com base em dados históricos. Autonomia: atua como referência operacional para o time Jr. Comportamento: pensa em padrões e causas, não só em casos isolados. Avança quando: está pronto para assumir análises de crédito complexas (Pleno I)."
         }
       ]
     },
@@ -3923,7 +3963,8 @@
             }
           ],
           "senioridade": "Pleno",
-          "nivel_senioridade": "I"
+          "nivel_senioridade": "I",
+          "step_atual": "Entrega: estrutura a estratégia de cobrança por segmento e canal. Competência: elabora relatórios executivos de performance de carteira. Autonomia: interage diretamente com parceiros de cobrança. Comportamento: assume responsabilidade pela performance das estratégias propostas. Avança quando: passa a desenvolver modelos preditivos de inadimplência."
         },
         {
           "nome": "Aline Silva Passos Nasciment",
@@ -4018,7 +4059,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": ""
         },
         {
           "nome": "Andréa Carlos de Araujo",
@@ -4113,7 +4155,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: analisa carteiras de inadimplência com métricas básicas. Competência: prepara relatórios de recuperação e aging. Autonomia: trabalha com revisão do Pleno/gestor. Comportamento: cuidadoso com a precisão dos dados apresentados. Avança quando: entrega relatórios sem erros por 2 meses consecutivos."
         },
         {
           "nome": "Daniela Oliveira Dutra da Si",
@@ -4208,7 +4251,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: analisa carteiras de inadimplência com métricas básicas. Competência: prepara relatórios de recuperação e aging. Autonomia: trabalha com revisão do Pleno/gestor. Comportamento: cuidadoso com a precisão dos dados apresentados. Avança quando: entrega relatórios sem erros por 2 meses consecutivos."
         },
         {
           "nome": "Daniela de Souza Kashiva",
@@ -4303,7 +4347,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": ""
         },
         {
           "nome": "Daniele Vanessa Severo Silva",
@@ -4398,7 +4443,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: analisa carteiras de inadimplência com métricas básicas. Competência: prepara relatórios de recuperação e aging. Autonomia: trabalha com revisão do Pleno/gestor. Comportamento: cuidadoso com a precisão dos dados apresentados. Avança quando: entrega relatórios sem erros por 2 meses consecutivos."
         },
         {
           "nome": "Danielly Maire Oliveira da C",
@@ -4493,7 +4539,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: conduz o controle de contratos e obrigações com autonomia crescente. Competência: propõe melhorias nos processos de monitoramento. Autonomia: trabalha sem necessidade de acompanhamento constante. Comportamento: busca eficiência nos processos de controle. Avança quando: passa a suportar auditorias com documentação adequada."
         },
         {
           "nome": "Fernanda Garcia",
@@ -4588,7 +4635,8 @@
             }
           ],
           "senioridade": "Pleno",
-          "nivel_senioridade": "I"
+          "nivel_senioridade": "I",
+          "step_atual": "Entrega: estrutura a estratégia de cobrança por segmento e canal. Competência: elabora relatórios executivos de performance de carteira. Autonomia: interage diretamente com parceiros de cobrança. Comportamento: assume responsabilidade pela performance das estratégias propostas. Avança quando: passa a desenvolver modelos preditivos de inadimplência."
         },
         {
           "nome": "Fernanda Marques Farias Seve",
@@ -4683,7 +4731,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: analisa carteiras de inadimplência com métricas básicas. Competência: prepara relatórios de recuperação e aging. Autonomia: trabalha com revisão do Pleno/gestor. Comportamento: cuidadoso com a precisão dos dados apresentados. Avança quando: entrega relatórios sem erros por 2 meses consecutivos."
         },
         {
           "nome": "Gabriela Fournaris Corrêa",
@@ -4778,7 +4827,8 @@
             }
           ],
           "senioridade": "Pleno",
-          "nivel_senioridade": "I"
+          "nivel_senioridade": "I",
+          "step_atual": "Entrega: estrutura a estratégia de cobrança por segmento e canal. Competência: elabora relatórios executivos de performance de carteira. Autonomia: interage diretamente com parceiros de cobrança. Comportamento: assume responsabilidade pela performance das estratégias propostas. Avança quando: passa a desenvolver modelos preditivos de inadimplência."
         },
         {
           "nome": "George Antônio do Senhor Siq",
@@ -4873,7 +4923,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: analisa carteiras de inadimplência com métricas básicas. Competência: prepara relatórios de recuperação e aging. Autonomia: trabalha com revisão do Pleno/gestor. Comportamento: cuidadoso com a precisão dos dados apresentados. Avança quando: entrega relatórios sem erros por 2 meses consecutivos."
         },
         {
           "nome": "Izadora Maria Vidor Camara",
@@ -4968,7 +5019,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: conduz análises jurídicas de forma aut&ocirc;noma. Competência: tem visão de risco e estratégia jurídica. Autonomia: atua com independência técnica plena. Comportamento: pensa estrategicamente sobre os riscos da empresa. Avança quando: está pronto para negociar contratos comerciais de forma aut&ocirc;noma (Pleno I)."
         },
         {
           "nome": "Jaqueline de Oliveira Didier",
@@ -5063,7 +5115,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: analisa carteiras de inadimplência com métricas básicas. Competência: prepara relatórios de recuperação e aging. Autonomia: trabalha com revisão do Pleno/gestor. Comportamento: cuidadoso com a precisão dos dados apresentados. Avança quando: entrega relatórios sem erros por 2 meses consecutivos."
         },
         {
           "nome": "Jennifer dos Santos Maciel",
@@ -5158,7 +5211,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: analisa carteiras de inadimplência com métricas básicas. Competência: prepara relatórios de recuperação e aging. Autonomia: trabalha com revisão do Pleno/gestor. Comportamento: cuidadoso com a precisão dos dados apresentados. Avança quando: entrega relatórios sem erros por 2 meses consecutivos."
         },
         {
           "nome": "Laryssa Cristiny Fernandes",
@@ -5253,7 +5307,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: analisa carteiras de inadimplência com métricas básicas. Competência: prepara relatórios de recuperação e aging. Autonomia: trabalha com revisão do Pleno/gestor. Comportamento: cuidadoso com a precisão dos dados apresentados. Avança quando: entrega relatórios sem erros por 2 meses consecutivos."
         },
         {
           "nome": "Letícia Francisco dos Santos",
@@ -5348,7 +5403,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: executa rotinas administrativas (compras, controle de materiais, gestão de fornecedores) com supervisão. Competência: mantém organização do escritório. Autonomia: trabalha com acompanhamento próximo do gestor. Comportamento: organizado e atento &agrave;s necessidades do dia a dia do escritório. Avança quando: executa rotinas sem erros por 2 meses consecutivos."
         },
         {
           "nome": "Lilian Cantuária Delis da Co",
@@ -5443,7 +5499,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: organiza e protocola documentos jurídicos. Competência: realiza pesquisas de jurisprudência sob orientação. Autonomia: trabalha com acompanhamento próximo do gestor. Comportamento: organizado e atento a prazos processuais. Avança quando: monitora prazos sem perdas por 2 meses consecutivos."
         },
         {
           "nome": "Mara Giovanna Valente Pinto",
@@ -5538,7 +5595,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: organiza e protocola documentos jurídicos. Competência: realiza pesquisas de jurisprudência sob orientação. Autonomia: trabalha com acompanhamento próximo do gestor. Comportamento: organizado e atento a prazos processuais. Avança quando: monitora prazos sem perdas por 2 meses consecutivos."
         },
         {
           "nome": "Matheus da Silva Ferreira",
@@ -5633,7 +5691,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: analisa contratos simples com supervisão. Competência: elabora pareceres jurídicos básicos. Autonomia: trabalha com revisão do gestor antes de finalizar entregas. Comportamento: cuidadoso com a precisão técnica dos pareceres. Avança quando: entrega pareceres aprovados sem retrabalho por 2 meses."
         },
         {
           "nome": "Márcia Rosane dos Santos Via",
@@ -5728,7 +5787,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": ""
         },
         {
           "nome": "Paloma Corin da Cruz",
@@ -5823,7 +5883,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": ""
         },
         {
           "nome": "Paula Eduarda Cardoso Betina",
@@ -5918,7 +5979,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: realiza contatos de cobrança conforme script e régua definidos. Competência: registra ocorrências no sistema com precisão. Autonomia: trabalha com acompanhamento próximo do gestor. Comportamento: mantém postura profissional e empática mesmo em contatos difíceis. Avança quando: registra contatos sem erros por 2 meses consecutivos."
         },
         {
           "nome": "Raissa Estefany Venâncio Cos",
@@ -6013,7 +6075,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: executa rotinas administrativas (compras, controle de materiais, gestão de fornecedores) com supervisão. Competência: mantém organização do escritório. Autonomia: trabalha com acompanhamento próximo do gestor. Comportamento: organizado e atento &agrave;s necessidades do dia a dia do escritório. Avança quando: executa rotinas sem erros por 2 meses consecutivos."
         },
         {
           "nome": "Silvana Muller",
@@ -6108,7 +6171,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: coordena a operação de cobrança com supervisão do Gerente. Competência: define prioridades da equipe. Autonomia: trabalha com acompanhamento do Gerente nas decisões maiores. Comportamento: lidera pelo exemplo nas rotinas do dia a dia. Avança quando: monitora KPIs diários de contato e recuperação dentro da meta."
         },
         {
           "nome": "Solange Gonçalves da Costa P",
@@ -6203,7 +6267,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: coordena a operação de cobrança com supervisão do Gerente. Competência: define prioridades da equipe. Autonomia: trabalha com acompanhamento do Gerente nas decisões maiores. Comportamento: lidera pelo exemplo nas rotinas do dia a dia. Avança quando: monitora KPIs diários de contato e recuperação dentro da meta."
         },
         {
           "nome": "Tamara Mesquita Martio",
@@ -6298,7 +6363,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: organiza e protocola documentos jurídicos. Competência: realiza pesquisas de jurisprudência sob orientação. Autonomia: trabalha com acompanhamento próximo do gestor. Comportamento: organizado e atento a prazos processuais. Avança quando: monitora prazos sem perdas por 2 meses consecutivos."
         },
         {
           "nome": "Vanessa da Silva",
@@ -6393,7 +6459,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: analisa carteiras de inadimplência com métricas básicas. Competência: prepara relatórios de recuperação e aging. Autonomia: trabalha com revisão do Pleno/gestor. Comportamento: cuidadoso com a precisão dos dados apresentados. Avança quando: entrega relatórios sem erros por 2 meses consecutivos."
         },
         {
           "nome": "Wilson Rodrigo Dalmolin",
@@ -6488,7 +6555,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: é parceiro estratégico do CFO e CEO. Competência: tem influência máxima na estratégia de risco da empresa. Autonomia: atua com total independência e visão de longo prazo. Comportamento: pronto para representar a empresa em qualquer fórum executivo. Avança quando: está pronto para Diretoria de Risco ou posição de liderança executiva."
         }
       ]
     },
@@ -6590,7 +6658,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: é referência máxima em product management. Competência: define o futuro do produto da empresa. Autonomia: atua com plena independência estratégica. Comportamento: pronto para representar a empresa em qualquer fórum de produto. Avança quando: está pronto para GPM ou VP de Produto."
         },
         {
           "nome": "Kauê B. Tomazelli",
@@ -6685,7 +6754,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: é parceiro estratégico do CEO/COO. Competência: tem influência máxima na estratégia de crescimento da empresa. Autonomia: atua com total independência e visão de longo prazo. Comportamento: pronto para representar a empresa em qualquer fórum. Avança quando: está pronto para assumir a diretoria de crescimento ou VP de Marketing &amp; Growth."
         },
         {
           "nome": "Melissa Alves Camargo",
@@ -6780,7 +6850,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: produz conteúdo para redes sociais e email conforme briefs definidos. Competência: agenda publicações e monitora métricas básicas de engajamento. Autonomia: trabalha com revisão do gestor antes da publicação. Comportamento: cuidadoso com tom de voz e identidade da marca. Avança quando: produz conteúdo aprovado sem retrabalho por 2 meses consecutivos."
         },
         {
           "nome": "Thalita Leal Dutra Bristot",
@@ -6875,7 +6946,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: conduz projetos de marketing end-to-end com supervisão mínima. Competência: propõe estratégias baseadas em dados. Autonomia: atua como referência operacional para o time Jr. Comportamento: pensa em estratégia, não só em execução de tarefas. Avança quando: está pronto para liderar campanhas de geração de demanda (Pleno I)."
         }
       ]
     },
@@ -6977,7 +7049,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: é referência em endomarketing e cultura. Competência: domina toda a estratégia de comunicação e cultura interna. Autonomia: atua com plena independência estratégica. Comportamento: pronto para representar People em qualquer fórum. Avança quando: está pronto para papel de liderança ou posição Sênior."
         },
         {
           "nome": "Ana Paula de Britto Sosa",
@@ -7072,7 +7145,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: conduz processos de compras e contratos simples com autonomia crescente. Competência: monitora indicadores básicos de facilities. Autonomia: responde demandas internas sem necessidade de acompanhamento. Comportamento: comunica prazos e status com transparência. Avança quando: passa a gerenciar fornecedores e contratos de facilities."
         },
         {
           "nome": "Luana Beatris Xavier",
@@ -7167,7 +7241,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: lidera o ciclo de gestão de pessoas da área parceira de forma aut&ocirc;noma. Competência: facilita conversas de carreira e desempenho. Autonomia: desenvolve líderes sem necessidade de acompanhamento. Comportamento: assume responsabilidade pelo desenvolvimento das lideranças que apoia. Avança quando: passa a implementar programas de desenvolvimento de liderança."
         }
       ]
     },
@@ -7269,7 +7344,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": ""
         },
         {
           "nome": "Felipe André Deistel Ferreir",
@@ -7364,7 +7440,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: co-define a visão de produto da empresa com o GPM. Competência: desenvolve o time com planos individuais (PDIs). Autonomia: é parceiro estratégico do CEO. Comportamento: atua como liderança estratégica de produto reconhecida. Avança quando: é referência máxima em product management."
         }
       ]
     },
@@ -7466,7 +7543,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: conduz QBRs e reuniões de relacionamento com autonomia. Competência: identifica oportunidades de expansão na carteira. Autonomia: suporta renovações de contrato sem acompanhamento constante. Comportamento: escuta o cliente para identificar necessidades antes de propor. Avança quando: passa a gerenciar carteira de maior complexidade."
         },
         {
           "nome": "Ana Paula Bunn",
@@ -7561,7 +7639,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: lidera a gestão de contas estratégicas da carteira. Competência: contribui com o playbook de relacionamento. Autonomia: capacita colegas Jr sem necessidade de supervisão. Comportamento: compartilha boas práticas com o time. Avança quando: gerencia contas complexas com alta autonomia."
         },
         {
           "nome": "Andresa Maria Ziegler",
@@ -7656,7 +7735,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: gerencia carteira de maior complexidade. Competência: propõe iniciativas de upsell e cross-sell. Autonomia: monitora e apresenta métricas da própria carteira sem provocação. Comportamento: pensa em expansão de receita junto com retenção. Avança quando: passa a liderar a gestão de contas estratégicas."
         },
         {
           "nome": "Andrieli Elmatos",
@@ -7751,7 +7831,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: é referência de gestão em onboarding. Competência: domina toda a estratégia de ativação. Autonomia: atua com plena independência estratégica. Comportamento: pronto para representar a área em qualquer fórum. Avança quando: está pronto para Gerente ou liderança sênior."
         },
         {
           "nome": "Bruna Gabriela",
@@ -7842,7 +7923,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": ""
         },
         {
           "nome": "Caroline Monguilhott Duarte",
@@ -7937,7 +8019,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: gerencia carteira de maior complexidade. Competência: propõe iniciativas de upsell e cross-sell. Autonomia: monitora e apresenta métricas da própria carteira sem provocação. Comportamento: pensa em expansão de receita junto com retenção. Avança quando: passa a liderar a gestão de contas estratégicas."
         },
         {
           "nome": "Caroline Regina Ramos de Oli",
@@ -8032,7 +8115,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: gerencia carteira de clientes com supervisão. Competência: realiza QBRs básicos e monitora saúde da conta. Autonomia: registra atividades no CRM com disciplina. Comportamento: empático e organizado no contato com clientes. Avança quando: realiza QBRs sem necessidade de revisão prévia."
         },
         {
           "nome": "Cauã Daniel Lima da Silva",
@@ -8127,7 +8211,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: conduz QBRs e reuniões de relacionamento com autonomia. Competência: identifica oportunidades de expansão na carteira. Autonomia: suporta renovações de contrato sem acompanhamento constante. Comportamento: escuta o cliente para identificar necessidades antes de propor. Avança quando: passa a gerenciar carteira de maior complexidade."
         },
         {
           "nome": "Daiane de Souza Lopes",
@@ -8222,7 +8307,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: atende tickets de suporte com base em base de conhecimento. Competência: escala casos complexos com contexto adequado. Autonomia: trabalha com acompanhamento próximo do gestor. Comportamento: empático e organizado no atendimento ao cliente. Avança quando: resolve tickets dentro do SLA por 2 meses consecutivos."
         },
         {
           "nome": "Dasaev Melo Menezes",
@@ -8317,7 +8403,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: analisa métricas de onboarding (TAT, taxa de ativação, churn no onboarding). Competência: produz relatórios com supervisão. Autonomia: trabalha com revisão do gestor antes de finalizar entregas. Comportamento: cuidadoso com a precisão dos dados apresentados. Avança quando: entrega relatórios sem erros por 2 meses consecutivos."
         },
         {
           "nome": "Failla de Oliveira Pires",
@@ -8412,7 +8499,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: lidera a análise e otimização do funil de onboarding. Competência: elabora relatórios executivos. Autonomia: atua como parceiro estratégico de produto e CS sem necessidade de direcionamento. Comportamento: assume responsabilidade pelos resultados do funil de ativação. Avança quando: passa a desenvolver modelos de previsão de churn no onboarding."
         },
         {
           "nome": "Francisco Bieging Gomes",
@@ -8507,7 +8595,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: atende tickets de suporte com base em base de conhecimento. Competência: escala casos complexos com contexto adequado. Autonomia: trabalha com acompanhamento próximo do gestor. Comportamento: empático e organizado no atendimento ao cliente. Avança quando: resolve tickets dentro do SLA por 2 meses consecutivos."
         },
         {
           "nome": "Ingrid Barbosa dos Santos",
@@ -8598,7 +8687,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": ""
         },
         {
           "nome": "Joanna Rosa Mella Massing",
@@ -8693,7 +8783,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: é referência de gestão em suporte. Competência: domina toda a estratégia de atendimento. Autonomia: atua com plena independência estratégica. Comportamento: pronto para representar a área em qualquer fórum. Avança quando: está pronto para Gerente ou liderança sênior de CX."
         },
         {
           "nome": "Joel Fernandes Dini",
@@ -8788,7 +8879,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: desenvolve o framework de onboarding data-driven. Competência: suporta o Coordenador com análises estratégicas. Autonomia: é referência técnica da área. Comportamento: pensa em dados como base para decisões de jornada. Avança quando: é referência em analytics de onboarding."
         },
         {
           "nome": "Juliana Xavier Simões",
@@ -8883,7 +8975,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: atende tickets de suporte com base em base de conhecimento. Competência: escala casos complexos com contexto adequado. Autonomia: trabalha com acompanhamento próximo do gestor. Comportamento: empático e organizado no atendimento ao cliente. Avança quando: resolve tickets dentro do SLA por 2 meses consecutivos."
         },
         {
           "nome": "Lucas Garcia Freitas",
@@ -8978,7 +9071,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: analisa métricas de onboarding (TAT, taxa de ativação, churn no onboarding). Competência: produz relatórios com supervisão. Autonomia: trabalha com revisão do gestor antes de finalizar entregas. Comportamento: cuidadoso com a precisão dos dados apresentados. Avança quando: entrega relatórios sem erros por 2 meses consecutivos."
         },
         {
           "nome": "Lucas da Silva Ferreira",
@@ -9073,7 +9167,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: resolve tickets de maior complexidade com autonomia crescente. Competência: identifica padrões de problema e reporta ao time. Autonomia: trabalha com supervisão pontual, não constante. Comportamento: traz contexto e histórico ao escalar um caso. Avança quando: mantém CSAT acima da meta por 2 meses consecutivos."
         },
         {
           "nome": "Manoela Paola Walter",
@@ -9168,7 +9263,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: gerencia carteira de clientes com supervisão. Competência: realiza QBRs básicos e monitora saúde da conta. Autonomia: registra atividades no CRM com disciplina. Comportamento: empático e organizado no contato com clientes. Avança quando: realiza QBRs sem necessidade de revisão prévia."
         },
         {
           "nome": "Olivio Cichovicz Neto",
@@ -9263,7 +9359,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: analisa métricas de onboarding (TAT, taxa de ativação, churn no onboarding). Competência: produz relatórios com supervisão. Autonomia: trabalha com revisão do gestor antes de finalizar entregas. Comportamento: cuidadoso com a precisão dos dados apresentados. Avança quando: entrega relatórios sem erros por 2 meses consecutivos."
         },
         {
           "nome": "Pedro Paulo Magalhães Jeremi",
@@ -9358,7 +9455,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: analisa métricas de onboarding (TAT, taxa de ativação, churn no onboarding). Competência: produz relatórios com supervisão. Autonomia: trabalha com revisão do gestor antes de finalizar entregas. Comportamento: cuidadoso com a precisão dos dados apresentados. Avança quando: entrega relatórios sem erros por 2 meses consecutivos."
         },
         {
           "nome": "Rafael Ian Barreto de Meneze",
@@ -9453,7 +9551,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: atende tickets de suporte com base em base de conhecimento. Competência: escala casos complexos com contexto adequado. Autonomia: trabalha com acompanhamento próximo do gestor. Comportamento: empático e organizado no atendimento ao cliente. Avança quando: resolve tickets dentro do SLA por 2 meses consecutivos."
         },
         {
           "nome": "Renata Otacilio",
@@ -9548,7 +9647,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: lidera projetos de retenção e expansão. Competência: representa a área em reuniões com clientes estratégicos. Autonomia: contribui com o playbook de CS sem provocação. Comportamento: comunica com segurança em reuniões com clientes de alto nível. Avança quando: passa a influenciar a estratégia de produto com feedback de clientes."
         },
         {
           "nome": "Sabrina Vieira",
@@ -9643,7 +9743,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: é parceiro estratégico do C-Level em CS. Competência: tem influência máxima na estratégia de retenção. Autonomia: atua com plena independência estratégica. Comportamento: pronto para representar CS em qualquer fórum. Avança quando: está pronto para Gerente Sênior ou VP de Customer Success."
         },
         {
           "nome": "Thiago Cardoso Araújo",
@@ -9738,7 +9839,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": ""
         },
         {
           "nome": "Tuany Ribeiro",
@@ -9833,7 +9935,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: gerencia carteira de maior complexidade. Competência: propõe iniciativas de upsell e cross-sell. Autonomia: monitora e apresenta métricas da própria carteira sem provocação. Comportamento: pensa em expansão de receita junto com retenção. Avança quando: passa a liderar a gestão de contas estratégicas."
         },
         {
           "nome": "Vitória Kimberllan Carvalho ",
@@ -9928,7 +10031,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: gerencia carteira de maior complexidade. Competência: propõe iniciativas de upsell e cross-sell. Autonomia: monitora e apresenta métricas da própria carteira sem provocação. Comportamento: pensa em expansão de receita junto com retenção. Avança quando: passa a liderar a gestão de contas estratégicas."
         }
       ]
     },
@@ -10030,7 +10134,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": ""
         },
         {
           "nome": "Ayrton de Sena",
@@ -10125,7 +10230,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: é referência de gestão em CS. Competência: domina toda a estratégia de CS e retenção. Autonomia: atua com plena independência estratégica. Comportamento: pronto para representar CS em qualquer fórum. Avança quando: está pronto para Gerente de Relacionamento ou liderança sênior."
         },
         {
           "nome": "Bruno Antônio Veronese",
@@ -10220,7 +10326,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: é referência de gestão em CS. Competência: domina toda a estratégia de CS e retenção. Autonomia: atua com plena independência estratégica. Comportamento: pronto para representar CS em qualquer fórum. Avança quando: está pronto para Gerente de Relacionamento ou liderança sênior."
         },
         {
           "nome": "Bruno de Mattos Porto",
@@ -10315,7 +10422,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: gerencia carteira de clientes com supervisão. Competência: realiza QBRs básicos e monitora saúde da conta. Autonomia: registra atividades no CRM com disciplina. Comportamento: empático e organizado no contato com clientes. Avança quando: realiza QBRs sem necessidade de revisão prévia."
         },
         {
           "nome": "Dimaima Maicá",
@@ -10410,7 +10518,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: gerencia carteira de clientes com supervisão. Competência: realiza QBRs básicos e monitora saúde da conta. Autonomia: registra atividades no CRM com disciplina. Comportamento: empático e organizado no contato com clientes. Avança quando: realiza QBRs sem necessidade de revisão prévia."
         },
         {
           "nome": "Felipe Moreira",
@@ -10505,7 +10614,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: gerencia carteira de clientes com supervisão. Competência: realiza QBRs básicos e monitora saúde da conta. Autonomia: registra atividades no CRM com disciplina. Comportamento: empático e organizado no contato com clientes. Avança quando: realiza QBRs sem necessidade de revisão prévia."
         },
         {
           "nome": "Gianluca Dal Zotto",
@@ -10600,7 +10710,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: é parceiro estratégico do CEO/COO. Competência: tem influência máxima na estratégia de crescimento da empresa. Autonomia: atua com total independência e visão de longo prazo. Comportamento: pronto para representar a empresa em qualquer fórum. Avança quando: está pronto para assumir a diretoria de crescimento ou VP de Marketing &amp; Growth."
         },
         {
           "nome": "Guilherme Arquer Giacometti",
@@ -10695,7 +10806,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: é parceiro estratégico do CEO/COO. Competência: tem influência máxima na estratégia de crescimento da empresa. Autonomia: atua com total independência e visão de longo prazo. Comportamento: pronto para representar a empresa em qualquer fórum. Avança quando: está pronto para assumir a diretoria de crescimento ou VP de Marketing &amp; Growth."
         },
         {
           "nome": "Humberto Basso",
@@ -10790,7 +10902,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: é referência de gestão em CS. Competência: domina toda a estratégia de CS e retenção. Autonomia: atua com plena independência estratégica. Comportamento: pronto para representar CS em qualquer fórum. Avança quando: está pronto para Gerente de Relacionamento ou liderança sênior."
         },
         {
           "nome": "Jessica Correa",
@@ -10885,7 +10998,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: é referência em gestão de relacionamento. Competência: lidera iniciativas de alto impacto. Autonomia: atua com independência técnica plena. Comportamento: pensa estrategicamente sobre a evolução do CS. Avança quando: está pronto para Sênior ou Coordenação."
         },
         {
           "nome": "Juliana Ferreira da Costa",
@@ -10980,7 +11094,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: conduz QBRs e reuniões de relacionamento com autonomia. Competência: identifica oportunidades de expansão na carteira. Autonomia: suporta renovações de contrato sem acompanhamento constante. Comportamento: escuta o cliente para identificar necessidades antes de propor. Avança quando: passa a gerenciar carteira de maior complexidade."
         },
         {
           "nome": "Michelle Pacheco Soares",
@@ -11075,7 +11190,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: gerencia carteira de maior complexidade. Competência: propõe iniciativas de upsell e cross-sell. Autonomia: monitora e apresenta métricas da própria carteira sem provocação. Comportamento: pensa em expansão de receita junto com retenção. Avança quando: passa a liderar a gestão de contas estratégicas."
         },
         {
           "nome": "Natália Cristina Mello de Se",
@@ -11170,7 +11286,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: desenvolve e implementa estratégias de expansão de receita. Competência: monitora NPS e health score. Autonomia: capacita analistas Jr em gestão de carteira. Comportamento: pensa em expansão de receita de forma estruturada. Avança quando: passa a liderar projetos de retenção e expansão."
         },
         {
           "nome": "Vitoria Jessica Barbosa Melo",
@@ -11265,7 +11382,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: gerencia carteira de clientes com supervisão. Competência: realiza QBRs básicos e monitora saúde da conta. Autonomia: registra atividades no CRM com disciplina. Comportamento: empático e organizado no contato com clientes. Avança quando: realiza QBRs sem necessidade de revisão prévia."
         },
         {
           "nome": "Wagner Augusto Ferreira",
@@ -11360,7 +11478,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: gerencia carteira de clientes com supervisão. Competência: realiza QBRs básicos e monitora saúde da conta. Autonomia: registra atividades no CRM com disciplina. Comportamento: empático e organizado no contato com clientes. Avança quando: realiza QBRs sem necessidade de revisão prévia."
         },
         {
           "nome": "Willian Soares Alves",
@@ -11455,7 +11574,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: gerencia carteira de maior complexidade. Competência: propõe iniciativas de upsell e cross-sell. Autonomia: monitora e apresenta métricas da própria carteira sem provocação. Comportamento: pensa em expansão de receita junto com retenção. Avança quando: passa a liderar a gestão de contas estratégicas."
         },
         {
           "nome": "Ângelo Matheus Gonzalez Luz",
@@ -11546,7 +11666,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": ""
         },
         {
           "nome": "Mathias Dziekaniak Vecchietti",
@@ -11641,7 +11762,8 @@
             }
           ],
           "senioridade": "",
-          "nivel_senioridade": ""
+          "nivel_senioridade": "",
+          "step_atual": "Entrega: gerencia carteira de clientes com supervisão. Competência: realiza QBRs básicos e monitora saúde da conta. Autonomia: registra atividades no CRM com disciplina. Comportamento: empático e organizado no contato com clientes. Avança quando: realiza QBRs sem necessidade de revisão prévia."
         }
       ]
     }

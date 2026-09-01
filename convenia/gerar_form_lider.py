@@ -30,6 +30,10 @@ def filtrar_perguntas(perguntas):
             "n": p["n"], "pergunta": p["pergunta"], "tipo": p["tipo"],
             "opcoes": p.get("opcoes", [])
         })
+    # Rotacionar Q5→Q7, Q6→Q5, Q7→Q6 (índices 4,5,6)
+    if len(resultado) >= 7:
+        resultado[4], resultado[5], resultado[6] = resultado[5], resultado[6], resultado[4]
+        resultado[4]["n"], resultado[5]["n"], resultado[6]["n"] = 5, 6, 7
     return resultado
 
 perguntas_map = {}

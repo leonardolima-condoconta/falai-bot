@@ -88,13 +88,28 @@ r9_prev = to_9box(nbox_prev_res)
 p9_prev = to_9box(nbox_prev_pot)
 r9_auto = to_9box(nota_res_auto)
 
-# Construir linhas comparativas
-linhas = []
-all_keys = set(auto_p.keys()) | set(av_p.keys())
-for k in sorted(all_keys):
-    av = auto_p.get(k, "")
-    lv = av_p.get(k, "")
-    linhas.append((k, av, lv))
+# Construir linhas comparativas — mapeamento por CONCEITO (igual ao gerar_exec_forms.py)
+# AUTO:  Q1=Resultados Q2=Área Q3=Step Q4=Competências Q5=V+ Q6=V- Q7=MOTIVAÇÃO(SWAPPED) Q8=PDI(SWAPPED)
+# LIDER: Q1=Resultados Q2=Área Q3=Step Q4=Competências Q5=POTENCIAL Q6=SCI Q7=EVOLUIR (Q8=Recomendacao removida)
+# No RAW as chaves são o texto completo da pergunta → match por palavra-chave
+
+def match_key(data, *keywords):
+    for k, v in data.items():
+        kl = k.lower()
+        if all(kw.lower() in kl for kw in keywords):
+            return v
+    return ""
+
+linhas = [
+    ("1. Resultados",                  match_key(auto_p, "resultados", "ciclo"),                match_key(av_p, "resultados", "ciclo")),
+    ("2. Entrega / Área",              match_key(auto_p, "quantos", "entregou"),               match_key(av_p, "quantos", "entregou")),
+    ("3. Competências",                match_key(auto_p, "competências"),                      match_key(av_p, "competências")),
+    ("4. Escala de Energia × Potencial", match_key(auto_p, "motivação"),                      match_key(av_p, "potencial")),
+    ("5. Step × Step",                 match_key(auto_p, "step", "analisando"),                match_key(av_p, "pronto", "step")),
+    ("6. Valor Vivido × SCI",          match_key(auto_p, "valor", "viveu"),                    match_key(av_p, "valor", "exemplo", "situação")),
+    ("7. Valor Evoluir × Exemplo Evoluir", match_key(auto_p, "valor", "evoluir"),            match_key(av_p, "valor", "evoluir", "precisa")),
+    ("8. PDI (Autoavaliação)",         match_key(auto_p, "carreira", "fazer"),                 ""),
+]
 
 def fmt_cell(v, color):
     if not v: return f'<div class="val {color} empty">—</div>'
@@ -104,15 +119,49 @@ def fmt_cell(v, color):
         return f'<div class="val {color} num">{vs}</div>'
     return f'<div class="val {color}">{vs}</div>'
 
+# Construir linhas comparativas — DIV.STARS (padrão autoavaliação/líder)
+# Para cada conceito: título + stars 1-5 com auto (amarelo) e líder (azul) sobrepostos
+# Textos longos (não numéricos) aparecem abaixo dos stars
+
+def is_numeric(v):
+    if not v: return False
+    vs = str(v).strip()
+    return vs.replace(".","").replace(",","").isdigit() and len(vs) <= 4
+
+def star_val(v):
+    """Extrai valor numerico 1-5 de uma resposta."""
+    try: return int(float(str(v).strip().replace(",",".")))
+    except: return None
+
 linhas_html = ""
 for label, av, lv in linhas:
+    n_auto = star_val(av)
+    n_lider = star_val(lv)
+    texto_auto = "" if n_auto is not None else str(av).strip() if av else ""
+    texto_lider = "" if n_lider is not None else str(lv).strip() if lv else ""
+    
+    stars = ""
+    for s_val in range(1, 6):
+        cls = ""
+        if n_auto == s_val and n_lider == s_val:
+            cls = " mixed"
+        elif n_lider == s_val:
+            cls = " sel-lider"
+        elif n_auto == s_val:
+            cls = " sel-auto"
+        stars += f'<button class="{cls}" data-value="{s_val}" onclick="toggleStar(this,{s_val})">{s_val}</button>'
+    
+    texts = ""
+    if texto_auto:
+        texts += f'<div class="resp auto-resp" title="Autoavaliação">{texto_auto}</div>'
+    if texto_lider:
+        texts += f'<div class="resp lider-resp" title="Líder">{texto_lider}</div>'
+    
     linhas_html += f"""
-  <div class="row">
-    <div class="lbl">{label}</div>
-    <div class="cols">
-      {fmt_cell(av, "auto")}
-      {fmt_cell(lv, "lider")}
-    </div>
+  <div class="cmp-section">
+    <div class="cmp-label">{label}</div>
+    <div class="stars">{stars}</div>
+    {texts}
   </div>"""
 
 if not linhas:
@@ -175,16 +224,21 @@ header .sub{{color:#AFC1D6;font-size:12px;margin-top:4px}}
 .dot{{width:12px;height:12px;border-radius:3px;display:inline-block}}
 .dot.auto{{background:var(--auto-border)}}
 .dot.lider{{background:var(--lider-border)}}
-.header-row{{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;font-size:11px;font-weight:600;color:var(--muted);margin-bottom:8px;padding:0 28px}}
-.header-row div{{text-align:center}}
-.row{{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;align-items:start;padding:10px 28px;border-bottom:1px solid var(--line)}}
-.lbl{{font-size:12px;font-weight:600;color:var(--navy);line-height:1.4}}
-.cols{{display:grid;grid-template-columns:1fr 1fr;gap:8px}}
-.val{{font-size:12px;line-height:1.5;padding:8px 10px;border-radius:6px;text-align:center}}
-.val.auto{{background:var(--auto-bg);border:1px solid var(--auto-border);color:#8B6914}}
-.val.lider{{background:var(--lider-bg);border:1px solid var(--lider-border);color:#14365C}}
-.val.num{{font-size:20px;font-weight:800}}
-.val.empty{{color:var(--muted);font-style:italic;background:#FBFCFE;border:1px dashed var(--line)}}
+.header-row{{display:none}}
+.row{{display:none}}
+.lbl{{display:none}}
+.cols{{display:none}}
+.val{{display:none}}
+.cmp-section{{padding:16px 28px;border-bottom:1px solid var(--line)}}
+.cmp-label{{font-size:13px;font-weight:600;color:var(--navy);margin-bottom:10px;line-height:1.4}}
+.stars{{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px}}
+.stars button{{width:44px;height:44px;border-radius:8px;border:1.5px solid var(--line);background:#FBFCFE;font-size:15px;font-weight:600;cursor:pointer;color:var(--muted);transition:all .15s}}
+.stars button.sel-auto{{background:var(--auto-bg);border-color:var(--auto-border);color:#8B6914;font-weight:700}}
+.stars button.sel-lider{{background:var(--lider-bg);border-color:var(--lider-border);color:#14365C;font-weight:700}}
+.stars button.mixed{{background:linear-gradient(135deg,var(--auto-bg) 0% 50%,var(--lider-bg) 50% 100%);border-color:var(--auto-border);border-right-color:var(--lider-border);border-bottom-color:var(--lider-border);color:#14365C;font-weight:800}}
+.resp{{font-size:12px;line-height:1.5;padding:8px 12px;border-radius:6px;margin-top:6px}}
+.resp.auto-resp{{background:var(--auto-bg);border:1px solid var(--auto-border);color:##8B6914}}
+.resp.lider-resp{{background:var(--lider-bg);border:1px solid var(--lider-border);color:##14365C}}
 .empty-state{{padding:30px;text-align:center;color:var(--muted);font-size:13px}}
 .justify{{margin-top:12px}}
 .justify textarea{{width:100%;padding:10px 12px;border:1.5px solid var(--line);border-radius:8px;font-family:'Inter',sans-serif;font-size:13px;color:var(--ink);background:#FBFCFE;resize:vertical}}

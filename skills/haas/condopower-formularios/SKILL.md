@@ -1,14 +1,14 @@
 ---
 name: condopower-formularios
 description: Formulários People via proxy da condopower-api.
-version: 1.1.0
+version: 1.2.0
 ---
 
 # condopower-formularios — formulários HTML de People
 
 ## Changelog
+- **v1.2.0 (28/08/2026):** Reordenação de perguntas: Q7↔Q8 na autoavaliação (swap + rotação de `n`), Q5→Q7→Q6→Q5 no líder (rotação de 3 posições). Step atual do Confluence no form do líder. Layout 1x1 full-screen (60/40, 9box grande, scroll único). GitHub push com limpeza de tokens.
 - **v1.1.0 (27/08/2026):** Endpoint do webhook-proxy corrigido (sem `/rpc`). `gerar_form_lider.py` reescrito 100% client-side. Pergunta de Recomendação removida. Validação JS de obrigatoriedade adicionada em todos os forms.
-- **v1.0.0 (25/08/2026):** Padrão proxy same-domain, client-side identity, cookies 10 dias, líder múltiplos liderados.
 
 ## Arquivos por formulário
 
@@ -119,4 +119,12 @@ quebra. Link sempre SOLTO, com o rótulo em negrito antes:
 `📝 *Link do formulário:* https://...` (correto) vs `*Link: https://...*` (errado).
 
 ## Referências
-- `references/cors-e-proxy.md` — histórico completo do problema CORS/preflight e a solução do proxy.
+- `references/sql-fix-q7q8-swap.md` — SQL (SQLite e PostgreSQL) para corrigir respostas já salvas com Q7/Q8 invertidas
+- `references/confluence-step-atual.md` — extrair trilhas do Confluence e injetar step_atual no JSON
+- `references/perguntas-reorder-pattern.md` — padrão de reordenação de perguntas no render (Q7↔Q8 autoavaliação, Q5→Q7→Q6→Q5 líder)
+- `references/step-atual-display.md` — mostrar step_atual no form do líder (card azul abaixo do nome)
+- `references/extract-confluence-steps.md` — script de extração em lote de 38 cargos × 15 steps
+- `references/layout-fullscreen-1x1.md` — layout full-screen do 1x1 (60/40, header full-width, scroll único, 9box grande)
+- `references/1x1-semantic-mapping.md` — mapeamento semântico das 8 linhas comparativas auto×líder (keywords por conceito)
+- `references/1x1-stars-pattern.md` — padrão div.stars com gradiente dual-color (sel-auto/sel-lider/mixed)
+- `references/git-secrets-cleanup.md` — remover tokens do histórico git com `filter-branch` + push force

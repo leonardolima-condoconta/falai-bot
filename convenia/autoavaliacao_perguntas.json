@@ -3193,9 +3193,9 @@
         },
         {
           "nome": "Mateus Fantucci",
-          "aba": "Mateus Fantucci",
-          "cargo": "Treasury Analyst",
-          "area": "Finance",
+            "aba": "Mateus Fantucci",
+            "cargo": "Treasury Analyst",
+            "area": "Tesouraria",
           "nivel": "Júnior",
           "step": "V",
           "gestor": null,

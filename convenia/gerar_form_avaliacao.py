@@ -40,28 +40,33 @@ for area in auto.get("areas", []):
     for col in area["colaboradores"]:
         all_cols.append(("autoavaliacao", auto, col))
 
-# Priority 1: exact override by email
+# Priority 1: exact email match (JSON agora tem campo email)
 colaborador = None
 tipo_form = source_data = None
-override_name = _email_overrides.get(EMAIL.lower())
-if override_name:
-    override_lower = override_name.lower()
-    for t, src, col in all_cols:
-        nome_lower = col["nome"].lower()
-        # Match by prefix (autoavaliacao names are truncated at ~31 chars)
-        if nome_lower == override_lower or override_lower.startswith(nome_lower) or nome_lower.startswith(override_lower[:len(nome_lower)]):
-            tipo_form, source_data, colaborador = t, src, col
-            break
+emaill = EMAIL.lower().strip()
+for t, src, col in all_cols:
+    if col.get("email", "").lower().strip() == emaill:
+        tipo_form, source_data, colaborador = t, src, col
+        break
 
-# Priority 2: fuzzy matching
+# Priority 2: exact override by email
+if not colaborador:
+    override_name = _email_overrides.get(EMAIL.lower())
+    if override_name:
+        override_lower = override_name.lower()
+        for t, src, col in all_cols:
+            nome_lower = col["nome"].lower()
+            if nome_lower == override_lower or override_lower.startswith(nome_lower) or nome_lower.startswith(override_lower[:len(nome_lower)]):
+                tipo_form, source_data, colaborador = t, src, col
+                break
+
+# Priority 3: fuzzy matching
 if not colaborador:
     parts = EMAIL.lower().replace("@condoconta.com.br","").replace("@","").split(".")
     best, best_score = None, 0
     for t, src, col in all_cols:
         nome = col["nome"].lower()
         np = nome.split()
-        if EMAIL.lower() == col.get("email","").lower():
-            best = (t, src, col); break
         sc = sum(2 for p in parts for n in np if len(n)>=3 and (n in p or p in n))
         if sc > best_score:
             best_score = sc; best = (t, src, col)
@@ -102,7 +107,7 @@ for p in perguntas_render:
 
 # Build CSS + HTML
 css = """
-:root{--paper:#F4F6FA;--ink:#0C2440;--navy:#14365C;--navy-deep:#0A2138;--gold:#F4B72C;--gold-deep:#C98F0C;--muted:#5E748C;--line:#DCE3EC;--card:#FFFFFF}
+:root{--paper:#F4F6FA;--ink:#0C2440;--navy:#14365C;--navy-deep:#0A2138;--gold:#F4B72C;--gold-deep:#C98F0C;--muted:#5E748C;--line:#DCE3EC;--card:#FFFFFF;--danger:#C62828;--success:#2E7D32}
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--paper);color:var(--ink);font-family:'Inter',sans-serif;line-height:1.5;padding:40px 20px}
 .sheet{max-width:860px;margin:0 auto;background:var(--card);box-shadow:0 24px 60px -28px rgba(12,36,64,.35),0 0 0 1px var(--line)}
@@ -127,6 +132,7 @@ textarea:focus{outline:none;border-color:var(--gold)}
 .submit-row{text-align:right;margin-top:24px}
 .submit-row button{background:var(--navy);color:#fff;border:none;padding:14px 36px;border-radius:10px;font-family:'Sora',sans-serif;font-size:15px;font-weight:600;cursor:pointer}
 .submit-row button:hover{opacity:.9}
+.submit-row button:disabled{opacity:.5;cursor:not-allowed}
 #status{text-align:right;margin-top:10px;font-size:13px;color:var(--gold-deep)}
 .thank-you{display:none;text-align:center;padding:60px 44px}
 .thank-you .emoji{font-size:64px;margin-bottom:20px}
@@ -134,6 +140,9 @@ textarea:focus{outline:none;border-color:var(--gold)}
 .thank-you p{font-size:14px;color:var(--muted);max-width:500px;margin:0 auto}
 footer{background:var(--navy-deep);color:#AFC1D6;padding:20px 44px;display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:10.5px;flex-wrap:wrap;gap:8px}
 footer b{color:#fff}footer .gold{color:var(--gold)}
+#auth-check{background:#FFF8E1;border:1px solid #FFE082;border-radius:8px;padding:14px 18px;margin-bottom:20px;font-size:13px;color:#5D4037;line-height:1.6}
+#auth-check.auth-ok{background:#E8F5E9;border-color:#A5D6A7}
+#auth-check.auth-fail{background:#FFEBEE;border-color:#EF9A9A}
 """
 
 html = """<!DOCTYPE html>
@@ -159,14 +168,19 @@ html = """<!DOCTYPE html>
 <h1>Autoavaliacao <em>""" + cnome + """</em></h1>
 <div class="sub">""" + ccargo + " · " + carea + " · " + cnivel + " " + cstep + " · Ciclo " + ciclo + """</div>
 </header>
-<section class="pad">
+<section class="pad" id="form-section">
+<div id="auth-check">
+  <span id="auth-status">Verificando identidade...</span>
+</div>
+<div id="questions-area" style="display:none">
 """ + ph + """
 <input type="hidden" id="colaborador_email" value=""" + json.dumps(cemail) + """>
 <input type="hidden" id="colaborador_nome" value=""" + json.dumps(cnome) + """>
 <input type="hidden" id="area" value=""" + json.dumps(carea) + """>
 <div class="submit-row">
-<button onclick="enviarForm()">Enviar Avaliacao</button>
+<button id="submit-btn" onclick="enviarForm()" disabled>Enviar Avaliacao</button>
 <div id="status"></div>
+</div>
 </div>
 </section>
 <div class="thank-you" id="thank-you">
@@ -181,29 +195,91 @@ html = """<!DOCTYPE html>
 </footer>
 </div>
 <script>
+var FORM_EMAIL = """ + json.dumps(EMAIL) + """;
+var COLABORADOR_ID = '';
+var AUTH_OK = false;
+
 (function(){
   if(document.cookie.indexOf('autoavaliacao_respondida=1') >= 0){
-    document.querySelector('.pad').style.display = 'none';
+    document.getElementById('form-section').style.display = 'none';
     document.getElementById('thank-you').style.display = 'block';
   }
 })();
-var COLABORADOR_ID = '';
+
+function selStar(btn,id){var g=btn.parentElement;g.querySelectorAll('button').forEach(function(b){b.classList.remove('sel')});btn.classList.add('sel');document.getElementById(id).value=btn.dataset.value;}
+function selReco(btn,id){var g=btn.parentElement;g.querySelectorAll('button').forEach(function(b){b.classList.remove('sel')});btn.classList.add('sel');document.getElementById(id).value=btn.dataset.value;}
+
+function checkAuth() {
+  var s = document.getElementById('auth-status');
+  var c = document.getElementById('auth-check');
+  var cookies = document.cookie.split('; ');
+  for(var i=0; i<cookies.length; i++) {
+    var kv = cookies[i].split('=');
+    if(kv[0] === 'x-user-email' || kv[0] === '_oauth2_proxy_email') {
+      return validateEmail(decodeURIComponent(kv.slice(1).join('=')));
+    }
+  }
+  fetch('https://static-server.aiexpert-condoconta.info/proxy/condopower-rpc', {
+    method:'POST', headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({method:'access.verify',params:{identifier:FORM_EMAIL}})
+  }).then(function(r){return r.json()}).then(function(r){
+    if(r.ok && r.result && r.result.employee) {
+      COLABORADOR_ID = r.result.employee.id;
+      return validateEmail(r.result.employee.email);
+    }
+    showBlocked();
+  }).catch(function(e){showBlocked();});
+}
+
+function showBlocked() {
+  var s = document.getElementById('auth-status');
+  var c = document.getElementById('auth-check');
+  s.innerHTML = '&#x1F6AB; <b>Este formulario nao pertence a voce.</b><br>O email autenticado nao confere com o colaborador deste formulario.';
+  c.className = 'auth-fail';
+}
+
+function validateEmail(authEmail) {
+  var s = document.getElementById('auth-status');
+  var c = document.getElementById('auth-check');
+  if(authEmail.toLowerCase() === FORM_EMAIL.toLowerCase()) {
+    s.innerHTML = '&#x2705; Identidade confirmada.';
+    c.className = 'auth-ok';
+    AUTH_OK = true;
+    document.getElementById('questions-area').style.display = 'block';
+    document.getElementById('submit-btn').disabled = false;
+  } else {
+    s.innerHTML = '&#x1F6AB; <b>Este formulario nao pertence a voce.</b><br>Voce esta autenticado como <code>' + authEmail + '</code>, mas este formulario e de <code>' + FORM_EMAIL + '</code>.';
+    c.className = 'auth-fail';
+  }
+}
+
 (function(){
-  var email = document.getElementById('colaborador_email').value;
   fetch('https://static-server.aiexpert-condoconta.info/proxy/condopower-rpc',{
-    method:'POST',
-    headers:{'Content-Type':'application/json'},
-    body:JSON.stringify({method:'access.verify',params:{identifier:email}})
+    method:'POST', headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({method:'access.verify',params:{identifier:FORM_EMAIL}})
   }).then(function(r){return r.json()}).then(function(r){
     if(r.ok && r.result && r.result.employee){
       COLABORADOR_ID = r.result.employee.id;
-      document.getElementById('colaborador_id').value = COLABORADOR_ID;
     }
   }).catch(function(e){console.error('falha ao resolver id', e);});
 })();
-function selStar(btn,id){var g=btn.parentElement;g.querySelectorAll('button').forEach(function(b){b.classList.remove('sel')});btn.classList.add('sel');document.getElementById(id).value=btn.dataset.value;}
-function selReco(btn,id){var g=btn.parentElement;g.querySelectorAll('button').forEach(function(b){b.classList.remove('sel')});btn.classList.add('sel');document.getElementById(id).value=btn.dataset.value;}
-function enviarForm(){var s=document.getElementById('status');var vazios=[];document.querySelectorAll('.pad [data-pergunta]').forEach(function(f){if(!f.value)vazios.push(f);});if(vazios.length>0){s.textContent='⚠️ Preencha todas as perguntas ('+vazios.length+' pendente'+(vazios.length>1?'s':'')+').';s.style.color='#C62828';vazios[0].scrollIntoView({behavior:'smooth',block:'center'});if(vazios[0].previousElementSibling)vazios[0].previousElementSibling.classList.add('flash');return;}var p={},cid=COLABORADOR_ID,cem=document.getElementById('colaborador_email').value,cno=document.getElementById('colaborador_nome').value,car=document.getElementById('area').value;document.querySelectorAll('.pad [data-pergunta]').forEach(function(f){if(f.value)p[f.dataset.pergunta]=f.value;});if(!cid){s.textContent='❌ Aguarde... identificando. Tente de novo em instantes.';s.style.color='#C62828';return;}s.textContent='Enviando...';fetch('https://static-server.aiexpert-condoconta.info/proxy/condopower-rpc',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({method:'form.autoavaliacao',params:{colaborador_id:cid,colaborador_email:cem,colaborador_nome:cno,area:car,perguntas:p}})}).then(function(r){return r.json()}).then(function(r){if(r.ok){document.cookie='autoavaliacao_respondida=1;max-age=864000;path=/';document.querySelector('.pad').style.display='none';document.getElementById('thank-you').style.display='block';}else{var msg=r.error&&r.error.message||'?';if(r.error&&r.error.fields)msg+=' ['+r.error.fields.map(function(f){return f.field}).join(', ')+']';s.textContent='❌ Erro: '+msg;s.style.color='#C62828';}}).catch(function(e){s.textContent='❌ Erro de conexao: '+e;console.error(e);s.style.color='#C62828';});}
+
+function enviarForm(){
+  var s=document.getElementById('status');
+  if(!AUTH_OK){ s.textContent='Email autenticado nao confere com o formulario.';s.style.color='#C62828';return; }
+  var vazios=[];
+  document.querySelectorAll('#questions-area [data-pergunta]').forEach(function(f){if(!f.value)vazios.push(f);});
+  if(vazios.length>0){s.textContent='Preencha todas as perguntas ('+vazios.length+' pendente'+(vazios.length>1?'s':'')+').';s.style.color='#C62828';vazios[0].scrollIntoView({behavior:'smooth',block:'center'});return;}
+  var p={},cid=COLABORADOR_ID,cem=document.getElementById('colaborador_email').value,cno=document.getElementById('colaborador_nome').value,car=document.getElementById('area').value;
+  document.querySelectorAll('#questions-area [data-pergunta]').forEach(function(f){if(f.value)p[f.dataset.pergunta]=f.value;});
+  if(!cid){s.textContent='Aguarde... identificando.';s.style.color='#C62828';return;}
+  s.textContent='Enviando...';
+  fetch('https://static-server.aiexpert-condoconta.info/proxy/condopower-rpc',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({method:'form.autoavaliacao',params:{colaborador_id:cid,colaborador_email:cem,colaborador_nome:cno,area:car,perguntas:p}})}).then(function(r){return r.json()}).then(function(r){
+    if(r.ok){document.cookie='autoavaliacao_respondida=1;max-age=864000;path=/';document.getElementById('form-section').style.display='none';document.getElementById('thank-you').style.display='block';}
+    else{var msg=r.error&&r.error.message||'?';if(r.error&&r.error.fields)msg+=' ['+r.error.fields.map(function(f){return f.field}).join(', ')+']';s.textContent='Erro: '+msg;s.style.color='#C62828';}
+  }).catch(function(e){s.textContent='Erro de conexao: '+e;console.error(e);s.style.color='#C62828';});
+}
+checkAuth();
 </script>
 </body>
 </html>"""

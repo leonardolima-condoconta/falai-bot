@@ -88,6 +88,19 @@ for area in lider_json.get("areas", []):
             step_atual_map[key] = sat
 step_atual_json = json.dumps(step_atual_map, ensure_ascii=False)
 
+# Mapa de area: nome → area (departamento) — extraído do JSON pois reports[] não contém department
+area_map = {}
+for area in lider_json.get("areas", []):
+    area_nome = area.get("area", "")
+    for col in area["colaboradores"]:
+        nome = col["nome"]
+        area_map[nome.lower()] = area_nome
+        if nome.lower().split():
+            area_map[nome.lower().split()[0]] = area_nome
+        key = strip_accents(nome.lower())
+        area_map[key] = area_nome
+area_map_json = json.dumps(area_map, ensure_ascii=False)
+
 # 2. Gerar HTML (sem access.verify no Python)
 html = f"""<!DOCTYPE html>
 <html lang="pt-BR">
@@ -175,6 +188,7 @@ var LIDER_EMAIL = {json.dumps(EMAIL)};
 var PERGUNTAS_MAP = {perguntas_map_json};
 var SENIORIDADE_MAP = {senioridade_map_json};
 var STEP_ATUAL_MAP = {step_atual_json};
+var AREA_MAP = {area_map_json};
 var LIDERADOS = [];
 var LEADER_ID = '';
 var LEADER_NOME = '';
@@ -196,6 +210,16 @@ function matchStepAtual(nome){{
   var partes = stripAccents(nome.toLowerCase()).split(' ');
   for(var i=0;i<partes.length;i++){{
     if(STEP_ATUAL_MAP[partes[i]]) return STEP_ATUAL_MAP[partes[i]];
+  }}
+  return '';
+}}
+
+function matchArea(nome){{
+  var key = stripAccents(nome.toLowerCase());
+  if(AREA_MAP[key]) return AREA_MAP[key];
+  var partes = stripAccents(nome.toLowerCase()).split(' ');
+  for(var i=0;i<partes.length;i++){{
+    if(AREA_MAP[partes[i]]) return AREA_MAP[partes[i]];
   }}
   return '';
 }}
@@ -256,7 +280,7 @@ function rebuildDropdown(){{
           nome: rep.full_name,
           email: rep.email || '',
           cargo: rep.job || '',
-          departamento: rep.department || '',
+          area: matchArea(rep.full_name),
           senioridade: sr.senioridade || '',
           nivel_senioridade: sr.nivel_senioridade || '',
           perguntas: matchPerguntas(rep.full_name)
@@ -309,7 +333,7 @@ function carregarPerguntas(idx){{
   }}
   html += '<input type="hidden" name="colaborador_id" value="' + l.id + '">';
   html += '<input type="hidden" name="colaborador_nome" value="' + l.nome + '">';
-  html += '<input type="hidden" name="area" value="' + (l.departamento || '') + '">';
+  html += '<input type="hidden" name="area" value="' + (l.area || '') + '">';
   html += '<input type="hidden" name="lider_email" value="' + LIDER_EMAIL + '">';
   html += '<input type="hidden" name="lider_id" value="' + LEADER_ID + '">';
   document.getElementById('perguntas-container').innerHTML = html;
